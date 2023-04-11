@@ -483,7 +483,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
 
 Robust odometry system is an indispensable need of autonomous robots operating navigation, exploration, and locomotion in unknown environments. In recent years, various robots are being deployed in increasingly complex environments for a broad spectrum of applications such as off-road driving, search-and-rescue in extreme environments, and robotic rovers on planetary missions. Despite the progress made, most of state estimation algorithms are still vulnerable in long-term operation and still struggle in these scenarios. A key necessity in progressing SLAM for long-term autonomy is the availability of high-quality datasets including various challenging scenerios.
 
-<img src="/img/posts/iccv23/iccv/tartanair.png" width="10000" />
+<img src="/img/iccv/tartanair.png" width="10000" />
 
 To push the limits of robust SLAM and robust perception, we will organize a SLAM challenge and evaluate the performance from **virtual to real world robotics**. For virtual environments,
 
