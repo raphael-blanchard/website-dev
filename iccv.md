@@ -4,7 +4,7 @@ subtitle: Oct 02 - Oct 06 2023
 layout: page
 show_sidebar: false
 hide_footer: false
-hero_height: is-large
+hero_height: is-medium
 hero_image: img/iccv/iccv2023_background.jpg
 # hero_link: /iccv#schedule
 # hero_link_text: View Schedule
@@ -668,8 +668,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
 
 ## Workshop Registration
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBylBl2_07IWboKWyUZw0VWyUVjzDLNuDoXEMmV0oYHeyV9A/viewform?embedded=true" width="640" height="684" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBylBl2_07IWboKWyUZw0VWyUVjzDLNuDoXEMmV0oYHeyV9A/viewform?embedded=true" width="100%" height="684" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 <script>
   function myFunction(buttonID, blockName) {
