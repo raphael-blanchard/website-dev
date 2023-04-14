@@ -1,6 +1,6 @@
 ---
-title: Workshop on Robot Learning and SLAM
-subtitle: Oct 02 - Oct 06 2023
+title: ICCV'23 Workshop on Robot Learning and SLAM
+subtitle: Oct 02 - Oct 06, 2023, Paris
 layout: page
 show_sidebar: false
 hide_footer: false
@@ -34,7 +34,6 @@ hero_image: img/iccv/iccv2023_background.jpg
 
 
 
-## Outline
 
 This workshop aims to present the latest results on the **theory** and **practice** of both traditional and modern techniques for **robot learning**, r**obot perception**, and **SLAM**.
 It will be consist of a **seminar** and a **SLAM challenge**.
@@ -169,7 +168,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
   </tr>
 </table>
 
-### Coffee Break and Posters (10:00 - 10:25 AM)
+Coffee Break and Posters (10:00 - 10:25 AM)
 
 ### Session 2 (10:25 AM - 12:00 PM)
 
@@ -303,7 +302,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
 
 </table>
 
-### Lunck Break and Posters (12:00 - 13:00 PM)
+Lunck Break and Posters (12:00 - 13:00 PM)
 
 ### Session 3 (1:00 - 3:20 PM)
 
@@ -601,7 +600,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/shaoshu/">Shaoshu Shu</a>
       </p>
-      <p style="margin-bottom: 3px;">PhD Candidate </p>
+      <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab </p>
       <p>University at Buffalo</p>
     </td> 
     <td style="text-align: center;">
