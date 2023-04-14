@@ -6,6 +6,7 @@ show_sidebar: false
 hide_footer: false
 hero_height: is-medium
 hero_image: img/iccv/iccv2023_background.jpg
+permalink: /iccv23/
 # hero_link: /iccv#schedule
 # hero_link_text: View Schedule
 ---
