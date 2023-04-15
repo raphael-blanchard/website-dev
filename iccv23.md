@@ -5,13 +5,12 @@ layout: page
 show_sidebar: false
 hide_footer: false
 hero_height: is-medium
-hero_image: img/iccv/iccv2023_background.jpg
-permalink: /iccv23/
+hero_image: /img/iccv/iccv2023_background.jpg
 # hero_link: /iccv#schedule
 # hero_link_text: View Schedule
 ---
 
-<!-- <img src="img/iccv/iccv_show_5.png" width="10000" /> -->
+<!-- <img src="/img/iccv/iccv_show_5.png" width="10000" /> -->
 
 <script>
     
@@ -521,7 +520,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
  <table class="customFormat" style="width:100%border-collapse: collapse; border: none;">
   <tr>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/invited_speakers/chenwang.jpg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/invited_speakers/chenwang.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/chen/">Chen Wang</a>
       </p>
@@ -537,7 +536,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/wenshan_wang.jpg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/wenshan_wang.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="http://www.wangwenshan.com/">Wenshan Wang</a>
       </p>
@@ -545,7 +544,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/yuhengqiu.jpeg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/yuhengqiu.jpeg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://scholar.google.com/citations?user=aEK45mEAAAAJ">Yuheng Qiu</a>
       </p>
@@ -555,7 +554,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
   </tr>
   <tr>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/letizia.jpg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/letizia.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://scholar.harvard.edu/letiziagionfrida/bio">Letizia Gionfrida</a>
       </p>
@@ -563,7 +562,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p>Harvard University</p>
     </td>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/invited_speakers/basti.jpg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/invited_speakers/basti.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://theairlab.org/team/sebastian/">Sebastian Scherer</a>
       </p>
@@ -571,7 +570,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/invited_speakers/ayong_kim.jpg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/invited_speakers/ayong_kim.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://ayoungk.github.io/">Ayoung Kim</a>
       </p>
@@ -579,7 +578,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p>Seoul National University</p>
     </td>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/mashuang.jpeg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/mashuang.jpeg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://www.shuangma.me/">Shuang Ma</a>
       </p>
@@ -589,7 +588,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
   </tr>
   <tr>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/iccv_members/yidu.jpg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yidu.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/yidu/">Yi Du</a>
       </p>
@@ -597,7 +596,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p>University at Buffalo</p>
     </td>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/iccv_members/shaoshu.png" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/shaoshu.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/shaoshu/">Shaoshu Shu</a>
       </p>
@@ -623,7 +622,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
   </tr>
   <tr>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/iccv_members/yaohe.png" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yaohe.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://www.ri.cmu.edu/ri-people/yao-he/">Yao He</a>
       </p>
@@ -631,7 +630,7 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/iccv_members/tianhao.jpg" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/tianhao.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://www.linkedin.com/mwlite/in/tianhao-wu-112688a6">Tian Hao Wu</a>
       </p>
