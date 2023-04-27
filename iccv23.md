@@ -132,7 +132,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <p>Massachusetts Institute of Technology</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TDB</p>
+      <p style="margin-bottom: 3px;">From SLAM to Spatial Perception: Hierarchical Models, Certification, and Self-Supervision</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">9:20 - 9:40 AM</p>
@@ -577,17 +577,8 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p style="margin-bottom: 3px;">Robust Perception and Mobile Robotics Lab</p>
       <p>Seoul National University</p>
     </td>
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/mashuang.jpeg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.shuangma.me/">Shuang Ma</a>
-      </p>
-      <p style="margin-bottom: 3px;">Senior researcher,  Autonomous Systems Research Team</p>
-      <p>Microsoft</p>
-    </td> 
   </tr>
-  <tr>
-    <td style="text-align: center;">
+  <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/yidu.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/yidu/">Yi Du</a>
@@ -595,13 +586,22 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab</p>
       <p>University at Buffalo</p>
     </td>
+  <tr>
     <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/shaoshu.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://sairlab.org/team/shaoshu/">Shaoshu Shu</a>
+        <a style="margin-bottom: 1px;" href="https://sairlab.org/team/shaoshu/">Shaoshu Su</a>
       </p>
       <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab </p>
       <p>University at Buffalo</p>
+    </td> 
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/mashuang.jpeg" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.shuangma.me/">Shuang Ma</a>
+      </p>
+      <p style="margin-bottom: 3px;">Senior researcher,  Autonomous Systems Research Team</p>
+      <p>Microsoft</p>
     </td> 
     <td style="text-align: center;">
       <img class="circular_image" src="/img/team/rushan_jiang.png" style="margin-bottom: 6px;"/>
