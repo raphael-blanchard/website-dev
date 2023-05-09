@@ -39,6 +39,20 @@ This workshop aims to present the latest results on the **theory** and **practic
 It will be consist of a **seminar** and a **SLAM challenge**.
 A series of contributed and invited talks by academic leaders and renowned researchers will discuss ground-breaking perception and mapping methods for long-term autonomy based on current cutting-edge traditional solutions and modern learning methods. The workshop will also discuss the current challenges and future research directions and will include posters and spotlight talks to facilitate interaction between the speakers and the audience. We plan to have a hybrid format with in-person speakers/attendees and a live broadcast to convey the message to a broader audience.
 
+<br>
+
+<center>
+<a href="https://forms.gle/tQ6jpzvqP8dAdFC38" class="button is-info"><i class="far fa-envelope fa-2x"></i> &nbsp; Join our Mailing List</a >
+&nbsp;
+<a href="https://www.youtube.com/c/AirLab" class="button is-info"><i class="fab fa-youtube fa-2x"></i> &nbsp; Subscribe to the AirLab YouTube Channel</a >
+&nbsp;
+<a href="https://www.youtube.com/channel/UCCbJv86q7tA9titP3aFZTHw" class="button is-info"><i class="fab fa-youtube fa-2x"></i> &nbsp; Subscribe to our YouTube Channel</a >
+&nbsp;
+<a href="https://discord.gg/v5FTsPaadN" class="button is-info"><i class="fab fa-discord fa-2x"></i> &nbsp; Join our Discord</a >
+</center>
+
+
+<br>
 
 ## Seminar
 
@@ -637,6 +651,14 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p style="margin-bottom: 3px;">Research Associate</p>
       <p>Carnegie Mellon University</p>
     </td> 
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/team/tingting.jpg" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/tingting-da-6b87b4250/">Tingting Da</a >
+      </p >
+      <p style="margin-bottom: 3px;">Undergraduate Student</p >
+      <p>Carnegie Mellon University</p >
+    </td>
     <!-- <td style="text-align: center;">
       <img class="circular_image" src="/img/team/rushan_jiang.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
