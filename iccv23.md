@@ -42,11 +42,11 @@ A series of contributed and invited talks by academic leaders and renowned resea
 <br>
 
 <center>
-<a href="https://forms.gle/tQ6jpzvqP8dAdFC38" class="button is-info"><i class="far fa-envelope fa-2x"></i> &nbsp; Join our Mailing List</a >
+<a href="https://forms.gle/GSxyrYSSVrBQCY8Z6" class="button is-info"><i class="far fa-envelope fa-2x"></i> &nbsp; Join our Mailing List</a >
 &nbsp;
 <a href="https://www.youtube.com/c/AirLab" class="button is-info"><i class="fab fa-youtube fa-2x"></i> &nbsp; Subscribe to the AirLab YouTube Channel</a >
 &nbsp;
-<a href="https://www.youtube.com/channel/UCCbJv86q7tA9titP3aFZTHw" class="button is-info"><i class="fab fa-youtube fa-2x"></i> &nbsp; Subscribe to our YouTube Channel</a >
+<a href="https://www.youtube.com/channel/UCCbJv86q7tA9titP3aFZTHw" class="button is-info"><i class="fab fa-youtube fa-2x"></i> &nbsp; Subscribe to the SAIR Lab YouTube Channel</a >
 &nbsp;
 <a href="https://discord.gg/v5FTsPaadN" class="button is-info"><i class="fab fa-discord fa-2x"></i> &nbsp; Join our Discord</a >
 </center>
