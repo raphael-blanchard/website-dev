@@ -149,6 +149,16 @@ How to contribute to this dataset?
       <p style="margin-bottom: 3px;">Senior Field Robotics Specialist</p>
       <p>Carnegie Mellon University</p>
     </td>
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/daman.png" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/damanpreet-singh-289a46163/">Damanpreet Singh</a>
+      </p>
+      <p style="margin-bottom: 3px;">Graduate Student</p>
+      <p>Carnegie Mellon University</p>
+      </tr>
+     <tr>
+    </td> 
   </tr>
 </table>
 

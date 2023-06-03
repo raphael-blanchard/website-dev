@@ -666,6 +666,8 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       </p>
       <p style="margin-bottom: 3px;">Graduate Student</p>
       <p>Carnegie Mellon University</p>
+      </tr>
+     <tr>
     </td> 
      <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/yuanjun.jpg" style="margin-bottom: 6px;"/>
