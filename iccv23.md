@@ -495,9 +495,24 @@ Lunck Break and Posters (12:00 - 13:00 PM)
 ### Pushing SLAM Towards All-weather Environments
 
 The challenge is online! Please join our three tracks of challenges from the links below
+<br>
+
+<center>
+<a href="/iccv23_challenge_VI" class="button is-info"> &nbsp; Visual Inertial Track </a >
+&nbsp;
+<a href="/iccv23_challenge_LiI" class="button is-info"> &nbsp; LiDAR Inertial Track </a >
+&nbsp;
+<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Multi Modality Track</a >
+&nbsp;
+</center>
+
+
+<br>
+
+<!-- 
 - [Visual-inertial challenge](/iccv23_challenge_VI)
 - [LiDAR-inertial challenge](/iccv23_challenge_LiI)
-- [Sensor Fusion challenge](/iccv23_challenge_Mul)
+- [Sensor Fusion challenge](/iccv23_challenge_Mul) -->
 
 Robust odometry system is an indispensable need of autonomous robots operating navigation, exploration, and locomotion in unknown environments. In recent years, various robots are being deployed in increasingly complex environments for a broad spectrum of applications such as off-road driving, search-and-rescue in extreme environments, and robotic rovers on planetary missions. Despite the progress made, most of state estimation algorithms are still vulnerable in long-term operation and still struggle in these scenarios. A key necessity in progressing SLAM for long-term autonomy is the availability of high-quality datasets including various challenging scenerios.
 

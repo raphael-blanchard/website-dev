@@ -4,6 +4,7 @@ subtitle: ICCV 2023 Workshop of Robot Learning and SLAM
 layout: page
 show_sidebar: false
 hide_footer: true
+menubar_toc: true
 hero_height: is-medium
 hero_image: /img/iccv/iccv2023_background.jpg
 ---
@@ -13,11 +14,11 @@ Welcome to ICCV 2023 sensor fusion SLAM Challenge!
 
 ## Datasets
 
-1. **Robot Exploration Dataset** (SHIBO)
+### **Robot Exploration Dataset** (SHIBO)
    - Description: This dataset consists of indoor environments, such as office buildings, corridors, and rooms, captured by various sensors like LiDAR, RGB-D cameras, or stereo cameras.
    - Challenges: Loop closures, dynamic objects, and varying lighting conditions may be present.
 
-2. **TartanAir Dataset**
+### **TartanAir Dataset**
    This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
 
    - **Large size diverse realistic data.** We collect the data in diverse environments with different styles, covering indoor/outdoor, different weather, different seasons, urban/rural.
