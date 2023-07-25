@@ -704,6 +704,14 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       </p>
       <p style="margin-bottom: 3px;">MSR Student</p>
       <p>Carnegie Mellon University</p>
+    </td>
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/mansi.jpg" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/mansi-sarawata">Mansi Sarawata</a>
+      </p>
+      <p style="margin-bottom: 3px;">MSME Student</p>
+      <p>Carnegie Mellon University</p>
     </td> 
     <!-- <td style="text-align: center;">
       <img class="circular_image" src="/img/team/rushan_jiang.png" style="margin-bottom: 6px;"/>
