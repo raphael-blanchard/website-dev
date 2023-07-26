@@ -96,9 +96,9 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
     +-- MH007                            # monocular hard trajectory 7
     ```
 
-
+<!-- 
 ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
-![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif)
+![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif) -->
 
 
 
@@ -134,7 +134,7 @@ Due to the scale ambiguity of the monocular image, a global scale factor is calc
 # Submit the results. 
 
 ### Prepare the trajectory
-For each of the 5 trajectories of **visual-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
+For each of the 5 trajectories of **LiDAR-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
 
 ```
     lidar_inertial_track.zip

@@ -62,14 +62,10 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
     +-- MH007                            # monocular hard trajectory 7
     ```
 
-## Datasets
 
-1. **Robot Exploration Dataset** (SHIBO)
-   - Description: This dataset consists of indoor environments, such as office buildings, corridors, and rooms, captured by various sensors like LiDAR, RGB-D cameras, or stereo cameras.
-   - Challenges: Loop closures, dynamic objects, and varying lighting conditions may be present.
+## Tartan Air Datasets
 
-2. **TartanAir Dataset**
-   This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
+This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
 
    - **Large size diverse realistic data.** We collect the data in diverse environments with different styles, covering indoor/outdoor, different weather, different seasons, urban/rural.
    - **Multimodal ground truth labels.** We provide RGB stereo, depth, optical flow, and semantic segmentation images, which facilitates the training and evaluation of various visual SLAM methods. 
@@ -102,8 +98,8 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
     ```
 
 
-![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
-![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif)
+<!-- ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
+![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif) -->
 
 
 
