@@ -3,6 +3,7 @@ title: SLAM Challenge
 subtitle: ICCV 2023 Workshop of Robot Learning and SLAM
 layout: page
 show_sidebar: false
+menubar_toc: true
 hide_footer: true
 hero_height: is-medium
 hero_image: /img/iccv/iccv2023_background.jpg
@@ -61,10 +62,14 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
     +-- MH007                            # monocular hard trajectory 7
     ```
 
-   
-## Tartan Air Dataset
+## Datasets
 
-This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
+1. **Robot Exploration Dataset** (SHIBO)
+   - Description: This dataset consists of indoor environments, such as office buildings, corridors, and rooms, captured by various sensors like LiDAR, RGB-D cameras, or stereo cameras.
+   - Challenges: Loop closures, dynamic objects, and varying lighting conditions may be present.
+
+2. **TartanAir Dataset**
+   This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
 
    - **Large size diverse realistic data.** We collect the data in diverse environments with different styles, covering indoor/outdoor, different weather, different seasons, urban/rural.
    - **Multimodal ground truth labels.** We provide RGB stereo, depth, optical flow, and semantic segmentation images, which facilitates the training and evaluation of various visual SLAM methods. 
@@ -131,7 +136,7 @@ Due to the scale ambiguity of the monocular image, a global scale factor is calc
     Download the tartanair_tools repository, and follow the instruction here. 
 
 
-# Submit the results. 
+## Submit the results. 
 
 ### Prepare the trajectory
 For each of the 5 trajectories of **visual-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 

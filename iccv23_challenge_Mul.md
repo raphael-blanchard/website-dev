@@ -4,6 +4,7 @@ subtitle: ICCV 2023 Workshop of Robot Learning and SLAM
 layout: page
 show_sidebar: false
 hide_footer: true
+menubar_toc: true
 hero_height: is-medium
 hero_image: /img/iccv/iccv2023_background.jpg
 ---
@@ -62,7 +63,8 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
    
 ## Tartan Air Dataset
 
-This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
+2. **TartanAir Dataset**
+   This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
 
    - **Large size diverse realistic data.** We collect the data in diverse environments with different styles, covering indoor/outdoor, different weather, different seasons, urban/rural.
    - **Multimodal ground truth labels.** We provide RGB stereo, depth, optical flow, and semantic segmentation images, which facilitates the training and evaluation of various visual SLAM methods. 
