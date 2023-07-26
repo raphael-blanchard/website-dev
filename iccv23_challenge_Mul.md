@@ -12,7 +12,7 @@ hero_image: /img/iccv/iccv2023_background.jpg
 
 # Challenge
 
-In this track, we exclusively offer access to high-quality **visual-inertial** datasets sourced from SubT-MRS and Tartan Air. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"** providing a test from **simulation to real-world**.
+In this track, we exclusively offer access to high-quality **sensor-fusion** datasets sourced from SubT-MRS. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"**.
 
 
 Three separate awards will be given for each track.

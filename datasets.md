@@ -101,7 +101,10 @@ Join us for three exciting tracks of challenges from the links below.
 - [LiDAR-inertial challenge](/iccv23_challenge_LiI)
 - [Sensor Fusion challenge](/iccv23_challenge_Mul)
 
-🚀 Don't Forget: The Sensor Fusion Challenge is a Must!
+🚀 Don't Forget: The Sensor Fusion Challenge is a Must! You can participate either  [Visual-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) or  
+ [LiDAR-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) Or only participate in [Sensor Fusion challenge](/iccv23_challenge_VI).
+
+
 Seize this chance to demonstrate your skills and compete among the finest in the field!
 
 Three separate awards will be given for each track.
@@ -144,14 +147,21 @@ Easily search for the datasets you require by inputting <b> "visual" or "lidar" 
 </table>
 <br>
 
-# Contribute
+
+# Contact  
+(TODO: github name should be ICCV 2023 Challenge @xucan)
+If you have any issues on the SLAM challenge, please post issues on this [github](https://github.com/sleepycan/SubT-MRS). 
+
+
+
+<!-- # Contribute
 
 We're delighted to receive your challenging datasets! Contributing to this dataset is simple:
 
 1. Have your dataset ready.
 2. Use <a href="/rosbagutils" style="color:#cc002b;">Rosbag Utils</a> to filter the topics you want to publish.
 3. Rosbag Utils can also provide some statistics for your robot trajectory.
-4. Contact Haoxiang Sun (<haoxians@andrew.cmu.edu>) for more information.
+4. Contact Haoxiang Sun (<haoxians@andrew.cmu.edu>) for more information. -->
 
 # Organizers
 
