@@ -96,10 +96,20 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 🚀 The Challenge is Live! 🚀
 Join us for three exciting tracks of challenges from the links below.
 
+<br>
 
-- [Visual-inertial challenge](/iccv23_challenge_VI)
-- [LiDAR-inertial challenge](/iccv23_challenge_LiI)
-- [Sensor Fusion challenge](/iccv23_challenge_Mul)
+<center>
+<a href="/iccv23_challenge_VI" class="button is-info"> &nbsp; Visual Inertial Track </a >
+&nbsp;
+<a href="/iccv23_challenge_LiI" class="button is-info"> &nbsp; LiDAR Inertial Track </a >
+&nbsp;
+<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Multi Modality Track</a >
+&nbsp;
+</center>
+
+
+<br>
+
 
 🚀 Don't Forget: The Sensor Fusion Challenge is a Must! You can participate either  [Visual-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) or  
  [LiDAR-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) Or only participate in [Sensor Fusion challenge](/iccv23_challenge_VI).

@@ -3,7 +3,7 @@ title: SLAM Challenge
 subtitle: ICCV 2023 Workshop of Robot Learning and SLAM
 layout: page
 show_sidebar: false
-hide_footer: true
+hide_footer: false
 menubar_toc: true
 hero_height: is-medium
 hero_image: /img/iccv/iccv2023_background.jpg
