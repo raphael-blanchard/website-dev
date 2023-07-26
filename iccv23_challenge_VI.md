@@ -111,14 +111,13 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
 Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
 
-| Name | Source  | Location  | Robot |Sensor | Degraded  | Description | Trajectory | Duration  | Size  |  Video | Download Link|
-|---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|-------|--------|--------------|
-|   |           |         |           |           |            |           |             |           |       |        | [Baidu](dummy) [google](dummy)          |
-|   |           |         |           |           |            |           |             |           |       |        | [Baidu](dummy) [google](dummy)                           |
-|   |           |         |           |           |            |           |             |           |       |        | [Baidu](dummy) [google](dummy)              |
-|   |           |         |           |           |            |           |             |           |       |        | [Baidu](dummy) [google](dummy)              |
-|   |           |         |           |           |            |           |             |           |       |        |  [Baidu](dummy) [google](dummy)               |
-
+| Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
+|---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
+|   |           |         |           |           |            |           |             |           |       [link](dummy)          | [Baidu](dummy) [google](dummy)          |
+|   |           |         |           |           |            |           |             |           |       [link](dummy)            | [Baidu](dummy) [google](dummy)                           |
+|   |           |         |           |           |            |           |             |           |       [link](dummy)            | [Baidu](dummy) [google](dummy)              |
+|   |           |         |           |           |            |           |             |           |       [link](dummy)           | [Baidu](dummy) [google](dummy)              |
+|   |           |         |           |           |            |           |             |           |       [link](dummy)           |  [Baidu](dummy) [google](dummy)               |
 
 
 
