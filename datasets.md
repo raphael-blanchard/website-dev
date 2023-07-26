@@ -49,28 +49,75 @@ opacity: 40%;
 }
 </style>
 
+
 # About
 
-![]()
-<img src="/img/datasets/palette.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
+We present the sim to real datasets collected in <b>Tartan Air</b> and <b> SubT-MRS</b>. The datasets contains set of perceptually degraded environments such as darkness, airbone obscurats conditions such as fog, dust, smoke and lack of prominent perceptual features in self-similar areas.
 
-We present the first real-world datasets collected in Subterranean Environments includes caves, urban, and tunnels that specifically push the limits of robust SLAM. These datasets are the first Multi-Robot Datasets that include UGV, UAV, and Spot with various motions. These datasets are the first Multi-Spectral dataset that includes Visual, Lidar, Thermal, and inertial measurements in various challenging environments such as darkness, smoke, dust, and geometrically degraded environments such as a long corridor.
+## SubT-MRS Dataset 
 
-# Sensors
+<img src="/img/datasets/palette.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%;" />
+
+The SubT-MRS Dataset is an exceptional real-world collection of challenging datasets obtained from Subterranean Environments, encompassing caves, urban areas, and tunnels. Its primary focus lies in testing robust SLAM capabilities and is designed as Multi-Robot Datasets, featuring UGV, UAV, and Spot robots, each demonstrating various motions. The datasets are distinguished as Multi-Spectral, integrating Visual, Lidar, Thermal, and inertial measurements, effectively enabling exploration under demanding conditions such as darkness, smoke, dust, and geometrically degraded environments.Key features of our dataset:
+
+<b> 1. Multiple Modalities: </b>
+Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR, 1 IMU, and 1 thermal camera, providing diverse and precise sensor inputs.
+
+<b> 2.Diverse Scenarios: </b>
+    Collected from multiple locations, the dataset exhibits varying environmental setups, encompassing indoors, outdoors, mixed indoor-outdoor, underground, off-road, and buildings, among others.
+
+<b> 3.Multi-Degraded: </b>
+   By incorporating multiple sensor modalities and challenging conditions like fog, snow, smoke, and illumination changes, the dataset introduces various levels of sensor degradation.
+
+<b> 4. Heterogeneous Kinematic Profiles:</b>
+  The SubT-MRS Dataset uniquely features time-synchronized sensor data from diverse vehicles, including RC cars, legged robots, drones, and handheld devices, each operating within distinct speed ranges. 
+
+
+## Tartan Air Dataset 
+
+ The [TartanAir dataset](http://theairlab.org/tartanair-dataset/) is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
+
+   <b>  1. Large size diverse realistic data:</b>
+     We collect the data in diverse environments with different styles, covering indoor/outdoor, different weather, different seasons, urban/rural.
+    
+   <b> 2. Multimodal ground truth labels:</b>
+     We provide RGB stereo, depth, optical flow, and semantic segmentation images, which facilitates the training and evaluation of various visual SLAM methods. 
+
+  <b>  3. Diversity of motion patterns:</b>
+   Our dataset covers much more diverse motion combinations in 3D space, which is significantly more difficult than existing datasets.
+   
+   <b> 4. Diversity of motion patterns:</b>
+    We include challenging scenes with difficult lighting conditions, day-night alternating, low illumination, weather effects (rain, snow, wind and fog) and seasonal changes.Please refer to the TartanAir Dataset and the paper for more information. 
+
+
+
+# Challenge 
+
+🚀 The Challenge is Live! 🚀
+Join us for three exciting tracks of challenges from the links below.
+
+
+- [Visual-inertial challenge](/iccv23_challenge_VI)
+- [LiDAR-inertial challenge](/iccv23_challenge_LiI)
+- [Sensor Fusion challenge](/iccv23_challenge_Mul)
+
+🚀 Don't Forget: The Sensor Fusion Challenge is a Must!
+Seize this chance to demonstrate your skills and compete among the finest in the field!
+
+Three separate awards will be given for each track.
+Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks.
+Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
+
+
+# Sensors 
 
 <iframe width="100%" height="400" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"  src="https://www.youtube.com/embed/G8KaflyapIE" title="Website - Sensor Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <img src="/img/datasets/specs.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
-# Contribute
-
-How to contribute to this dataset?
-
-1. Have your dataset ready.
-2. Use <a href="/rosbagutils" style="color:#cc002b;">Rosbag Utils</a> to filter the topics you want to publish.
-3. Rosbag Utils can also provide some statistics for your robot trajectory.
-4. Contact Haoxiang Sun (<haoxians@andrew.cmu.edu>) for more information.
 
 # Download
+
+Easily search for the datasets you require by inputting <b> "visual" or "lidar" or "subt" </b> to find precisely what you need. Our tool ensures you get the specific datasets you're looking for hassle-free. Try it now and access the data you require for your projects with ease! 📁🔍
 
 <div id="chips" class="chips" onclick="openAutoComplete()">
 <input class="custom-class">
@@ -96,6 +143,15 @@ How to contribute to this dataset?
 <tbody id="datasetTable"></tbody>
 </table>
 <br>
+
+# Contribute
+
+We're delighted to receive your challenging datasets! Contributing to this dataset is simple:
+
+1. Have your dataset ready.
+2. Use <a href="/rosbagutils" style="color:#cc002b;">Rosbag Utils</a> to filter the topics you want to publish.
+3. Rosbag Utils can also provide some statistics for your robot trajectory.
+4. Contact Haoxiang Sun (<haoxians@andrew.cmu.edu>) for more information.
 
 # Organizers
 
@@ -158,9 +214,7 @@ How to contribute to this dataset?
       <p>Carnegie Mellon University</p>
       </tr>
      <tr>
-    </td> 
-  </tr>
-</table>
+  
 
 <script>
 let calibrations;
