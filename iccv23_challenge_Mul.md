@@ -137,7 +137,7 @@ Click [here](dummy) to download the testing data for visual-inertial track. (Siz
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|Multi_Floor|SubT-MRS|Hawkins|Spot|Lidar,RGB,IMU|Multi Floor|270|480|size|21.2G[link](dummy)| [Baidu](dummy) [google](dummy)          |
+|Multi_Floor|SubT-MRS|Hawkins|SP1|Lidar,RGB,IMU|Multi Floor|270|480|21.2G|[link](dummy)| [Baidu](dummy) [google](dummy)          |
 |Long_Corridor|SubT-MRS|Hawkins|RC2|Lidar,RGB,IMU|Multi Floor|616.45|332|14.6G|[link](dummy)| [Baidu](dummy) [google](dummy)          |
 |SensorDrop1|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU|Block Lidar|307.55|677|17.1G|[link](dummy)| [Baidu](dummy) [google](dummy)                           |
 |SensorDrop2|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU|Block Visual|186.02|359|19.8G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
