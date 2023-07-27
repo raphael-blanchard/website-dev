@@ -38,86 +38,55 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
    File structure:  (@YuanJun)
 
     ```
-    .
-    └── 3_Multi_Modality_Track
-        ├── Lidar_Inertial_Track_Bonus
-            │   ├── trajectory_name_1
-        │   │   ├── folders
-        │   │   │   ├── raw_sensor_data
-        │   │   │   │   ├── cam_0
-        │   │   │   │   │   ├── 0.png
-        │   │   │   │   │   ├── 1.png
-        │   │   │   │   │   ├── {...}.png
-        │   │   │   │   │   └── timestamps.txt
-        │   │   │   │   ├── imu
-        │   │   │   │   │   └── imu_data.csv
-        │   │   │   │   ├── lidar
-        │   │   │   │   │   ├── 0.las
-        │   │   │   │   │   ├── 1.las
-        │   │   │   │   │   ├── {...}.las
-        │   │   │   │   │   └── timestamps.txt
-        │   │   │   │   └── [tf]
-        │   │   │   │       └── [tf_data.csv]
-        │   │   │   └── super_odometry_results
-        │   │   │       ├── aft_odom
-        │   │   │       │   └── odometry_data.csv
-        │   │   │       ├── [integrated_odom]
-        │   │   │       │   └── [odometry_data.csv]
-        │   │   │       ├── mapping
-        │   │   │       │   ├── 0.las
-        │   │   │       │   ├── 1.las
-        │   │   │       │   ├── {...}.las
-        │   │   │       │   └── timestamps.txt
-        │   │   │       ├── pred_source
-        │   │   │       │   └── string_data.csv
-        │   │   │       └── stats
-        │   │   │           └── super_odometry_stats.csv
-        │   │   └── rosbags
-        │   │       ├── [prefix]_yyyy-mm-dd-hh-mm-ss_[seq num].bag
+    Multi_Modality_Track
+    ├── Lidar_Visual_IMU
+    │   ├── Multi_Floor
+    │   │   ├── rosbags
+    │   │   │   └── [...]yyyy-mm-dd-hh-mm-ss[...].bag
+    │   │   ├── folders
+    │   │   │   ├── raw_sensor_data
+    │   │   │   │   ├── cam_0
+    │   │   │   │   │   ├── {...}.png
+    │   │   │   │   │   └── timestamps.txt
+    │   │   │   │   ├── imu
+    │   │   │   │   │   └── imu_data.csv
+    │   │   │   │   ├── lidar
+    │   │   │   │   │   ├── {...}.las
+    │   │   │   │   │   └── timestamps.txt
+    │   │   │   │   └── tf
+    │   │   │   │       └── tf_data.csv
+    │   │   │   └── super_odometry_results
+    │   │   │       └── ...
+    │   │   ├── extrinsics.yaml
+    │   │   └── intrinsics.yaml
+    │   ├── Sensor_Drop
+    │   │   └── ...
+    │   └── Long_Corridor
+    │       └── ...
+    └── Visual_Thermal_IMU
+        ├── Flash_Light
+        │   ├── rosbags
+        │   │   └── [...]yyyy-mm-dd-hh-mm-ss[...].bag
+        │   ├── folders
+        │   │   ├── raw_sensor_data
+        │   │   │   ├── cam_0
+        │   │   │   │   ├── {...}.png
+        │   │   │   │   └── timestamps.txt
+        │   │   │   ├── imu
+        │   │   │   │   └── imu_data.csv
+        │   │   │   ├── tf
+        │   │   │   │   └── tf_data.csv
+        │   │   │   └── thermal
+        │   │   │       ├── {...}.png
+        │   │   │       └── timestamps.txt
+        │   │   └── super_odometry_results
         │   │       └── ...
-        │   ├── trajectory_name_2
-        │   │   └── ...
-        │   └── trajectory_name_{...}
-        │       └── ...
-        └── Visual_Inertial_Track_Bonus
-            ├── trajectory_name_1
-            │   ├── folders
-            │   │   ├── raw_sensor_data
-            │   │   │   ├── cam_0
-            │   │   │   │   ├── 0.png
-            │   │   │   │   ├── 1.png
-            │   │   │   │   ├── {...}.png
-            │   │   │   │   └── timestamps.txt
-            │   │   │   ├── imu
-            │   │   │   │   └── imu_data.csv
-            │   │   │   ├── tf
-            │   │   │   │   └── tf_data.csv
-            │   │   │   └── thermal
-            │   │   │       ├── 0.png
-            │   │   │       ├── 1.png
-            │   │   │       ├── {...}.png
-            │   │   │       └── timestamps.txt
-            │   │   └── super_odometry_results
-            │   │       ├── aft_odom
-            │   │       │   └── odometry_data.csv
-            │   │       ├── integrated_odom
-            │   │       │   └── odometry_data.csv
-            │   │       ├── mapping
-            │   │       │   ├── 0.las
-            │   │       │   ├── 1.las
-            │   │       │   ├── {...}.las
-            │   │       │   └── timestamps.txt
-            │   │       ├── pred_source
-            │   │       │   └── string_data.csv
-            │   │       └── stats
-            │   │           └── super_odometry_stats.csv
-            │   └── rosbags
-            │       ├── [prefix]_yyyy-mm-dd-hh-mm-ss_[seq num].bag
-            │       └── ...
-            ├── trajectory_name_2
-            │   └── ...
-            └── trajectory_name_{...}
-                └── ...
+        │   ├── extrinsics.yaml
+        │   └── intrinsics.yaml
+        ├── Smoke_Room
+        │   └── ...
+        └── Outdoor_Night
+            └── ...
     ```
 
    

@@ -40,41 +40,27 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
    File structure:  (@YuanJun)
 
     ```
-    .
-    └── Visual_Inertial_Track
-        ├── trajectory_name_1
-        │   ├── folders
-        │   │   ├── raw_sensor_data
-        │   │   │   ├── cam_0
-        │   │   │   │   ├── 0.png
-        │   │   │   │   ├── 1.png
-        │   │   │   │   ├── {...}.png
-        │   │   │   │   └── timestamps.txt
-        │   │   │   ├── imu
-        │   │   │   │   └── imu_data.csv
-        │   │   │   └── tf
-        │   │   │       └── tf_data.csv
-        │   │   └── super_odometry_results
-        │   │       ├── aft_odom
-        │   │       │   └── odometry_data.csv
-        │   │       ├── integrated_odom
-        │   │       │   └── odometry_data.csv
-        │   │       ├── mapping
-        │   │       │   ├── 0.las
-        │   │       │   ├── 1.las
-        │   │       │   ├── {...}.las
-        │   │       │   └── timestamps.txt
-        │   │       ├── pred_source
-        │   │       │   └── string_data.csv
-        │   │       └── stats
-        │   │           └── super_odometry_stats.csv
-        │   └── rosbags
-        │       ├── [prefix]_yyyy-mm-dd-hh-mm-ss_[seq num].bag
-        │       └── ...
-        ├── trajectory_name_2
-        │   └── ...
-        └── trajectory_name_{...}
-            └── ...
+    Visual_Inertial_Track
+    ├── Laurel_Canerns_1
+    │   ├── rosbags
+    │   │   └── [...]yyyy-mm-dd-hh-mm-ss[...].bag
+    │   ├── folders
+    │   │   ├── raw_sensor_data
+    │   │   │   ├── cam_0
+    │   │   │   │   ├── {...}.png
+    │   │   │   │   └── timestamps.txt
+    │   │   │   ├── imu
+    │   │   │   │   └── imu_data.csv
+    │   │   │   └── tf
+    │   │   │       └── tf_data.csv
+    │   │   └── super_odometry_results
+    │   │       └── ...
+    │   ├── extrinsics.yaml
+    │   └── intrinsics.yaml
+    ├── Laurel_Canerns_2
+    │   └── ...
+    └── Over_Exposure
+        └── ...
     ```
 
 

@@ -41,41 +41,33 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
    File structure:  (@YuanJun)
 
     ```
-    .
-    └── Lidar_Inertial_Track
-        ├── trajectory_name_1
-        │   ├── folders
-        │   │   ├── raw_sensor_data
-        │   │   │   ├── imu
-        │   │   │   │   └── imu_data.csv
-        │   │   │   ├── lidar
-        │   │   │   │   ├── 0.las
-        │   │   │   │   ├── 1.las
-        │   │   │   │   ├── {...}.las
-        │   │   │   │   └── timestamps.txt
-        │   │   │   └── tf
-        │   │   │       └── tf_data.csv
-        │   │   └── super_odometry_results
-        │   │       ├── aft_odom
-        │   │       │   └── odometry_data.csv
-        │   │       ├── integrated_odom
-        │   │       │   └── odometry_data.csv
-        │   │       ├── mapping
-        │   │       │   ├── 0.las
-        │   │       │   ├── 1.las
-        │   │       │   ├── {...}.las
-        │   │       │   └── timestamps.txt
-        │   │       ├── [pred_source]
-        │   │       │   └── [string_data.csv]
-        │   │       └── [stats]
-        │   │           └── [super_odometry_stats.csv]
-        │   └── rosbags
-        │       ├── [prefix]_yyyy-mm-dd-hh-mm-ss_[seq num].bag
-        │       └── ...
-        ├── trajectory_name_2
-        │   └── ...
-        └── trajectory_name_{...}
-            └── ...
+    Lidar_Inertial_Track
+    ├── SubT_Systems_1
+    │   ├── rosbags
+    │   │   └── [...]yyyy-mm-dd-hh-mm-ss[...].bag
+    │   ├── folders
+    │   │   ├── raw_sensor_data
+    │   │   │   ├── imu
+    │   │   │   │   └── imu_data.csv
+    │   │   │   ├── lidar
+    │   │   │   │   ├── {...}.las
+    │   │   │   │   └── timestamps.txt
+    │   │   │   └── tf
+    │   │   │       └── tf_data.csv
+    │   │   └── super_odometry_results
+    │   │       └── ...
+    │   ├── extrinsics.yaml
+    │   └── intrinsics.yaml
+    ├── SubT_Systems_2
+    │   └── ...
+    ├── SubT_Systems_3
+    │   └── ...
+    ├── SubT_Urban_1
+    │   └── ...
+    ├── SubT_Urban_2
+    │   └── ...
+    └── Laural_Caverns_3
+        └── ...
     ```
 
 ## TartanAir Dataset
