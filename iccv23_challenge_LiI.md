@@ -163,11 +163,12 @@ Click [here](dummy) to download the testing data for visual-inertial track. (Siz
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|   |           |         |           |           |            |           |             |           |       [link](dummy)          | [Baidu](dummy) [google](dummy)          |
-|   |           |         |           |           |            |           |             |           |       [link](dummy)            | [Baidu](dummy) [google](dummy)                           |
-|   |           |         |           |           |            |           |             |           |       [link](dummy)            | [Baidu](dummy) [google](dummy)              |
-|   |           |         |           |           |            |           |             |           |       [link](dummy)           | [Baidu](dummy) [google](dummy)              |
-|   |           |         |           |           |            |           |             |           |       [link](dummy)           |  [Baidu](dummy) [google](dummy)               |
+|  Subt_Systems_1 |   SubT-MRS        |         |     RC1      |   LiDAR,IMU        | Geometry Degraded           |  441.86         |  1600           |   34.1GB        |       [link](dummy)          | [Baidu](dummy) [google](dummy)          |
+|  Subt_Systems_2 |    SubT-MRS       |         |   RC2        |    LiDAR,IMU       |  Geometry Degraded          |  493.67         |  3390           |   63.1GB        |       [link](dummy)            | [Baidu](dummy) [google](dummy)                           |
+| Subt_Systems_3  |    SubT-MRS       |         |      RC3     |    LiDAR,IMU       |  Geometry Degraded          |  593.79         |  1714           |    35.0GB       |       [link](dummy)            | [Baidu](dummy) [google](dummy)              |
+| Subt_Urban_1   |    SubT-MRS       |         |     UGV1      |    LiDAR,IMU        |            |  124.92         |  513           |    10.2GB       |       [link](dummy)           | [Baidu](dummy) [google](dummy)              |
+|  Subt_Urban_2  |    SubT-MRS       |         |     UGV2      |     LiDAR,IMU       |            |  1377.37         |   3120          |    63.6GB       |       [link](dummy)           |  [Baidu](dummy) [google](dummy)               |
+|  Laurel_Caverns_3  |    SubT-MRS       |         |     RC7      |   LiDAR,IMU         |            |           |             |    TBD       |       [link](dummy)           |  [Baidu](dummy) [google](dummy)               |
 
 
 
