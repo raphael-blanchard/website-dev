@@ -1,15 +1,15 @@
 ---
-title: SLAM Challenge
-subtitle: ICCV 2023 Workshop of Robot Learning and SLAM
+title: ‎ 
+subtitle: ‎ 
 layout: page
 show_sidebar: false
-menubar_toc: false
+menubar_toc: true
 hide_footer: true
 hero_height: is-medium
-hero_image: /img/iccv/iccv2023_background.jpg
+hero_image: /img/iccv/Lil.gif
 ---
 
-# 🎉 Welcome to ICCV 2023 LiDAR-Inertial SLAM Challenge! 🎉
+# 🎉 Welcome to ICCV'23 LiDAR-Inertial SLAM Challenge! 🎉
 
 # Challenge
 
@@ -70,6 +70,34 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
         └── ...
     ```
 
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## TartanAir Dataset
    This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
 
@@ -106,10 +134,30 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 <!-- 
 ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
 ![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif) -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-
-# Download (@Mansi @WenShan )
+## Download (@Mansi @WenShan )
 
 Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
 
@@ -124,7 +172,7 @@ Click [here](dummy) to download the testing data for visual-inertial track. (Siz
 
 
 
-# Evaluation (@ Wenshan)
+## Evaluation (@ Wenshan)
 The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE).
 
 1. The following metrics will be used to evaluate the SLAM algorithms' performance:
@@ -138,7 +186,7 @@ Due to the scale ambiguity of the monocular image, a global scale factor is calc
     Download the tartanair_tools repository, and follow the instruction here. 
 
 
-# Submit the results. 
+## Submit the results. 
 
 ### Prepare the trajectory
 For each of the 5 trajectories of **LiDAR-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
@@ -158,6 +206,19 @@ For each of the 5 trajectories of **LiDAR-inertial track**, you need to compute 
     |          ..
     --- MH007.txt                             # result file for the trajectory MH007 
 ```
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 The text file should have the following format: 
@@ -167,6 +228,12 @@ The text file should have the following format:
 1.403636580013555527e+09 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 
 ```
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 The camera pose file should have the same format as the ground truth file in the training data. It is a text file containing the translation and orientation of the camera in a fixed coordinate frame. Note that our automatic evaluation tool expects the estimated trajectory to be in this format. 
 

@@ -1,15 +1,15 @@
 ---
-title: SLAM Challenge
-subtitle: ICCV 2023 Workshop of Robot Learning and SLAM
+title: ‎ 
+subtitle: ‎ 
 layout: page
 show_sidebar: false
-menubar_toc: false
+menubar_toc: true
 hide_footer: true
 hero_height: is-medium
-hero_image: /img/iccv/iccv2023_background.jpg
+hero_image: /img/iccv/VI.gif
 ---
 
-# 🎉 Welcome to ICCV 2023 Visual-Inertial SLAM Challenge! 🎉
+# 🎉 Welcome to ICCV'23 Visual-Inertial SLAM Challenge! 🎉
 
 # Challenge
 
@@ -63,6 +63,27 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
         └── ...
     ```
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 ## Tartan Air Datasets
 
@@ -102,9 +123,31 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
 <!-- ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
 ![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif) -->
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-# Download (@Tianhao @WenShan )
+## Download (@Tianhao @WenShan )
 
 Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
 
@@ -117,7 +160,7 @@ Click [here](dummy) to download the testing data for visual-inertial track. (Siz
 |   |           |         |           |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)               |
 
 
-# Bonus Tracks(Find it also in the Multi Modality Track)
+## Bonus Tracks(Find it also in the Multi Modality Track)
 
 Bonus tracks will not be scored
 
@@ -128,7 +171,7 @@ Bonus tracks will not be scored
 |FlashLight|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|147.75|279|13G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
 
 
-# Evaluation (@ Wenshan)
+## Evaluation (@ Wenshan)
 The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE).
 
 1. The following metrics will be used to evaluate the SLAM algorithms' performance:
@@ -162,6 +205,21 @@ For each of the 5 trajectories of **visual-inertial track**, you need to compute
     |          ..
     --- MH007.txt                             # result file for the trajectory MH007 
 ```
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 
 The text file should have the following format: 
@@ -171,6 +229,11 @@ The text file should have the following format:
 1.403636580013555527e+09 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 
 ```
+<br>
+<br>
+<br>
+<br>
+<br>
 
 The camera pose file should have the same format as the ground truth file in the training data. It is a text file containing the translation and orientation of the camera in a fixed coordinate frame. Note that our automatic evaluation tool expects the estimated trajectory to be in this format. 
 

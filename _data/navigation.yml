@@ -1,7 +1,14 @@
 - name: ICCV Workshop
   link: /iccv23
-- name: Datasets
+- name: ICCV SLAM Challenge
   link: /datasets
+  dropdown:
+    - name: Visual Inertial Track
+      link: /iccv23_challenge_VI/
+    - name: LiDAR Inertial Track
+      link: /iccv23_challenge_LiI/
+    - name: Multi Modality Track
+      link: /iccv23_challenge_Mul/
 - name: TP-TIO
   link: /tptio
 - name: Super Loop

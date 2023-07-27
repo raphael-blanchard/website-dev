@@ -4,6 +4,7 @@ subtitle: Multi-Robot, Multi-Degraded SLAM Datasets
 layout: page
 show_sidebar: false
 hide_footer: false
+menubar_toc: true
 hero_height: is-large
 hero_image: /img/datasets/dataset_video_short.gif
 hero_link: /datasets#download
@@ -91,7 +92,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
 
 
-# Challenge 
+## ICCV 2023 SLAM Challenge 
 
 🚀 The Challenge is Live! 🚀
 Join us for three exciting tracks of challenges from the links below.
@@ -111,7 +112,8 @@ Join us for three exciting tracks of challenges from the links below.
 <br>
 
 
-🚀 Don't Forget: The Sensor Fusion Challenge is a Must! You can participate either  [Visual-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) or  
+🚀 Don't Forget: The Sensor Fusion Challenge is a Must!<br>
+You can participate either  [Visual-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) or  
  [LiDAR-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) Or only participate in [Sensor Fusion challenge](/iccv23_challenge_VI).
 
 
@@ -121,14 +123,19 @@ Three separate awards will be given for each track.
 Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks.
 Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
 
+## Meet our robots!!
+<img src="/img/iccv/offroad.png" style="width: 23%;" />
+<img src="/img/iccv/spot.png" style="width: 23%;" />
+<img src="/img/iccv/ugv.jpg" style="width: 23%;" />
+<img src="/img/iccv/uav.png" style="width: 23%;" />
 
-# Sensors 
+## Sensors 
 
 <iframe width="100%" height="400" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"  src="https://www.youtube.com/embed/G8KaflyapIE" title="Website - Sensor Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <img src="/img/datasets/specs.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 
-# Download
+## Download our datasets
 
 Easily search for the datasets you require by inputting <b> "visual" or "lidar" or "subt" </b> to find precisely what you need. Our tool ensures you get the specific datasets you're looking for hassle-free. Try it now and access the data you require for your projects with ease! 📁🔍
 
@@ -158,7 +165,7 @@ Easily search for the datasets you require by inputting <b> "visual" or "lidar" 
 <br>
 
 
-# Contact  
+## Contact us
 (TODO: github name should be ICCV 2023 Challenge @xucan)
 If you have any issues on the SLAM challenge, please post issues on this [github](https://github.com/sleepycan/SubT-MRS). 
 
@@ -232,7 +239,6 @@ We're delighted to receive your challenging datasets! Contributing to this datas
       </p>
       <p style="margin-bottom: 3px;">Graduate Student</p>
       <p>Carnegie Mellon University</p>
-      </tr>
      <tr>
   
 
