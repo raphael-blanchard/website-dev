@@ -38,26 +38,86 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
    File structure:  (@YuanJun)
 
     ```
-    mono
-    |
-    --- ME000                             # monocular easy trajectory 0 
-    |       |
-    |       ---- 000000.png          # RGB image 000000
-    |       ---- 000001.png          # RGB image 000001
-    |       .
-    |       .
-    |       ---- 000xxx.png           # RGB image 000xxx
-    |
-    +-- ME001                             # monocular easy trajectory 1 
     .
-    .
-    +-- ME007                            # monocular easy trajectory 7 
-    |
-    +-- MH000                            # monocular hard trajectory 0 
-    .
-    .
-    |
-    +-- MH007                            # monocular hard trajectory 7
+    └── 3_Multi_Modality_Track
+        ├── Lidar_Inertial_Track_Bonus
+            │   ├── trajectory_name_1
+        │   │   ├── folders
+        │   │   │   ├── raw_sensor_data
+        │   │   │   │   ├── cam_0
+        │   │   │   │   │   ├── 0.png
+        │   │   │   │   │   ├── 1.png
+        │   │   │   │   │   ├── {...}.png
+        │   │   │   │   │   └── timestamps.txt
+        │   │   │   │   ├── imu
+        │   │   │   │   │   └── imu_data.csv
+        │   │   │   │   ├── lidar
+        │   │   │   │   │   ├── 0.las
+        │   │   │   │   │   ├── 1.las
+        │   │   │   │   │   ├── {...}.las
+        │   │   │   │   │   └── timestamps.txt
+        │   │   │   │   └── [tf]
+        │   │   │   │       └── [tf_data.csv]
+        │   │   │   └── super_odometry_results
+        │   │   │       ├── aft_odom
+        │   │   │       │   └── odometry_data.csv
+        │   │   │       ├── [integrated_odom]
+        │   │   │       │   └── [odometry_data.csv]
+        │   │   │       ├── mapping
+        │   │   │       │   ├── 0.las
+        │   │   │       │   ├── 1.las
+        │   │   │       │   ├── {...}.las
+        │   │   │       │   └── timestamps.txt
+        │   │   │       ├── pred_source
+        │   │   │       │   └── string_data.csv
+        │   │   │       └── stats
+        │   │   │           └── super_odometry_stats.csv
+        │   │   └── rosbags
+        │   │       ├── [prefix]_yyyy-mm-dd-hh-mm-ss_[seq num].bag
+        │   │       └── ...
+        │   ├── trajectory_name_2
+        │   │   └── ...
+        │   └── trajectory_name_{...}
+        │       └── ...
+        └── Visual_Inertial_Track_Bonus
+            ├── trajectory_name_1
+            │   ├── folders
+            │   │   ├── raw_sensor_data
+            │   │   │   ├── cam_0
+            │   │   │   │   ├── 0.png
+            │   │   │   │   ├── 1.png
+            │   │   │   │   ├── {...}.png
+            │   │   │   │   └── timestamps.txt
+            │   │   │   ├── imu
+            │   │   │   │   └── imu_data.csv
+            │   │   │   ├── tf
+            │   │   │   │   └── tf_data.csv
+            │   │   │   └── thermal
+            │   │   │       ├── 0.png
+            │   │   │       ├── 1.png
+            │   │   │       ├── {...}.png
+            │   │   │       └── timestamps.txt
+            │   │   └── super_odometry_results
+            │   │       ├── aft_odom
+            │   │       │   └── odometry_data.csv
+            │   │       ├── integrated_odom
+            │   │       │   └── odometry_data.csv
+            │   │       ├── mapping
+            │   │       │   ├── 0.las
+            │   │       │   ├── 1.las
+            │   │       │   ├── {...}.las
+            │   │       │   └── timestamps.txt
+            │   │       ├── pred_source
+            │   │       │   └── string_data.csv
+            │   │       └── stats
+            │   │           └── super_odometry_stats.csv
+            │   └── rosbags
+            │       ├── [prefix]_yyyy-mm-dd-hh-mm-ss_[seq num].bag
+            │       └── ...
+            ├── trajectory_name_2
+            │   └── ...
+            └── trajectory_name_{...}
+                └── ...
     ```
 
    
