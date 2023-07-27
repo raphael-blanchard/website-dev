@@ -200,7 +200,6 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
 
 
-
 ## Download (@Tianhao @WenShan )
 
 Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
@@ -251,7 +250,19 @@ For each of the 5 trajectories of **sensor-fusion track**, you need to compute t
     |          ..
     --- MH007.txt                             # result file for the trajectory MH007 
 ```
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 The text file should have the following format: 
 
@@ -260,6 +271,12 @@ The text file should have the following format:
 1.403636580013555527e+09 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 
 ```
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 The camera pose file should have the same format as the ground truth file in the training data. It is a text file containing the translation and orientation of the camera in a fixed coordinate frame. Note that our automatic evaluation tool expects the estimated trajectory to be in this format. 
 
