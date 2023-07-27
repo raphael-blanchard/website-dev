@@ -109,12 +109,22 @@ Click [here](dummy) to download the testing data for visual-inertial track. (Siz
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|   |           |         |           |           |            |           |             |           |       [link](dummy)          | [Baidu](dummy) [google](dummy)          |
-|   |           |         |           |           |            |           |             |           |       [link](dummy)            | [Baidu](dummy) [google](dummy)                           |
-|   |           |         |           |           |            |           |             |           |       [link](dummy)            | [Baidu](dummy) [google](dummy)              |
-|   |           |         |           |           |            |           |             |           |       [link](dummy)           | [Baidu](dummy) [google](dummy)              |
-|   |           |         |           |           |            |           |             |           |       [link](dummy)           |  [Baidu](dummy) [google](dummy)               |
+|LaurenCavern1|SubT-MRS|whole_traj1|RC7|IMU,RGB|Darkness|400.61|816|45.3G|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|LaurenCavern2|SubT-MRS|big_loop|RC7|IMU,RGB|Darkness|583.19|739|38.4G|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|Outdoor_Day|SubT-MRS|Hawkins|RC7|IMU,RGB|Over Exposure|456.26|2128|46.1G|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|   |           |         |           |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)              |
+|   |           |         |           |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)               |
 
+
+# Bonus Tracks(Find it also in the Multi Modality Track)
+
+Bonus tracks will not be scored
+
+| Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
+|---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
+|SmokeRoom|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|104.84|418|20G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
+|Outdoor_Night|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|254.03|484|22.9G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
+|FlashLight|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|147.75|279|13G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
 
 
 # Evaluation (@ Wenshan)
