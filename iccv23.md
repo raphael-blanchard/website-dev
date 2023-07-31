@@ -547,6 +547,41 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
 - 9:30 - 10:00 AM: TartanAir V2 SLAM Challenge Summary
 
 
+## Workshop Registration
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBylBl2_07IWboKWyUZw0VWyUVjzDLNuDoXEMmV0oYHeyV9A/viewform?embedded=true" width="100%" height="684" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<script>
+  function myFunction(buttonID, blockName) {
+    var x = document.getElementById(blockName);
+    if (x.style.display === "table-row") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "table-row";
+    }
+    var el = document.getElementById(buttonID);
+    if (el.childNodes[0].nodeValue === "Expand Contents"){
+      el.childNodes[0].nodeValue = "Collapse Contents";
+    } else {
+      el.childNodes[0].nodeValue = "Expand Contents";
+    }
+  }
+</script>
+
+
+## Sponsor 
+
+Enormous gratitude to our esteemed sponsor.
+
+<table class="customFormat" style="width:100%border-collapse: collapse; border: none;">
+  <tr>
+    <td style="text-align: center;">
+      <img class="box_image" src="/img/sponsor/nvidia.png" style="margin-bottom: 0px;"/>
+    </td>
+</tr>
+</table>
+
+
 
 ## Organizers & Committee
 
@@ -595,6 +630,14 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p style="margin-bottom: 3px;">Postdoctoral Research Fellow, Biorobotics Lab</p>
       <p>Harvard University</p>
     </td>
+      <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/John_Rogers_mid_scale.jpg" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="">John Rogers</a>
+      </p>
+      <p style="margin-bottom: 3px;">Research Scientist </p>
+      <p>US Army Research Laboratory</p>
+    </td> 
     <td style="text-align: center;">
       <img class="circular_image" src="/img/invited_speakers/basti.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
@@ -610,14 +653,6 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       </p>
       <p style="margin-bottom: 3px;">Robust Perception and Mobile Robotics Lab</p>
       <p>Seoul National University</p>
-    </td>
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yidu.jpg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://sairlab.org/team/yidu/">Yi Du</a>
-      </p>
-      <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab</p>
-      <p>University at Buffalo</p>
     </td>
   </tr>
   <tr>
@@ -656,12 +691,12 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
   </tr>
   <tr>
     <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yaohe.png" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yidu.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.ri.cmu.edu/ri-people/yao-he/">Yao He</a>
+        <a style="margin-bottom: 1px;" href="https://sairlab.org/team/yidu/">Yi Du</a>
       </p>
-      <p style="margin-bottom: 3px;">Research Associate</p>
-      <p>Carnegie Mellon University</p>
+      <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab</p>
+      <p>University at Buffalo</p>
     </td>
     <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/tianhao.jpg" style="margin-bottom: 6px;"/>
@@ -686,7 +721,6 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       </p>
       <p style="margin-bottom: 3px;">Graduate Student</p>
       <p>Carnegie Mellon University</p>
-      </tr>
      <tr>
     </td> 
      <td style="text-align: center;">
@@ -713,59 +747,15 @@ The workshop has an associated new benchmark dataset (Subt-MRS datasets and Tart
       <p style="margin-bottom: 3px;">MSME Student</p>
       <p>Carnegie Mellon University</p>
     </td> 
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/mansi.jpg" style="margin-bottom: 6px;"/>
+     <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yaohe.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/mansi-sarawata">Mansi Sarawata</a>
+        <a style="margin-bottom: 1px;" href="https://www.ri.cmu.edu/ri-people/yao-he/">Yao He</a>
       </p>
-      <p style="margin-bottom: 3px;">MSME Student</p>
-      <p>Carnegie Mellon University</p>
-    </td> 
-    <!-- <td style="text-align: center;">
-      <img class="circular_image" src="/img/team/rushan_jiang.png" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://drive.google.com/file/d/1qWiMQoJsAF4oOikU0akjOOveBn-SUOLl/view">Rushan Jiang</a>
-      </p>
-      <p style="margin-bottom: 3px;">Undergradate Student</p>
-      <p>Carnegie Mellon University</p>
-    </td> -->
-    <!-- <td style="text-align: center;">
-      <img class="circular_image" src="/img/team/haoxiangsun.jpg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://seansun.org">Haoxiang Sun</a>
-      </p>
-      <p style="margin-bottom: 3px;">Undergradate Student</p>
+      <p style="margin-bottom: 3px;">Research Associate</p>
       <p>Carnegie Mellon University</p>
     </td>
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/team/haoxiangsun.jpg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://seansun.org">Haoxiang Sun</a>
-      </p>
-      <p style="margin-bottom: 3px;">Undergradate Student</p>
-      <p>Carnegie Mellon University</p>
-    </td> -->
   </tr>
 </table>
 
 
-## Workshop Registration
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBylBl2_07IWboKWyUZw0VWyUVjzDLNuDoXEMmV0oYHeyV9A/viewform?embedded=true" width="100%" height="684" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-<script>
-  function myFunction(buttonID, blockName) {
-    var x = document.getElementById(blockName);
-    if (x.style.display === "table-row") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "table-row";
-    }
-    var el = document.getElementById(buttonID);
-    if (el.childNodes[0].nodeValue === "Expand Contents"){
-      el.childNodes[0].nodeValue = "Collapse Contents";
-    } else {
-      el.childNodes[0].nodeValue = "Expand Contents";
-    }
-  }
-</script>

@@ -65,6 +65,14 @@ div.highlight {
 
     display:inline-block;
   }
+  .box_image {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    background-color: white;
+    float: center;
+    object-fit:cover;
+  }
   .circular_image img{
     width:100%;
     height: auto;
