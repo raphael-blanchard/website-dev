@@ -45,10 +45,14 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
     ├── rosbag
     │   ├── TartanAir_lidar_{places ...}_noise0.bag
     │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
-    │       └── (zipped) raw_data_[...]yyyy-mm-dd-hh-mm-ss[...].bag
+    │       └── (zipped) raw_data_{...}yyyy-mm-dd-hh-mm-ss{...}.bag
     ├── folder
     │   ├── TartanAir_lidar_{places ...}.zip
-    │   │   └── (zipped) ??? need to ask Wenshan
+    │   │   ├── (zipped) imu
+    │   │   │   └── [acc/gyro/imu/imu_time].[npy/txt]
+    │   │   └── (zipped) lidar
+    │   │       ├── {...}_lcam_front_lidar.ply
+    │   │       └── timestamps.txt
     │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
     │       ├── (zipped) imu
     │       │   └── imu_data.csv

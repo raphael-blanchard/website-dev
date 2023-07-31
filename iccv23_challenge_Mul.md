@@ -41,7 +41,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
     Multi_Modal_Sensor_Fusion_Track
     ├── rosbag
     │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
-    │       └── (zipped) raw_data_[...]yyyy-mm-dd-hh-mm-ss[...].bag
+    │       └── (zipped) raw_data_{...}yyyy-mm-dd-hh-mm-ss{...}.bag
     ├── folder
     │   ├── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
     │   │   ├── (zipped) cam_0
