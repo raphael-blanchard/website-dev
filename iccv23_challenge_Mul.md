@@ -151,7 +151,7 @@ Click [here](dummy) to download the testing data for visual-inertial track. (Siz
 |Multi_Floor|SubT-MRS|Hawkins|SP1|Lidar,RGB,IMU|Multi Floor|270|480|21.2G|[link](dummy)| [Baidu](dummy) [google](dummy)          |
 |Long_Corridor|SubT-MRS|Hawkins|RC2|Lidar,RGB,IMU|Multi Floor|616.45|332|14.6G|[link](dummy)| [Baidu](dummy) [google](dummy)          |
 |BlockLiDAR|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU|Block Lidar|307.55|677|17.1G|[link](dummy)| [Baidu](dummy) [google](dummy)                           |
-|BlockVisual|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU|Block Visual|186.02|359|19.8G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
+|BlockVisual|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU,Thermal|Block Visual/Thermal|186.02|359|19.8G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
 |SmokeRoom|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|104.84|418|20G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
 |OutdoorNight|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|254.03|484|22.9G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
 |FlashLight|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|147.75|279|13G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
@@ -171,15 +171,15 @@ For each of the 5 trajectories of **sensor-fusion track**, you need to compute t
 
 ```
     Multi_Model_Sensor_Fusion.zip
-    --- SubT_MRS_Hawkins_Long_Corridor_RC.txt            # result file for the trajectory Long Corridor 
+    
+
+--- SubT_MRS_Hawkins_Long_Corridor_RC.txt            # result file for the trajectory Long Corridor 
     --- SubT_MRS_Hawkins_Multi_Floor_LegRobot.txt        # result file for the trajectory Multi Floor 
     --- SubT_MRS_MILL19_Block_LiDAR.txt                  # result file for the trajectory Block LiDAR 
     --- SubT_MRS_MILL19_Block_Visual.txt                 # result file for the trajectory Block Visual   
     --- SubT_MRS_Flash_Light_LegRobot.txt                # result file for the trajectory Flash Light
     --- SubT_MRS_Hawkins_Smoke_Handheld.txt              # result file for the smoke room 
     --- Subt_MRS_Outdoor_Night_LegRobot.txt              # result file for the outdoor night
-
-
   
 ```
 <br>
@@ -210,8 +210,8 @@ The text file should have the following format:
 <br>
 <br>
 
-The camera pose file should have the same format as the ground truth file in the training data. It is a text file containing the translation and orientation of the camera in a fixed coordinate frame. Note that our automatic evaluation tool expects the estimated trajectory to be in this format. 
 
+It is a text file containing the translation and orientation of the IMU in a fixed coordinate frame. The estimated trajectory file should satisfy the following requirements.
 - Each line in the text file contains a single pose.
 - The number of lines/poses must be the same as the number of image frames in that trajectory. **(TODO: do we need this assumption? @wenshan)**  
 - The format of each line is 'tx ty tz qx qy qz qw'. 
@@ -221,7 +221,14 @@ The camera pose file should have the same format as the ground truth file in the
 
 ### Submit in Gradescope  (@wenshan)
 
-- Todo: provide the instruction of submission
+To submit the estimated trajectory into the submission system, you can follow the steps listed below:
+
+1. Register a account in the [GradeScope](http://gradescope.com/) and log into the website.
+2. Click the right-bottom `Add Course` button and enter the course-entry code: `G2YGGB0`, Then you can find the `iccv-lii` courses in your GradeScope homepage.
+3. Click the `iccv-lii` course and you will see the assignment named `Trajectory-result-submission` in the dashboard.
+4. Click the assignment and upload your `sensor_fusion_track.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
+    - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
+5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
 
 ##  🎉Sensor-Fusion Leaderboard 🎉
 
@@ -232,3 +239,7 @@ The camera pose file should have the same format as the ground truth file in the
 | 3    | Algorithm C     | 0.28     | 1.55     | False            | 85.6                | Visual, IMU            | 43.2          | 320.1      |
 | 4    | Algorithm D     | 0.35     | 2.01     | False            |  82.4               | Visual, IMU              | 50.8          | 352.5      |
 | 5    | Algorithm E     | 0.41     | 2.45     | False            | 79.8                | Visual, IMU            | 58.1          | 389.7      |
+
+## Contact us
+
+If you have any issues on the SLAM challenge, please post issues on this [github](git@github.com:shibowing/ICCV2023_SLAM_Challenge.git). 
