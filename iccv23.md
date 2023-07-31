@@ -633,7 +633,7 @@ Enormous gratitude to our esteemed sponsor.
       <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/John_Rogers_mid_scale.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="">John Rogers</a>
+        <a style="margin-bottom: 1px;" href="https://scholar.google.com/citations?hl=en&user=uH_LDocAAAAJ&view_op=list_works&sortby=pubdate">John Rogers</a>
       </p>
       <p style="margin-bottom: 3px;">Research Scientist </p>
       <p>US Army Research Laboratory</p>
