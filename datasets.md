@@ -51,9 +51,9 @@ opacity: 40%;
 </style>
 
 
-# About
+# Welcome to the ICCV 2023 SLAM Challenge! 
 
-We present the sim to real datasets collected in <b>Tartan Air</b> and <b> SubT-MRS</b>. The datasets contains set of perceptually degraded environments such as darkness, airbone obscurats conditions such as fog, dust, smoke and lack of prominent perceptual features in self-similar areas.
+We provide datasets <b>TartanAir</b> and <b> SubT-MRS</b>, aiming to push SLAM in <b>challenging</b> environments, as well as advancing <b>sim-to-real transfer</b>. Our datasets contain a set of perceptually degraded environments such as darkness, airborne obscurant conditions such as fog, dust, smoke and lack of prominent perceptual features in self-similar areas. One of our hypotheses is that in such challenging cases, the robot needs to rely on multiple sensors to reliably track and localize itself. We provide a rich set of sensory modalities including RGB images, LiDAR points, IMU measurements, thermal images and so on. 
 
 ## SubT-MRS Dataset 
 
@@ -104,7 +104,7 @@ Join us for three exciting tracks of challenges from the links below.
 &nbsp;
 <a href="/iccv23_challenge_LiI" class="button is-info"> &nbsp; LiDAR Inertial Track </a >
 &nbsp;
-<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Multi Modal Fusion Track</a >
+<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Sensor Fusion Track</a >
 &nbsp;
 </center>
 
@@ -164,6 +164,11 @@ Easily search for the datasets you require by inputting <b> "visual" or "lidar" 
 </table>
 <br>
 
+## Sponsors
+
+We thank Nvidia for supporting our challenge! 
+The winning team will be awarded with an Orin Developer Kit and Orin Nano Developer Kit!
+<img src="https://media-cdn.seeedstudio.com/media/wysiwyg/NVIDIA_ElitePartner_Default_RGB.png">
 
 ## Contact us
 
