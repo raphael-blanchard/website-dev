@@ -502,7 +502,7 @@ The challenge is online! Please join our three tracks of challenges from the lin
 &nbsp;
 <a href="/iccv23_challenge_LiI" class="button is-info"> &nbsp; LiDAR Inertial Track </a >
 &nbsp;
-<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Multi Modality Track</a >
+<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Multi Modal Fusion Track</a >
 &nbsp;
 </center>
 

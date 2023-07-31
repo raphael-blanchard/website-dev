@@ -147,64 +147,65 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
 <br>
 
 
-## Download (@Tianhao @WenShan )
+## Download (@WenShan)
 
 Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|LaurenCavern1|SubT-MRS|whole_traj1|RC7|IMU,RGB|Darkness|400.61|816|45.3G|[link](dummy)|[Baidu](dummy) [google](dummy)|
-|LaurenCavern2|SubT-MRS|big_loop|RC7|IMU,RGB|Darkness|583.19|739|38.4G|[link](dummy)|[Baidu](dummy) [google](dummy)|
-|Outdoor_Day|SubT-MRS|Hawkins|RC7|IMU,RGB|Over Exposure|456.26|2128|46.1G|[link](dummy)|[Baidu](dummy) [google](dummy)|
-|   |           |         |           |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)              |
-|   |           |         |           |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)               |
+|Handheld1|SubT-MRS|Lauren Cavern      |RC7 Payload|IMU,RGB|Darkness     |400.61|816|45.3G|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|Handheld2|SubT-MRS|Lauren Cavern      |RC7 Payload|IMU,RGB|Darkness     |583.19|739|38.4G|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|OverExposure      |SubT-MRS|Hawkins   |RC7 Payload|IMU,RGB|Over Exposure|456.26|2128|46.1G|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|Endofworld        | Tartan Air        |  Simulation       | IMU,RGB          |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)              |
+|Moon              | Tartan Air        |  Simulation       | IMU,RGB          |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)               |
+|Westerndesert     | Tartan Air        |  Simulation       | IMU,RGB          |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)  
+
+## Bonus Tracks(Can also be found in the Multi Modal Fusion Track)
+
+We invite you to test your VIO algorithm with our Bonus datasets (3 extra datasets).
+
+**Please note that the results obtained from the Bonus track will not be factored into the final scoring for the visual-inertial track.** 
+The intention behind this separation is to allow participants ample time for fine-tuning their algorithms without the added pressure of immediate scoring.
+
+Nonetheless, it is mandatory for all participants to provide the results from the Bonus track to complete their entry in the visual-inertial track competition. 
+This will aid in a comprehensive evaluation of the algorithms and showcase their adaptability to diverse and complex datasets.
 
 
-## Bonus Tracks(Find it also in the Multi Modality Track)
-
-Bonus tracks will not be scored
-
-| Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
-|---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|SmokeRoom|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|104.84|418|20G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
-|Outdoor_Night|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|254.03|484|22.9G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
-|FlashLight|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|147.75|279|13G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
+| Name | Source    | Location  | Robot     |Sensor     | Description | Trajectory | Duration  | Size  |  Video | Download Link|
+|------|-----------|-----------|-----------|-----------|-------------|-----------|-------------|-----------|---------------|--------------|
+|Smoke_Room   |SubT-MRS|Hawkins|Handheld|RGB,Thermal,IMU|Visual Degraded|104.84|418|20G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
+|Outdoor_Night|SubT-MRS|Hawkins|Legrobot|RGB,Thermal,IMU|Visual Degraded|254.03|484|22.9G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
+|FlashLight   |SubT-MRS|Hawkins|Legrobot|RGB,Thermal,IMU|Visual Degraded|147.75|279|13G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
 
 
 ## Evaluation (@ Wenshan)
-The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE).
+The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE,RPE).
 
-1. The following metrics will be used to evaluate the SLAM algorithms' performance:
-
-For a known ground truth trajectory ME000_gt.txt and an estimated trajectory ME000_est.txt, we calculate the translation and rotation error based on the normalized Relative Pose Error similar to the KITTI dataset. Different from KITTI, we compute translational and rotational errors for all possible subsequences of length (5, 10, 15, ...,40) meters.  The translational error and rotational error are then combined to the final score:  , where we use  to balance the two errors, because the average rotation speed (in degree) is 7 times bigger than the average translation speed on our dataset. 
-
-Due to the scale ambiguity of the monocular image, a global scale factor is calculated before the error computation. 
-
-2. Download the evaluation tools. (TODO)
-
-    Download the tartanair_tools repository, and follow the instruction here. 
-
+We will directly use ATE and RPE to evaluate the accuracy of trajectory. 
 
 ## Submit the results. 
 
 ### Prepare the trajectory
-For each of the 5 trajectories of **visual-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
+For each of the 9 trajectories of **visual-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
+
 
 ```
     visual_inertial_track.zip
-    |
-    --- ME000.txt                             # result file for the trajectory ME000 
-    --- ME001.txt                             # result file for the trajectory ME001
-    |          ..
-    |          ..
-    --- ME007.txt                             # result file for the trajectory ME007
-    |       
-    --- MH000.txt                             # result file for the trajectory MH000
-    --- MH001.txt                             # result file for the trajectory MH001
-    |          ..
-    |          ..
-    --- MH007.txt                             # result file for the trajectory MH007 
+    --- SubT_MRS_Laurel_Caverns_Handheld1.txt     # result file for the trajectory Laurel_Caverns_Handheld1
+    --- SubT_MRS_Laurel_Caverns_Handheld2.txt     # result file for the trajectory Laurel_Caverns_Handheld2
+    --- SubT_MRS_OverExposure_LegRobot.txt        # result of te trajectory OverExposure_LegRobot
+    --- TartanAir_visual_endofworld.txt           # result file for the trajectory Urban_Challenge_UGV1
+    --- TartanAir_visual_moon.txt                 # result file for the trajectory Urban_Challenge_UGV2
+    --- TartanAir_visual_westerndesert.txt        # result file for the trajectory Laurel_Cavern
+    Bonus_track 
+    --- SubT_MRS_Flash_Light_LegRobot.txt         # result file for the trajectory Flash Light
+    --- SubT_MRS_Hawkins_Smoke_Handheld.txt       # result file for the smoke room 
+    --- Subt_MRS_Outdoor_Night_LegRobot.txt       # result file for the outdoor night
+
 ```
+
+
+
 <br>
 <br>
 <br>
@@ -235,8 +236,7 @@ The text file should have the following format:
 <br>
 <br>
 
-The camera pose file should have the same format as the ground truth file in the training data. It is a text file containing the translation and orientation of the camera in a fixed coordinate frame. Note that our automatic evaluation tool expects the estimated trajectory to be in this format. 
-
+It is a text file containing the translation and orientation of the IMU in a fixed coordinate frame. The estimated trajectory file should satisfy the following requirements.
 - Each line in the text file contains a single pose.
 - The number of lines/poses must be the same as the number of image frames in that trajectory. **(TODO: do we need this assumption? @wenshan)**  
 - The format of each line is 'tx ty tz qx qy qz qw'. 
@@ -246,7 +246,20 @@ The camera pose file should have the same format as the ground truth file in the
 
 ### Submit in Gradescope  (@wenshan)
 
-- Todo: provide the instruction of submission
+To submit the estimated trajectory into the submission system, you can follow the steps listed below:
+
+1. Register a account in the [GradeScope](http://gradescope.com/) and log into the website.
+2. Click the right-bottom `Add Course` button and enter the course-entry code: `V5NPPX0` , Then you can find the `iccv-vi` courses in your GradeScope homepage.
+3. Click the `iccv-vi` course and you will see the assignment named `Trajectory-result-submission` in the dashboard.
+4. Click the assignment and upload your `visual-inertial-track.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
+    - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
+5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
+
+After submitted your trajectory zip file, the system will perform two checks:
+
+- Note: 
+    1. You must submit all the 9 trajectories for visual inertial track.
+    2. The trajecotry should be complete. The duration of estimated trajecotry should be roughly same with ground truth trajectory. 
 
 ##  🎉Visual-inertial Leaderboard 🎉
 

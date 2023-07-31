@@ -87,7 +87,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
   <b>  3. Diversity of motion patterns:</b>
    Our dataset covers much more diverse motion combinations in 3D space, which is significantly more difficult than existing datasets.
    
-   <b> 4. Diversity of motion patterns:</b>
+   <b> 4. Challenging Scenes:</b>
     We include challenging scenes with difficult lighting conditions, day-night alternating, low illumination, weather effects (rain, snow, wind and fog) and seasonal changes.Please refer to the TartanAir Dataset and the paper for more information. 
 
 
@@ -104,7 +104,7 @@ Join us for three exciting tracks of challenges from the links below.
 &nbsp;
 <a href="/iccv23_challenge_LiI" class="button is-info"> &nbsp; LiDAR Inertial Track </a >
 &nbsp;
-<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Multi Modality Track</a >
+<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Multi Modal Fusion Track</a >
 &nbsp;
 </center>
 
@@ -166,7 +166,7 @@ Easily search for the datasets you require by inputting <b> "visual" or "lidar" 
 
 
 ## Contact us
-(TODO: github name should be ICCV 2023 Challenge @xucan)
+
 If you have any issues on the SLAM challenge, please post issues on this [github](https://github.com/sleepycan/SubT-MRS). 
 
 

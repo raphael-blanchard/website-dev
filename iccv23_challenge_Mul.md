@@ -137,70 +137,12 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 <br>
 
 
-
-## Tartan Air Dataset
-
-   This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
-
-   - **Large size diverse realistic data.** We collect the data in diverse environments with different styles, covering indoor/outdoor, different weather, different seasons, urban/rural.
-   - **Multimodal ground truth labels.** We provide RGB stereo, depth, optical flow, and semantic segmentation images, which facilitates the training and evaluation of various visual SLAM methods. 
-   - **Diversity of motion patterns.**  Our dataset covers much more diverse motion combinations in 3D space, which is significantly more difficult than existing datasets.
-   - **Challenging Scenes.** We include challenging scenes with difficult lighting conditions, day-night alternating, low illumination, weather effects (rain, snow, wind and fog) and seasonal changes.Please refer to the TartanAir Dataset and the paper for more information. 
-
-   File structure: 
-
-    ```
-    mono
-    |
-    --- ME000                             # monocular easy trajectory 0 
-    |       |
-    |       ---- 000000.png          # RGB image 000000
-    |       ---- 000001.png          # RGB image 000001
-    |       .
-    |       .
-    |       ---- 000xxx.png           # RGB image 000xxx
-    |
-    +-- ME001                             # monocular easy trajectory 1 
-    .
-    .
-    +-- ME007                            # monocular easy trajectory 7 
-    |
-    +-- MH000                            # monocular hard trajectory 0 
-    .
-    .
-    |
-    +-- MH007                            # monocular hard trajectory 7
-    ```
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
-![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif)
+<!-- ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
+![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif) -->
 
 
 
-## Download (@Tianhao @WenShan )
+## Download
 
 Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
 
@@ -208,26 +150,18 @@ Click [here](dummy) to download the testing data for visual-inertial track. (Siz
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
 |Multi_Floor|SubT-MRS|Hawkins|SP1|Lidar,RGB,IMU|Multi Floor|270|480|21.2G|[link](dummy)| [Baidu](dummy) [google](dummy)          |
 |Long_Corridor|SubT-MRS|Hawkins|RC2|Lidar,RGB,IMU|Multi Floor|616.45|332|14.6G|[link](dummy)| [Baidu](dummy) [google](dummy)          |
-|SensorDrop1|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU|Block Lidar|307.55|677|17.1G|[link](dummy)| [Baidu](dummy) [google](dummy)                           |
-|SensorDrop2|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU|Block Visual|186.02|359|19.8G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
+|BlockLiDAR|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU|Block Lidar|307.55|677|17.1G|[link](dummy)| [Baidu](dummy) [google](dummy)                           |
+|BlockVisual|SubT-MRS|Mill19|RC3|Lidar,RGB,IMU|Block Visual|186.02|359|19.8G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
 |SmokeRoom|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|104.84|418|20G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
 |OutdoorNight|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|254.03|484|22.9G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
 |FlashLight|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|147.75|279|13G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
 
 
 
-## Evaluation (@ Wenshan)
-The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE).
+## Evaluation 
+The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE,RPE).
 
-1. The following metrics will be used to evaluate the SLAM algorithms' performance:
-
-For a known ground truth trajectory ME000_gt.txt and an estimated trajectory ME000_est.txt, we calculate the translation and rotation error based on the normalized Relative Pose Error similar to the KITTI dataset. Different from KITTI, we compute translational and rotational errors for all possible subsequences of length (5, 10, 15, ...,40) meters.  The translational error and rotational error are then combined to the final score:  , where we use  to balance the two errors, because the average rotation speed (in degree) is 7 times bigger than the average translation speed on our dataset. 
-
-Due to the scale ambiguity of the monocular image, a global scale factor is calculated before the error computation. 
-
-2. Download the evaluation tools. (TODO)
-
-    Download the tartanair_tools repository, and follow the instruction here. 
+We will directly use ATE and RPE to evaluate the accuracy of trajectory. 
 
 
 ## Submit the results. 
@@ -236,19 +170,17 @@ Due to the scale ambiguity of the monocular image, a global scale factor is calc
 For each of the 5 trajectories of **sensor-fusion track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
 
 ```
-    visual_inertial_track.zip
-    |
-    --- ME000.txt                             # result file for the trajectory ME000 
-    --- ME001.txt                             # result file for the trajectory ME001
-    |          ..
-    |          ..
-    --- ME007.txt                             # result file for the trajectory ME007
-    |       
-    --- MH000.txt                             # result file for the trajectory MH000
-    --- MH001.txt                             # result file for the trajectory MH001
-    |          ..
-    |          ..
-    --- MH007.txt                             # result file for the trajectory MH007 
+    Multi_Model_Sensor_Fusion.zip
+    --- SubT_MRS_Hawkins_Long_Corridor_RC.txt            # result file for the trajectory Long Corridor 
+    --- SubT_MRS_Hawkins_Multi_Floor_LegRobot.txt        # result file for the trajectory Multi Floor 
+    --- SubT_MRS_MILL19_Block_LiDAR.txt                  # result file for the trajectory Block LiDAR 
+    --- SubT_MRS_MILL19_Block_Visual.txt                 # result file for the trajectory Block Visual   
+    --- SubT_MRS_Flash_Light_LegRobot.txt                # result file for the trajectory Flash Light
+    --- SubT_MRS_Hawkins_Smoke_Handheld.txt              # result file for the smoke room 
+    --- Subt_MRS_Outdoor_Night_LegRobot.txt              # result file for the outdoor night
+
+
+  
 ```
 <br>
 <br>

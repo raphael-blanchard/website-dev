@@ -157,25 +157,48 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 <br>
 
 
-## Download (@Mansi @WenShan )
+## Download (@WenShan )
 
-Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
+Click [here](dummy) to download the testing data for lidar-inertial track. (Size: 7.65 GB)
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|  Subt_Systems_1 |   SubT-MRS        |         |     RC1      |   LiDAR,IMU        | Geometry Degraded           |  441.86         |  1600           |   34.1GB        |       [link](dummy)          | [Baidu](dummy) [google](dummy)          |
-|  Subt_Systems_2 |    SubT-MRS       |         |   RC2        |    LiDAR,IMU       |  Geometry Degraded          |  493.67         |  3390           |   63.1GB        |       [link](dummy)            | [Baidu](dummy) [google](dummy)                           |
-| Subt_Systems_3  |    SubT-MRS       |         |      RC3     |    LiDAR,IMU       |  Geometry Degraded          |  593.79         |  1714           |    35.0GB       |       [link](dummy)            | [Baidu](dummy) [google](dummy)              |
-| Subt_Urban_1   |    SubT-MRS       |         |     UGV1      |    LiDAR,IMU        |            |  124.92         |  513           |    10.2GB       |       [link](dummy)           | [Baidu](dummy) [google](dummy)              |
-|  Subt_Urban_2  |    SubT-MRS       |         |     UGV2      |     LiDAR,IMU       |            |  1377.37         |   3120          |    63.6GB       |       [link](dummy)           |  [Baidu](dummy) [google](dummy)               |
-|  Laurel_Caverns_3  |    SubT-MRS       |         |     RC7      |   LiDAR,IMU         |            |           |             |    TBD       |       [link](dummy)           |  [Baidu](dummy) [google](dummy)               |
+| Final_Challenge_UGV1 |  SubT-MRS       |         |     UGV1      |    LiDAR,IMU       | Geometry Degraded          |  441.86         |  1600           |   34.1GB        |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
+| Final_Challenge_UGV2 |  SubT-MRS       |         |     UGV2      |    LiDAR,IMU       | Geometry Degraded          |  493.67         |  3390           |   63.1GB        |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
+| Final_Challenge_UGV3 |  SubT-MRS       |         |     UGV3      |    LiDAR,IMU       | Geometry Degraded          |  593.79         |  1714           |    35.0GB       |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
+| Urban_Challenge_UGV1 |  SubT-MRS       |         |     UGV1      |    LiDAR,IMU       | Geometry Degraded          |  124.92         |  513            |    10.2GB       |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
+| Urban_Challenge_UGV2 |  SubT-MRS       |         |     UGV2      |    LiDAR,IMU       | Geometry Degraded          |  1377.37        |   3120          |    63.6GB       |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Laurel_Cavern        |  SubT-MRS       |         |     Handheld  |    LiDAR,IMU       |                            |                 |                 |    TBD          |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Lidar_factory       |  TartanAir       |         |     simulaion  |    LiDAR,IMU       | Geometry Degraded         |                 |                 |    TBD          |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Lidar_ocean       |  TartanAir       |         |     simulaion  |    LiDAR,IMU       | Geometry Degraded         |                 |                 |    TBD          |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Lidar_sewerage       |  TartanAir       |         |     simulaion  |    LiDAR,IMU       | Geometry Degraded         |                 |                 |    TBD          |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
 
 
+## Bonus Tracks(Can also be found in the Multi Modal Fusion Track)
+
+We invite you to test your LIO algorithm with our Bonus datasets (3 extra datasets).
+
+**Please note that the results obtained from the Bonus track will not be factored into the final scoring for the LiDAR-inertial track.** 
+The intention behind this separation is to allow participants ample time for fine-tuning their algorithms without the added pressure of immediate scoring.
+
+Nonetheless, it is mandatory for all participants to provide the results from the Bonus track to complete their entry in the lidar-inertial track competition. 
+This will aid in a comprehensive evaluation of the algorithms and showcase their adaptability to diverse and complex datasets.
+
+
+| Name | Source    | Location  | Robot     |Sensor     | Description | Trajectory | Duration  | Size  |  Video | Download Link|
+|------|-----------|-----------|-----------|-----------|-------------|-----------|-------------|-----------|---------------|--------------|
+|Long Corridor  |SubT-MRS|Hawkins|RC car      |RGB,LiDAR IMU|Lidar Degraded|104.84|418|20G|[link](dummy)| [Baidu](dummy) [google](dummy)              |
+|Multi_Floor    |SubT-MRS|Hawkins|Legged robot|RGB,LiDAR,IMU|Lidar Degraded|254.03|484|22.9G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
+|Block_LiDAR    |SubT-MRS|Hawkins|Legged robot|RGB,LiDAR,IMU|Lidar Degraded|147.75|279|13G|[link](dummy)|  [Baidu](dummy) [google](dummy)               |
 
 
 ## Evaluation (@ Wenshan)
-The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE).
+The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE,RPE).
 
+We will directly use ATE and RPE to evaluate the accuracy of trajectory. 
+
+
+<!-- 
 1. The following metrics will be used to evaluate the SLAM algorithms' performance:
 
 For a known ground truth trajectory ME000_gt.txt and an estimated trajectory ME000_est.txt, we calculate the translation and rotation error based on the normalized Relative Pose Error similar to the KITTI dataset. Different from KITTI, we compute translational and rotational errors for all possible subsequences of length (5, 10, 15, ...,40) meters.  The translational error and rotational error are then combined to the final score:  , where we use  to balance the two errors, because the average rotation speed (in degree) is 7 times bigger than the average translation speed on our dataset. 
@@ -184,28 +207,31 @@ Due to the scale ambiguity of the monocular image, a global scale factor is calc
 
 2. Download the evaluation tools. (TODO)
 
-    Download the tartanair_tools repository, and follow the instruction here. 
+    Download the tartanair_tools repository, and follow the instruction here.  -->
 
 
 ## Submit the results. 
 
 ### Prepare the trajectory
-For each of the 5 trajectories of **LiDAR-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
+For each of the 9 trajectories of **LiDAR-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the estimated trajectory text file with the name sequnce_name.txt. Put all 9 files into a zip file with the following structure: 
 
 ```
     lidar_inertial_track.zip
-    |
-    --- ME000.txt                             # result file for the trajectory ME000 
-    --- ME001.txt                             # result file for the trajectory ME001
-    |          ..
-    |          ..
-    --- ME007.txt                             # result file for the trajectory ME007
-    |       
-    --- MH000.txt                             # result file for the trajectory MH000
-    --- MH001.txt                             # result file for the trajectory MH001
-    |          ..
-    |          ..
-    --- MH007.txt                             # result file for the trajectory MH007 
+    --- SubT_MRS_Final_Challenge_UGV1.txt         # result file for the trajectory Final_Challenge_UGV1
+    --- SubT_MRS_Final_Challenge_UGV2.txt         # result file for the trajectory Final_Challenge_UGV2
+    --- SubT_MRS_Final_Challenge_UGV3.txt         # result file for the Final_Challenge_UGV3
+    --- SubT_MRS_Urban_Challenge_UGV1.txt         # result file for the Urban_Challenge_UGV1
+    --- SubT_MRS_Urban_Challenge_UGV2.txt         # result file for the Urban_Challenge_UGV2 
+    --- SubT_MRS_Laurel_Caverns_Handheld3.txt     # result file for the Laureal Cavern  
+    --- TartanAir_lidar_factory.txt               # result file for the trajectory lidar_factory 
+    --- TartanAir_lidar_ocean.txt                 # result file for the trajectory lidar_ocean 
+    --- TartanAir_lidar_sewerage.txt              # result file for the trajectory lidar_sewerage 
+    Bonus_track 
+    --- SubT_MRS_Hawkins_Long_Corridor_RC.txt            # result file for the trajectory Long Corridor 
+    --- SubT_MRS_Hawkins_Multi_Floor_LegRobot.txt        # result file for the trajectory Multi Floor 
+    --- SubT_MRS_MILL19_Block_LiDAR.txt                  # result file for the trajectory Block LiDAR  
+
+
 ```
 <br>
 <br>
@@ -220,11 +246,16 @@ For each of the 5 trajectories of **LiDAR-inertial track**, you need to compute 
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+The estimated_trajecotry.txt file should have the following format: 
 
-
-The text file should have the following format: 
 
 ```
+
 # timestamp_s tx ty tz qx qy qz qw
 1.403636580013555527e+09 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 
@@ -236,18 +267,28 @@ The text file should have the following format:
 <br>
 <br>
 
-The camera pose file should have the same format as the ground truth file in the training data. It is a text file containing the translation and orientation of the camera in a fixed coordinate frame. Note that our automatic evaluation tool expects the estimated trajectory to be in this format. 
+Here are some requirements for your estimated_trajectory.txt
 
 - Each line in the text file contains a single pose.
-- The number of lines/poses must be the same as the number of image frames in that trajectory. **(TODO: do we need this assumption? @wenshan)**  
+- If you are testing Tartan Air datraset, the number of lines/poses must be the same as the number of image frames in that trajectory. (**@wenshan**)  
 - The format of each line is 'tx ty tz qx qy qz qw'. 
 - tx ty tz (3 floats) give the position of IMU sensor to the world origin in the world frame.
 - qx qy qz qw (4 floats) give the orientation of IMU in the form of a unit quaternion with respect to the world frame. 
 - The trajectory can have an arbitrary initial position and orientation. However, we are using the IMU frame to define the motion. That is to say, the x-axis is pointing to forward, the y-axis is pointing left, the z-axis is pointing up.
 
-### Submit in Gradescope  (@wenshan)
+### Submit in Gradescope  
 
-- Todo: provide the instruction of submission
+- To submit the estimated trajectory into the submission system, you can follow the steps listed below:
+    1. Register a account in the [GradeScope](http://gradescope.com/) and log into the website.
+    2. Click the right-bottom `Add Course` button and enter the course-entry code: `K3EGGJ0`, Then you can find the `iccv-lii` courses in your GradeScope homepage.
+    3. Click the `iccv-lii` course and you will see the assignment named `Trajectory-result-submission` in the dashboard.
+    4. Click the assignment and upload your `lidar_inertial_track.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
+        - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
+    5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
+
+- Note: 
+    1. You must submit all the 9 trajectories for lidar inertial track.
+    2. The trajecotry should be complete. The duration of estimated trajecotry should be roughly same with ground truth trajectory. 
 
 ##  🎉Lidar-inertial Leaderboard 🎉
 
