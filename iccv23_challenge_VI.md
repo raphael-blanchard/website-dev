@@ -41,26 +41,24 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
     ```
     Visual_Inertial_Track
-    ├── Laurel_Canerns_1
-    │   ├── rosbags
-    │   │   └── [...]yyyy-mm-dd-hh-mm-ss[...].bag
-    │   ├── folders
-    │   │   ├── raw_sensor_data
-    │   │   │   ├── cam_0
-    │   │   │   │   ├── {...}.png
-    │   │   │   │   └── timestamps.txt
-    │   │   │   ├── imu
-    │   │   │   │   └── imu_data.csv
-    │   │   │   └── tf
-    │   │   │       └── tf_data.csv
-    │   │   └── super_odometry_results
-    │   │       └── ...
-    │   ├── extrinsics.yaml
-    │   └── intrinsics.yaml
-    ├── Laurel_Canerns_2
-    │   └── ...
-    └── Over_Exposure
-        └── ...
+    ├── rosbag
+    │   ├── TartanAir_visual_{places ...}_noise0.bag
+    │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+    │       └── (zipped) raw_data_[...]yyyy-mm-dd-hh-mm-ss[...].bag
+    ├── folder
+    │   ├── TartanAir_visual_{places ...}.zip
+    │   │   └── (zipped) ??? need to ask Wenshan
+    │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+    │       ├── (zipped) cam_0
+    │       │   ├── {...}.png
+    │       │   └── timestamps.txt
+    │       ├── (zipped) imu
+    │       │   └── imu_data.csv
+    │       └── (zipped) tf
+    │           └── tf_data.csv
+    └── calibration
+        ├── SubT_MRS_{trajectory names ...}_{robot types ...}_Extrinsics.yaml
+        └── SubT_MRS_{trajectory names ...}_{robot types ...}_Intrinsics.yaml
     ```
 
 <br>

@@ -42,32 +42,23 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
     ```
     Lidar_Inertial_Track
-    ├── SubT_Systems_1
-    │   ├── rosbags
-    │   │   └── [...]yyyy-mm-dd-hh-mm-ss[...].bag
-    │   ├── folders
-    │   │   ├── raw_sensor_data
-    │   │   │   ├── imu
-    │   │   │   │   └── imu_data.csv
-    │   │   │   ├── lidar
-    │   │   │   │   ├── {...}.las
-    │   │   │   │   └── timestamps.txt
-    │   │   │   └── tf
-    │   │   │       └── tf_data.csv
-    │   │   └── super_odometry_results
-    │   │       └── ...
-    │   ├── extrinsics.yaml
-    │   └── intrinsics.yaml
-    ├── SubT_Systems_2
-    │   └── ...
-    ├── SubT_Systems_3
-    │   └── ...
-    ├── SubT_Urban_1
-    │   └── ...
-    ├── SubT_Urban_2
-    │   └── ...
-    └── Laural_Caverns_3
-        └── ...
+    ├── rosbag
+    │   ├── TartanAir_lidar_{places ...}_noise0.bag
+    │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+    │       └── (zipped) raw_data_[...]yyyy-mm-dd-hh-mm-ss[...].bag
+    ├── folder
+    │   ├── TartanAir_lidar_{places ...}.zip
+    │   │   └── (zipped) ??? need to ask Wenshan
+    │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+    │       ├── (zipped) imu
+    │       │   └── imu_data.csv
+    │       ├── (zipped) lidar
+    │       │   ├── {...}.las
+    │       │   └── timestamps.txt
+    │       └── (zipped) tf
+    │           └── tf_data.csv
+    └── calibration
+        └── SubT_MRS_{trajectory names ...}_{robot types ...}.yaml
     ```
 
 
