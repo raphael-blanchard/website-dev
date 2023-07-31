@@ -473,12 +473,38 @@ Lunck Break and Posters (12:00 - 13:00 PM)
       </div>
     </td>  
   </tr>
+  <tr>
+    <td style="text-align: center;">
+      <div class="circular_image">
+        <img src="/img/invited_speakers/ji_zhang.png"/>
+      </div>
+    </td>
+    <td style="text-align: center;vertical-align: middle;">
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://frc.ri.cmu.edu/~zhangji/">Ji Zhang</a>
+      </p>
+      <p style="margin-bottom: 3px;">Systems Scientist</p>
+      <p>Carnegie Mellon University</p>
+    </td>
+    <td style="text-align: center;vertical-align: middle;">
+      <p style="margin-bottom: 3px;">TBD</p>
+      <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
+    </td>
+    <td style="text-align: center;vertical-align: middle;">
+      <p style="margin-bottom: 3px;">3:10 - 3:25 PM</p>
+    </td>
+    <td align="right;" style="vertical-align: middle;">
+      <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://www.youtube.com/embed/gaM4AsfgnNs" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </td>  
+  </tr>
   <tr style="height: 100px;">
     <td style="text-align: center; vertical-align: middle;" colspan="3">
         <b style="margin-bottom: 3px;">Concluding Remarks</b>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">3:10 - 3:20 PM</p>
+      <p style="margin-bottom: 3px;">3:25 - 3:40 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
