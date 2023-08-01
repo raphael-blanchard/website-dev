@@ -13,7 +13,7 @@ hero_image: /img/iccv/VI.gif
 
 # Challenge
 
-In this track, we exclusively offer access to high-quality **visual-inertial** datasets sourced from SubT-MRS and Tartan Air. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"** providing a test from **simulation to real-world**.
+In this track, we exclusively offer access to high-quality **visual-inertial** datasets sourced from SubT-MRS and TartanAir. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"** providing a test from **simulation to real-world**.
 
 
 🚀 Don't Forget: The [Sensor Fusion Challenge](/iccv23_challenge_Mul) is a Must!
@@ -85,6 +85,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 <br>
 <br>
 <br>
+<br>
 
 
 
@@ -99,28 +100,30 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
 
    File structure: 
 
-    ```
-    mono
+```
+    visual_envname
     |
-    --- ME000                             # monocular easy trajectory 0 
+    --- image_lcam_front                        # image folder 
     |       |
-    |       ---- 000000.png          # RGB image 000000
-    |       ---- 000001.png          # RGB image 000001
+    |       ---- timestamps.txt                 # image timestamp
+    |       ---- 000000_lcam_front.png          # RGB image 000000
+    |       ---- 000001_lcam_front.png          # RGB image 000001
     |       .
     |       .
-    |       ---- 000xxx.png           # RGB image 000xxx
+    |       ---- 000xxx_lcam_front.png          # RGB image 000xxx
     |
-    +-- ME001                             # monocular easy trajectory 1 
-    .
-    .
-    +-- ME007                            # monocular easy trajectory 7 
-    |
-    +-- MH000                            # monocular hard trajectory 0 
-    .
-    .
-    |
-    +-- MH007                            # monocular hard trajectory 7
-    ```
+    --- imu                                     # IMU folder 
+    |       |
+    |       ---- acc.npy                        # IMU acceleration
+    |       ---- acc.txt                        # IMU acceleration
+    |       ---- gyro.npy                       # IMU gyroscope
+    |       ---- gyro.txt                       # IMU gyroscope
+    |       ---- imu.npy                        # IMU acceleration and gyroscope
+    |       ---- imu.txt                        # IMU acceleration and gyroscope
+    |       ---- imu_time.npy                   # IMU timestamp
+    |       ---- imu_time.txt                   # IMU timestamp
+
+```
 
 
 <!-- ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
@@ -154,14 +157,14 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
 
 Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
 
-| Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
+| Name | Source  | Location  | Robot |Sensor | Description | Trajectory Length (m)| Duration (s) | Size (GB) |  Video | Download Link|
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|Handheld1|SubT-MRS|Lauren Cavern      |RC7 Payload|IMU,RGB|Darkness     |400.61|816|45.3G|[link](dummy)|[Baidu](dummy) [google](dummy)|
-|Handheld2|SubT-MRS|Lauren Cavern      |RC7 Payload|IMU,RGB|Darkness     |583.19|739|38.4G|[link](dummy)|[Baidu](dummy) [google](dummy)|
-|OverExposure      |SubT-MRS|Hawkins   |RC7 Payload|IMU,RGB|Over Exposure|456.26|2128|46.1G|[link](dummy)|[Baidu](dummy) [google](dummy)|
-|Endofworld        | Tartan Air        |  Simulation       | IMU,RGB          |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)              |
-|Moon              | Tartan Air        |  Simulation       | IMU,RGB          |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)               |
-|Westerndesert     | Tartan Air        |  Simulation       | IMU,RGB          |           |            |           |             |           |[link](dummy)|[Baidu](dummy) [google](dummy)  
+|Handheld1|SubT-MRS|Lauren Cavern      |RC7 Payload|IMU,RGB|Darkness     |400.61|816|45.3|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|Handheld2|SubT-MRS|Lauren Cavern      |RC7 Payload|IMU,RGB|Darkness     |583.19|739|38.4|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|OverExposure      |SubT-MRS|Hawkins   |RC7 Payload|IMU,RGB|Over Exposure|456.26|2128|46.1|[link](dummy)|[Baidu](dummy) [google](dummy)|
+|Endofworld        | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Fog              | 280 | 70.8  | 0.53 |[link](dummy)|[Baidu](dummy) [google](dummy)              |
+|Moon              | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Shaddow          | 850 | 346.9 | 1.9  |[link](dummy)|[Baidu](dummy) [google](dummy)               |
+|Westerndesert     | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Day-night Circle | 600 | 180.5 | 0.7  |[link](dummy)|[Baidu](dummy) [google](dummy)  
 
 ## Bonus Tracks(Can also be found in the Multi Modal Fusion Track)
 
@@ -241,7 +244,6 @@ The text file should have the following format:
 
 It is a text file containing the translation and orientation of the IMU in a fixed coordinate frame. The estimated trajectory file should satisfy the following requirements.
 - Each line in the text file contains a single pose.
-- The number of lines/poses must be the same as the number of image frames in that trajectory. **(TODO: do we need this assumption? @wenshan)**  
 - The format of each line is 'tx ty tz qx qy qz qw'. 
 - tx ty tz (3 floats) give the position of IMU sensor to the world origin in the world frame.
 - qx qy qz qw (4 floats) give the orientation of IMU in the form of a unit quaternion with respect to the world frame. 

@@ -1,6 +1,6 @@
 ---
-title: SLAM Datasets
-subtitle: Multi-Robot, Multi-Degraded SLAM Datasets
+title: ICCV 2023 SLAM Challenge
+subtitle: Multi-Robot, Multi-Degraded SLAM Challenge
 layout: page
 show_sidebar: false
 hide_footer: false
@@ -53,7 +53,7 @@ opacity: 40%;
 
 # Welcome to the ICCV 2023 SLAM Challenge! 
 
-We provide datasets <b>TartanAir</b> and <b> SubT-MRS</b>, aiming to push SLAM in <b>challenging</b> environments, as well as advancing <b>sim-to-real transfer</b>. Our datasets contain a set of perceptually degraded environments such as darkness, airborne obscurant conditions such as fog, dust, smoke and lack of prominent perceptual features in self-similar areas. One of our hypotheses is that in such challenging cases, the robot needs to rely on multiple sensors to reliably track and localize itself. We provide a rich set of sensory modalities including RGB images, LiDAR points, IMU measurements, thermal images and so on. 
+We provide datasets <b>TartanAir</b> and <b> SubT-MRS</b>, aiming to push the rubustness of SLAM algorithms in <b>challenging</b> environments, as well as advancing <b>sim-to-real transfer</b>. Our datasets contain a set of perceptually degraded environments such as darkness, airborne obscurant conditions such as fog, dust, smoke and lack of prominent perceptual features in self-similar areas. One of our hypotheses is that in such challenging cases, the robot needs to rely on multiple sensors to reliably track and localize itself. We provide a rich set of sensory modalities including RGB images, LiDAR points, IMU measurements, thermal images and so on. 
 
 ## SubT-MRS Dataset 
 

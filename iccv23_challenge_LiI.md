@@ -13,7 +13,7 @@ hero_image: /img/iccv/Lil.gif
 
 # Challenge
 
-In this track, we exclusively offer access to high-quality **LiDAR-inertial** datasets sourced from SubT-MRS and Tartan Air. These datasets encompass various challenging conditions such as **"multi-floor,long corridor, self-similar environments and more"** providing a test from **simulation to real-world**.
+In this track, we exclusively offer access to high-quality **LiDAR-inertial** datasets sourced from SubT-MRS and TartanAir. These datasets encompass various challenging conditions such as **"multi-floor,long corridor, self-similar environments and more"** providing a test from **simulation to real-world**.
 
 
 🚀 Don't Forget: The [Sensor Fusion Challenge](/iccv23_challenge_Mul) is a Must!
@@ -103,28 +103,30 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
    File structure: 
 
-    ```
-    mono
+```
+    lidar_envname
     |
-    --- ME000                             # monocular easy trajectory 0 
+    --- lidar                                   # LiDAR folder 
     |       |
-    |       ---- 000000.png          # RGB image 000000
-    |       ---- 000001.png          # RGB image 000001
+    |       ---- timestamps.txt                 # LiDAR timestamp
+    |       ---- 000000_lcam_front_lidar.png    # RGB LiDAR 000000
+    |       ---- 000001_lcam_front_lidar.png    # RGB LiDAR 000001
     |       .
     |       .
-    |       ---- 000xxx.png           # RGB image 000xxx
+    |       ---- 000xxx_lcam_front_lidar.png    # RGB LiDAR 000xxx
     |
-    +-- ME001                             # monocular easy trajectory 1 
-    .
-    .
-    +-- ME007                            # monocular easy trajectory 7 
-    |
-    +-- MH000                            # monocular hard trajectory 0 
-    .
-    .
-    |
-    +-- MH007                            # monocular hard trajectory 7
-    ```
+    --- imu                                     # IMU folder 
+    |       |
+    |       ---- acc.npy                        # IMU acceleration
+    |       ---- acc.txt                        # IMU acceleration
+    |       ---- gyro.npy                       # IMU gyroscope
+    |       ---- gyro.txt                       # IMU gyroscope
+    |       ---- imu.npy                        # IMU acceleration and gyroscope
+    |       ---- imu.txt                        # IMU acceleration and gyroscope
+    |       ---- imu_time.npy                   # IMU timestamp
+    |       ---- imu_time.txt                   # IMU timestamp
+
+```
 
 <!-- 
 ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
@@ -156,17 +158,17 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
 Click [here](dummy) to download the testing data for lidar-inertial track. (Size: 7.65 GB)
 
-| Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  | Size  |  Video | Download Link|
+| Name | Source  | Location  | Robot |Sensor | Description |  Trajectory Length(m)| Duration (s) | Size (GB) |  Video | Download Link|
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-| Final_Challenge_UGV1 |  SubT-MRS       |         |     UGV1      |    LiDAR,IMU       | Geometry Degraded          |  441.86         |  1600           |   34.1GB        |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
-| Final_Challenge_UGV2 |  SubT-MRS       |         |     UGV2      |    LiDAR,IMU       | Geometry Degraded          |  493.67         |  3390           |   63.1GB        |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
-| Final_Challenge_UGV3 |  SubT-MRS       |         |     UGV3      |    LiDAR,IMU       | Geometry Degraded          |  593.79         |  1714           |    35.0GB       |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
-| Urban_Challenge_UGV1 |  SubT-MRS       |         |     UGV1      |    LiDAR,IMU       | Geometry Degraded          |  124.92         |  513            |    10.2GB       |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
-| Urban_Challenge_UGV2 |  SubT-MRS       |         |     UGV2      |    LiDAR,IMU       | Geometry Degraded          |  1377.37        |   3120          |    63.6GB       |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
-| Laurel_Cavern        |  SubT-MRS       |         |     Handheld  |    LiDAR,IMU       |                            |                 |                 |    TBD          |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
-| Lidar_factory       |  TartanAir       |         |     simulaion  |    LiDAR,IMU       | Geometry Degraded         |                 |                 |    TBD          |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
-| Lidar_ocean       |  TartanAir       |         |     simulaion  |    LiDAR,IMU       | Geometry Degraded         |                 |                 |    TBD          |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
-| Lidar_sewerage       |  TartanAir       |         |     simulaion  |    LiDAR,IMU       | Geometry Degraded         |                 |                 |    TBD          |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Final_Challenge_UGV1 |  SubT-MRS       |         |     UGV1      |    LiDAR,IMU       | Geometry Degraded          |  441.86         |  1600           |   34.1        |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
+| Final_Challenge_UGV2 |  SubT-MRS       |         |     UGV2      |    LiDAR,IMU       | Geometry Degraded          |  493.67         |  3390           |   63.1        |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
+| Final_Challenge_UGV3 |  SubT-MRS       |         |     UGV3      |    LiDAR,IMU       | Geometry Degraded          |  593.79         |  1714           |    35.0       |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
+| Urban_Challenge_UGV1 |  SubT-MRS       |         |     UGV1      |    LiDAR,IMU       | Geometry Degraded          |  124.92         |  513            |    10.2       |       [link](dummy)          | [Baidu](dummy) [google](dummy)       |
+| Urban_Challenge_UGV2 |  SubT-MRS       |         |     UGV2      |    LiDAR,IMU       | Geometry Degraded          |  1377.37        |   3120          |    63.6       |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Laurel_Cavern        |  SubT-MRS       |         |     Handheld  |    LiDAR,IMU       |                            |                 |                 |    TBD        |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Lidar_factory       |  TartanAir       |         |  Virtual Sensors | LiDAR,IMU       | Snow                       |  640            |   160.7         |    0.78       |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Lidar_ocean         |  TartanAir       |         |  Virtual Sensors | LiDAR,IMU       | Dynamic Objects            |  425            |   127.5         |    0.75       |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
+| Lidar_sewerage      |  TartanAir       |         |  Virtual Sensors | LiDAR,IMU       | Geometry Degraded          |  426            |   131.0         |    0.8        |       [link](dummy)          |  [Baidu](dummy) [google](dummy)      |
 
 
 ## Bonus Tracks(Can also be found in the Multi Modal Fusion Track)
@@ -265,7 +267,6 @@ The estimated_trajecotry.txt file should have the following format:
 Here are some requirements for your estimated_trajectory.txt
 
 - Each line in the text file contains a single pose.
-- If you are testing Tartan Air datraset, the number of lines/poses must be the same as the number of image frames in that trajectory. (**@wenshan**)  
 - The format of each line is 'tx ty tz qx qy qz qw'. 
 - tx ty tz (3 floats) give the position of IMU sensor to the world origin in the world frame.
 - qx qy qz qw (4 floats) give the orientation of IMU in the form of a unit quaternion with respect to the world frame. 
