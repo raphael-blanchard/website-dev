@@ -87,6 +87,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 <br>
 
 
+
 ## Tartan Air Datasets
 
 This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
@@ -188,7 +189,7 @@ We will directly use ATE and RPE to evaluate the accuracy of trajectory.
 ## Submit the results. 
 
 ### Prepare the trajectory
-For each of the 9 trajectories of **visual-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
+For each of the 9 trajectories of **visual-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 9 files into a zip file with the following structure: 
 
 
 ```
@@ -257,7 +258,6 @@ To submit the estimated trajectory into the submission system, you can follow th
     - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
 5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
 
-After submitted your trajectory zip file, the system will perform two checks:
 
 - Note: 
     1. You must submit all the 9 trajectories for visual inertial track.
