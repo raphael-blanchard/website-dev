@@ -16,11 +16,10 @@ hero_image: /img/iccv/Lil.gif
 In this track, we exclusively offer access to high-quality **LiDAR-inertial** datasets sourced from SubT-MRS and TartanAir. These datasets encompass various challenging conditions such as **"multi-floor,long corridor, self-similar environments and more"** providing a test from **simulation to real-world**.
 
 
-🚀 Don't Forget: The [Sensor Fusion Challenge](/iccv23_challenge_Mul) is a Must!
+
 Seize this chance to demonstrate your skills and compete among the finest in the field!
 
 Three separate awards will be given for each track.
-Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks.
 Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
 
 
@@ -156,7 +155,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
 ## Download 
 
-To download the sensor data for multi-modal sensor fusion track, click [here](https://drive.google.com/drive/folders/1hHCsnc-gANmK6Oox-Im3hqRwsGGaJIuJ) for ROS bags and click [here](https://drive.google.com/drive/folders/1zVG63JVmRCWSpTCe0F2iOb-E00NaS1JK) for processed folders.
+To download the sensor data for LiDAR-inertial track, click [here](https://drive.google.com/drive/folders/1hHCsnc-gANmK6Oox-Im3hqRwsGGaJIuJ) for ROS bags and click [here](https://drive.google.com/drive/folders/1zVG63JVmRCWSpTCe0F2iOb-E00NaS1JK) for processed folders.
 
 | Name | Source  | Location  | Robot |Sensor | Description |  Trajectory Length(m)| Duration (s) | Video | Calibration (Extrinsics) |
 |---|-----------|---------|-----------|-----------|------------|-----------|-----------|---------------|--------------|
