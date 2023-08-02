@@ -11,13 +11,13 @@
       link: /iccv23_challenge_Mul
 - name: TP-TIO
   link: /tptio
-- name: Super Loop
-  link: /superloop
-- name: Super Odometry 2
-  link: /superodometry2
-- name: MS-VIO
-  link: /msvio
-- name: MVIO
-  link: /mvio
+# - name: Super Loop
+#   link: /superloop
+# - name: Super Odometry 2
+#   link: /superodometry2
+# - name: MSO
+#   link: /msvio
+# - name: MVIO
+#   link: /mvio
 - name: Team
   link: /team

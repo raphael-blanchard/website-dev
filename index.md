@@ -24,6 +24,19 @@ We propose Super Odometry, a high-precision multi-modal sensor fusion framework,
 </div>
 
 
+We conducted extensive testing of Super Odometry on various platforms, including Unmanned Ground Vehicles (UGV), Unmanned Aerial Vehicles (UAV), and Legged Robots during the prestigious DARPA Challenge. The following results showcase the state estimation and  mapping performance achieved running on the embedded system. 
+
+
+<div>
+    <div style="float: left; width: 48%">
+    <div class="video-wrapper"><iframe src="https://youtu.be/7lxR0XIwdcM" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+    <div style="float: right; width: 48%;">
+    <div class="video-wrapper"><iframe src="https://youtu.be/c223fYNOmf4" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+</div>
+
+
 ## Citation
 
 Zhao, Shibo, et al. "Super odometry: IMU-centric LiDAR-visual-inertial estimator for challenging environments." 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2021. [Paper](https://arxiv.org/abs/2104.14938)
