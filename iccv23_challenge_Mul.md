@@ -103,8 +103,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 
 <!-- ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
