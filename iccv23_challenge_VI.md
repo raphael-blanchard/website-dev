@@ -155,7 +155,7 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
 
 ## Download (@WenShan)
 
-Click [here](dummy) to download the testing data for visual-inertial track. (Size: 7.65 GB)
+To download the sensor data for multi-modal sensor fusion track, click [here](https://drive.google.com/drive/folders/1drrdOTp7L02QhPJtIvpKo6zB21NoNlYb) for ROS bags and click [here](https://drive.google.com/drive/folders/1GR9vavG2iPbXpwlEoH_WzchHspF0ZfQ6) for processed folders.
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory Length (m)| Duration (s) | Size (GB) |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|

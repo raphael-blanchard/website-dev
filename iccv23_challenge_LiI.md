@@ -156,7 +156,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
 ## Download (@WenShan )
 
-Click [here](dummy) to download the testing data for lidar-inertial track. (Size: 7.65 GB)
+To download the sensor data for multi-modal sensor fusion track, click [here](https://drive.google.com/drive/folders/1hHCsnc-gANmK6Oox-Im3hqRwsGGaJIuJ) for ROS bags and click [here](https://drive.google.com/drive/folders/1zVG63JVmRCWSpTCe0F2iOb-E00NaS1JK) for processed folders.
 
 | Name | Source  | Location  | Robot |Sensor | Description |  Trajectory Length(m)| Duration (s) | Size (GB) |  Video | Calibration (Extrinsics) |
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
