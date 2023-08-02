@@ -55,9 +55,41 @@ opacity: 40%;
 
 We provide datasets <b>TartanAir</b> and <b> SubT-MRS</b>, aiming to push the rubustness of SLAM algorithms in <b>challenging</b> environments, as well as advancing <b>sim-to-real transfer</b>. Our datasets contain a set of perceptually degraded environments such as darkness, airborne obscurant conditions such as fog, dust, smoke and lack of prominent perceptual features in self-similar areas. One of our hypotheses is that in such challenging cases, the robot needs to rely on multiple sensors to reliably track and localize itself. We provide a rich set of sensory modalities including RGB images, LiDAR points, IMU measurements, thermal images and so on. 
 
+
+
+<div>
+<br>
+    <iframe width="100%" height="400" style="display: block; margin-left: auto; margin-left: auto; width: 250%;"  src="https://www.youtube.com/embed/Jgd1E_cXsYw" title="Website - Sensor Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## SubT-MRS Dataset 
 
+
+
+
 <img src="/img/datasets/palette.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%;" />
+
+
 
 The SubT-MRS Dataset is an exceptional real-world collection of challenging datasets obtained from Subterranean Environments, encompassing caves, urban areas, and tunnels. Its primary focus lies in testing robust SLAM capabilities and is designed as Multi-Robot Datasets, featuring UGV, UAV, and Spot robots, each demonstrating various motions. The datasets are distinguished as Multi-Spectral, integrating Visual, Lidar, Thermal, and inertial measurements, effectively enabling exploration under demanding conditions such as darkness, smoke, dust, and geometrically degraded environments.Key features of our dataset:
 
