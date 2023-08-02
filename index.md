@@ -29,10 +29,10 @@ We conducted extensive testing of Super Odometry on various platforms, including
 
 <div>
     <div style="float: left; width: 48%">
-    <div class="video-wrapper"><iframe src="https://youtu.be/7lxR0XIwdcM" frameborder="0" allowfullscreen></iframe></div>
+    <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/7lxR0XIwdcM" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div style="float: right; width: 48%;">
-    <div class="video-wrapper"><iframe src="https://youtu.be/c223fYNOmf4" frameborder="0" allowfullscreen></iframe></div>
+    <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/c223fYNOmf4" frameborder="0" allowfullscreen></iframe></div>
     </div>
 </div>
 
