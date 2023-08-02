@@ -174,6 +174,50 @@ If you have any issues on the SLAM challenge, please post issues on this [github
 
 
 
+## Citation 
+
+
+Zhao, Shibo, et al. "SubT-MRS: A Subterranean, Multi-Robot, Multi-Spectral and Multi-Degraded Dataset for Robust SLAM" [Paper](https://arxiv.org/abs/2307.07607)
+
+@misc{zhao2023subtmrs,
+      title={SubT-MRS: A Subterranean, Multi-Robot, Multi-Spectral and Multi-Degraded Dataset for Robust SLAM}, 
+      author={Shibo Zhao and Damanpreet Singh and Haoxiang Sun and Rushan Jiang and YuanJun Gao and Tianhao Wu and Jay Karhade and Chuck Whittaker and Ian Higgins and Jiahe Xu and Yuheng Qiu and Sourojit Saha and Chen Wang and Wenshan Wang and Sebastian Scherer},
+      year={2023},
+      eprint={2307.07607},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+
+
+Wenshan, Wang et al. "TartanAir: A Dataset to Push the Limits of Visual SLAM" [Paper](https://arxiv.org/abs/2003.14338)
+
+
+@misc{wang2020tartanair,
+      title={TartanAir: A Dataset to Push the Limits of Visual SLAM}, 
+      author={Wenshan Wang and Delong Zhu and Xiangwei Wang and Yaoyu Hu and Yuheng Qiu and Chen Wang and Yafei Hu and Ashish Kapoor and Sebastian Scherer},
+      year={2020},
+      eprint={2003.14338},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+
+Kamak Ebadi, et al. "Present and future of slam in extreme underground environments"  [Paper](https://arxiv.org/pdf/2208.01787.pdf)
+
+@misc{ebadi2022present,
+      title={Present and Future of SLAM in Extreme Underground Environments}, 
+      author={Kamak Ebadi and Lukas Bernreiter and Harel Biggie and Gavin Catt and Yun Chang and Arghya Chatterjee and Christopher E. Denniston and Simon-Pierre Deschênes and Kyle Harlow and Shehryar Khattak and Lucas Nogueira and Matteo Palieri and Pavel Petráček and Matěj Petrlík and Andrzej Reinke and Vít Krátký and Shibo Zhao and Ali-akbar Agha-mohammadi and Kostas Alexis and Christoffer Heckman and Kasra Khosoussi and Navinda Kottege and Benjamin Morrell and Marco Hutter and Fred Pauling and François Pomerleau and Martin Saska and Sebastian Scherer and Roland Siegwart and Jason L. Williams and Luca Carlone},
+      year={2022},
+      eprint={2208.01787},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+
+
+
+
+
+
+
 <!-- # Contribute
 
 We're delighted to receive your challenging datasets! Contributing to this dataset is simple:
