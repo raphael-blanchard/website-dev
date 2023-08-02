@@ -37,7 +37,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 - <b> Heterogeneous Kinematic Profiles:</b>
   The SubT-MRS Dataset uniquely features time-synchronized sensor data from diverse vehicles, including RC cars, legged robots, drones, and handheld devices, each operating within distinct speed ranges. 
 
-   File structure:  (@YuanJun)
+   File structure:  
 
     ```
     Lidar_Inertial_Track
@@ -297,4 +297,4 @@ Here are some requirements for your estimated_trajectory.txt
 
 ## Contact us
 
-If you have any issues on the SLAM challenge, please post issues on this [github](git@github.com:shibowing/ICCV2023_SLAM_Challenge.git). 
+If you have any issues on the SLAM challenge, please post issues on this [github](https://github.com/shibowing/ICCV2023_SLAM_Challenge.git). 
