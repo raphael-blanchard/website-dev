@@ -147,7 +147,7 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
 
 ## Download
 
-To download the sensor data for multi-modal sensor fusion track, click [here](https://drive.google.com/drive/folders/1drrdOTp7L02QhPJtIvpKo6zB21NoNlYb) for ROS bags and click [here](https://drive.google.com/drive/folders/1GR9vavG2iPbXpwlEoH_WzchHspF0ZfQ6) for processed folders.
+To download the sensor data for visual-inertial sensor fusion track, click [here](https://drive.google.com/drive/folders/1drrdOTp7L02QhPJtIvpKo6zB21NoNlYb) for ROS bags and click [here](https://drive.google.com/drive/folders/1GR9vavG2iPbXpwlEoH_WzchHspF0ZfQ6) for processed folders.
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory Length (m)| Duration (s) |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
