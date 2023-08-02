@@ -257,7 +257,7 @@ It is a text file containing the translation and orientation of the IMU in a fix
 To submit the estimated trajectory into the submission system, you can follow the steps listed below:
 
 1. Register a account in the [GradeScope](http://gradescope.com/) and log into the website.
-2. Click the right-bottom `Add Course` button and enter the course-entry code: `V5NPPX0` , Then you can find the `iccv-vi` courses in your GradeScope homepage.
+2. Click the right-bottom `Add Course` button and enter the course-entry code: `V5NPPX` , Then you can find the `iccv-vi` courses in your GradeScope homepage.
 3. Click the `iccv-vi` course and you will see the assignment named `Trajectory-result-submission` in the dashboard.
 4. Click the assignment and upload your `visual-inertial-track.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
     - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
