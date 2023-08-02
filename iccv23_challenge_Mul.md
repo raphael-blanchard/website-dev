@@ -18,7 +18,8 @@ In this track, we exclusively offer access to high-quality **sensor-fusion** dat
 
 Three separate awards will be given for each track.
 Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks.
-Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
+Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion!  
+🤖💡 Let your expertise shine in this thrilling competition!
 
 
 ## SubT-MRS Datasets
@@ -71,30 +72,6 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
     ```
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -205,8 +182,8 @@ It is a text file containing the translation and orientation of the IMU in a fix
 To submit the estimated trajectory into the submission system, you can follow the steps listed below:
 
 1. Register a account in the [GradeScope](http://gradescope.com/) and log into the website.
-2. Click the right-bottom `Add Course` button and enter the course-entry code: `G2YGGB0`, Then you can find the `iccv-lii` courses in your GradeScope homepage.
-3. Click the `iccv-lii` course and you will see the assignment named `Trajectory-result-submission` in the dashboard.
+2. Click the right-bottom `Add Course` button and enter the course-entry code: `G2YGGB0`, Then you can find the `iccv-mul` courses in your GradeScope homepage.
+3. Click the `iccv-mul` course and you will see the assignment named `Trajectory-result-submission` in the dashboard.
 4. Click the assignment and upload your `sensor_fusion_track.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
     - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
 5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
@@ -223,5 +200,5 @@ To submit the estimated trajectory into the submission system, you can follow th
 
 ## Contact us
 
-If you have any issues on the SLAM challenge, please post issues on this [github](git@github.com:shibowing/ICCV2023_SLAM_Challenge.git). 
+If you have any issues on the SLAM challenge, please post issues on this [github](https://github.com/shibowing/ICCV2023_SLAM_Challenge.git).
 
