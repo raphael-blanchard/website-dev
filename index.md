@@ -24,6 +24,10 @@ We propose Super Odometry, a high-precision multi-modal sensor fusion framework,
 </div>
 
 
+<br>
+<br>
+<br>
+
 We conducted extensive testing of Super Odometry on various platforms, including Unmanned Ground Vehicles (UGV), Unmanned Aerial Vehicles (UAV), and Legged Robots during the prestigious DARPA Challenge. The following results showcase the state estimation and  mapping performance achieved running on the embedded system. 
 
 
@@ -35,7 +39,6 @@ We conducted extensive testing of Super Odometry on various platforms, including
     <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/c223fYNOmf4" frameborder="0" allowfullscreen></iframe></div>
     </div>
 </div>
-
 
 ## Citation
 
@@ -51,6 +54,10 @@ Zhao, Shibo, et al. "Super odometry: IMU-centric LiDAR-visual-inertial estimator
   organization={IEEE}
 }
 ```
+
+
+
+
 
 ## Acknowledgments
 
