@@ -140,9 +140,7 @@ For each of the 6 trajectories of **sensor-fusion track**, you need to compute t
 
 ```
     Multi_Model_Sensor_Fusion.zip
-    
-
---- SubT_MRS_Hawkins_Long_Corridor_RC.txt            # result file for the trajectory Long Corridor 
+    --- SubT_MRS_Hawkins_Long_Corridor_RC.txt            # result file for the trajectory Long Corridor 
     --- SubT_MRS_Hawkins_Multi_Floor_LegRobot.txt        # result file for the trajectory Multi Floor 
     --- SubT_MRS_MILL19_Block_LiDAR.txt                  # result file for the trajectory Block LiDAR 
     --- SubT_MRS_MILL19_Block_Visual.txt                 # result file for the trajectory Block Visual   
@@ -188,14 +186,14 @@ It is a text file containing the translation and orientation of the IMU in a fix
 - qx qy qz qw (4 floats) give the orientation of IMU in the form of a unit quaternion with respect to the world frame. 
 - The trajectory can have an arbitrary initial position and orientation. However, we are using the IMU frame to define the motion. That is to say, the x-axis is pointing to forward, the y-axis is pointing left, the z-axis is pointing up.
 
-### Submit in Gradescope  (@wenshan)
+### Submit in Gradescope  
 
 To submit the estimated trajectory into the submission system, you can follow the steps listed below:
 
 1. Register a account in the [GradeScope](http://gradescope.com/) and log into the website.
-2. Click the right-bottom `Add Course` button and enter the course-entry code: `G2YGGB0`, Then you can find the `iccv-mul` courses in your GradeScope homepage.
+2. Click the right-bottom `Add Course` button and enter the course-entry code: `G2YGGB`, Then you can find the `iccv-mul` courses in your GradeScope homepage.
 3. Click the `iccv-mul` course and you will see the assignment named `Trajectory-result-submission` in the dashboard.
-4. Click the assignment and upload your `sensor_fusion_track.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
+4. Click the assignment and upload your `Multi_Model_Sensor_Fusion.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
     - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
 5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
 
