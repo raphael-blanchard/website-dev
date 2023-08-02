@@ -559,18 +559,20 @@ The dataset can be used for a number of visual tasks, including optical flow, vi
 
 The workshop has an associated new benchmark dataset (Subt-MRS datasets and TartanAir V2 datasets) that we will publish three months before the workshop.
 
-#### 01/June - 01/July Release Datasets Stage:
 
-- _Release the SubT-MRS Datasets and TartanAir V2 Datasets_
-
-#### 01/July - 30/Sep Competition Start
+#### 01/August - 30/Sep Competition Start
 
 - _Organize Competition and Submission Results_
 
-#### 01/Oct - 02/Oct Competition End
+#### 01/Oct - 02/Oct Competition Middle Summary 
 
 - 9:00 - 9:30 AM: Subt-MRS SLAM Challenge Summary
 - 9:30 - 10:00 AM: TartanAir V2 SLAM Challenge Summary
+
+
+####  30/Oct Competition End 
+
+Announce the winner of Competition
 
 
 ## Workshop Registration

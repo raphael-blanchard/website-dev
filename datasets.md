@@ -112,15 +112,13 @@ Join us for three exciting tracks of challenges from the links below.
 <br>
 
 
-🚀 Don't Forget: The Sensor Fusion Challenge is a Must!<br>
-You can participate either  [Visual-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) or  
- [LiDAR-inertial challenge](/iccv23_challenge_VI)+  [Sensor Fusion challenge](/iccv23_challenge_VI) Or only participate in [Sensor Fusion challenge](/iccv23_challenge_VI).
+🚀 You can participate either  [Visual-inertial challenge](/iccv23_challenge_VI) or  
+ [LiDAR-inertial challenge](/iccv23_challenge_VI)  Or participate in [Sensor Fusion challenge](/iccv23_challenge_VI).
 
-
-Seize this chance to demonstrate your skills and compete among the finest in the field!
 
 Three separate awards will be given for each track.
 Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks.
+
 Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
 
 ## Meet our robots!!
@@ -135,7 +133,7 @@ Join us now to become a vital part of cutting-edge advancements in robotics and 
 <img src="/img/datasets/specs.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 
-## Download our datasets
+## Download our Sample Datasets
 
 Easily search for the datasets you require by inputting <b> "visual" or "lidar" or "subt" </b> to find precisely what you need. Our tool ensures you get the specific datasets you're looking for hassle-free. Try it now and access the data you require for your projects with ease! 📁🔍
 
@@ -172,7 +170,7 @@ The winning team will be awarded with an Orin Developer Kit and Orin Nano Develo
 
 ## Contact us
 
-If you have any issues on the SLAM challenge, please post issues on this [github](https://github.com/sleepycan/SubT-MRS). 
+If you have any issues on the SLAM challenge, please post issues on this [github](git@github.com:shibowing/ICCV2023_SLAM_Challenge.git). 
 
 
 

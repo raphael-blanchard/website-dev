@@ -154,7 +154,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 <br>
 
 
-## Download (@WenShan )
+## Download 
 
 To download the sensor data for multi-modal sensor fusion track, click [here](https://drive.google.com/drive/folders/1hHCsnc-gANmK6Oox-Im3hqRwsGGaJIuJ) for ROS bags and click [here](https://drive.google.com/drive/folders/1zVG63JVmRCWSpTCe0F2iOb-E00NaS1JK) for processed folders.
 
@@ -173,13 +173,14 @@ To download the sensor data for multi-modal sensor fusion track, click [here](ht
 
 ## Bonus Tracks(Can also be found in the Multi Modal Fusion Track)
 
-We invite you to test your LIO algorithm with our Bonus datasets (3 extra datasets).
+🚀 We also provide 3 extra datasets from   [Sensor Fusion Challenge](/iccv23_challenge_Mul) as bonus in the competition. 
+You will get **extra scores** if you test your algoithm on Bonus Track and submit the results to us. 
 
-**Please note that the results obtained from the Bonus track will not be factored into the final scoring for the LiDAR-inertial track.** 
+<!-- **Please note that the results obtained from the Bonus track will not be factored into the final scoring for the LiDAR-inertial track.** 
 The intention behind this separation is to allow participants ample time for fine-tuning their algorithms without the added pressure of immediate scoring.
 
 Nonetheless, it is mandatory for all participants to provide the results from the Bonus track to complete their entry in the lidar-inertial track competition. 
-This will aid in a comprehensive evaluation of the algorithms and showcase their adaptability to diverse and complex datasets.
+This will aid in a comprehensive evaluation of the algorithms and showcase their adaptability to diverse and complex datasets. -->
 
 
 | Name | Source    | Location  | Robot     |Sensor     | Description | Trajectory | Duration  |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
@@ -188,7 +189,7 @@ This will aid in a comprehensive evaluation of the algorithms and showcase their
 |Multi_Floor    |SubT-MRS|Hawkins|Legged robot|RGB,LiDAR,IMU|Lidar Degraded|254.03|484|[link](https://youtu.be/QcHjVLlsyXE)| [Baidu](dummy) [google](https://drive.google.com/file/d/1BV87D60W35UGzIaHjKD64c_J1G0U70jf/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) |
 |Block_LiDAR    |SubT-MRS|Hawkins|Legged robot|RGB,LiDAR,IMU|Lidar Degraded|147.75|279|[link](https://youtu.be/2r4Z1XKTJHs)| [Baidu](dummy) [google](https://drive.google.com/file/d/1NscQVVsQc_CN-16O_VLpLQnmTWgBmf93/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1zCqwibpnmJ6I9lv29OUEnjyK2SxN4TbV/view?usp=drive_link) |
 
-## Evaluation (@ Wenshan)
+## Evaluation 
 The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE,RPE).
 
 We will directly use ATE and RPE to evaluate the accuracy of trajectory. 
@@ -209,7 +210,7 @@ Due to the scale ambiguity of the monocular image, a global scale factor is calc
 ## Submit the results. 
 
 ### Prepare the trajectory
-For each of the 9 trajectories of **LiDAR-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the estimated trajectory text file with the name sequnce_name.txt. Put all 9 files into a zip file with the following structure: 
+For each of the 12 trajectories of **LiDAR-inertial track**, you need to compute the **poses in IMU coordinate frame**, and save them in the estimated trajectory text file with the name sequnce_name.txt. Put all 12 files into a zip file with the following structure: 
 
 ```
     lidar_inertial_track.zip
@@ -282,7 +283,7 @@ Here are some requirements for your estimated_trajectory.txt
     5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
 
 - Note: 
-    1. You must submit all the 9 trajectories for lidar inertial track.
+    1. You must submit all the 12 trajectories for lidar inertial track.
     2. The trajecotry should be complete. The duration of estimated trajecotry should be roughly same with ground truth trajectory. 
 
 ##  🎉Lidar-inertial Leaderboard 🎉

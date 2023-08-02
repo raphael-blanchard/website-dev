@@ -15,14 +15,6 @@ hero_image: /img/iccv/VI.gif
 
 In this track, we exclusively offer access to high-quality **visual-inertial** datasets sourced from SubT-MRS and TartanAir. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"** providing a test from **simulation to real-world**.
 
-
-🚀 Don't Forget: The [Sensor Fusion Challenge](/iccv23_challenge_Mul) is a Must!
-Seize this chance to demonstrate your skills and compete among the finest in the field!
-
-Three separate awards will be given for each track.
-Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks.
-Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
-
 ## SubT-MRS Datasets
 
 - <b> Multiple Modalities: </b>
@@ -37,7 +29,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 - <b> Heterogeneous Kinematic Profiles:</b>
   The SubT-MRS Dataset uniquely features time-synchronized sensor data from diverse vehicles, including RC cars, legged robots, drones, and handheld devices, each operating within distinct speed ranges. 
 
-   File structure:  (@YuanJun)
+   File structure inside Subt-MRS datasets:  
 
     ```
     Visual_Inertial_Track
@@ -98,7 +90,7 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
    - **Diversity of motion patterns.**  Our dataset covers much more diverse motion combinations in 3D space, which is significantly more difficult than existing datasets.
    - **Challenging Scenes.** We include challenging scenes with difficult lighting conditions, day-night alternating, low illumination, weather effects (rain, snow, wind and fog) and seasonal changes.Please refer to the TartanAir Dataset and the paper for more information. 
 
-   File structure: 
+   File structure inside the Tartan Air dataset: 
 
 ```
     visual_envname
@@ -153,7 +145,7 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
 <br>
 
 
-## Download (@WenShan)
+## Download
 
 To download the sensor data for multi-modal sensor fusion track, click [here](https://drive.google.com/drive/folders/1drrdOTp7L02QhPJtIvpKo6zB21NoNlYb) for ROS bags and click [here](https://drive.google.com/drive/folders/1GR9vavG2iPbXpwlEoH_WzchHspF0ZfQ6) for processed folders.
 
@@ -168,13 +160,24 @@ To download the sensor data for multi-modal sensor fusion track, click [here](ht
 
 ## Bonus Tracks(Can also be found in the Multi Modal Fusion Track)
 
-We invite you to test your VIO algorithm with our Bonus datasets (3 extra datasets).
+🚀 We also provide 3 extra datasets from   [Sensor Fusion Challenge](/iccv23_challenge_Mul) as bonus in the competition. 
+You will get **extra scores** if you test your algoithm on Bonus Track and submit the results to us. 
 
-**Please note that the results obtained from the Bonus track will not be factored into the final scoring for the visual-inertial track.** 
+<!-- 
+Three separate awards will be given for each track.
+
+Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks. -->
+
+<!-- 
+Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition! -->
+
+<!-- We invite you to test your VIO algorithm with our Bonus datasets (3 extra datasets). -->
+
+<!-- 
 The intention behind this separation is to allow participants ample time for fine-tuning their algorithms without the added pressure of immediate scoring.
 
 Nonetheless, it is mandatory for all participants to provide the results from the Bonus track to complete their entry in the visual-inertial track competition. 
-This will aid in a comprehensive evaluation of the algorithms and showcase their adaptability to diverse and complex datasets.
+This will aid in a comprehensive evaluation of the algorithms and showcase their adaptability to diverse and complex datasets. -->
 
 
 | Name | Source    | Location  | Robot     |Sensor     | Description | Trajectory | Duration  |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
@@ -184,7 +187,7 @@ This will aid in a comprehensive evaluation of the algorithms and showcase their
 |FlashLight   |SubT-MRS|Hawkins|Legrobot|RGB,Thermal,IMU|Visual Degraded|147.75|279|[link](https://youtu.be/RybUmK27fyY)|  [Baidu](dummy) [google](https://drive.google.com/file/d/10YJQ3FMRw95F3_yhOsX2bbuMuvQbtnVV/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/13iTBn_po_GWxt3X8kNWVGZ2wwQ38Eou0/view?usp=drive_link) |
 
 
-## Evaluation (@ Wenshan)
+## Evaluation 
 The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE,RPE).
 
 We will directly use ATE and RPE to evaluate the accuracy of trajectory. 

@@ -35,7 +35,7 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 - <b> Heterogeneous Kinematic Profiles:</b>
   The SubT-MRS Dataset uniquely features time-synchronized sensor data from diverse vehicles, including RC cars, legged robots, drones, and handheld devices, each operating within distinct speed ranges. 
 
-   File structure:  (@YuanJun)
+   File structure: 
 
     ```
     Multi_Modal_Sensor_Fusion_Track
@@ -148,7 +148,7 @@ We will directly use ATE and RPE to evaluate the accuracy of trajectory.
 ## Submit the results. 
 
 ### Prepare the trajectory
-For each of the 5 trajectories of **sensor-fusion track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 5 files into a zip file with the following structure: 
+For each of the 6 trajectories of **sensor-fusion track**, you need to compute the **poses in IMU coordinate frame**, and save them in the text file with the name sequnce_name.txt. Put all 6 files into a zip file with the following structure: 
 
 ```
     Multi_Model_Sensor_Fusion.zip
@@ -194,7 +194,7 @@ The text file should have the following format:
 
 It is a text file containing the translation and orientation of the IMU in a fixed coordinate frame. The estimated trajectory file should satisfy the following requirements.
 - Each line in the text file contains a single pose.
-- The number of lines/poses must be the same as the number of image frames in that trajectory. **(TODO: do we need this assumption? @wenshan)**  
+- The number of lines/poses must be the same as the number of image frames in that trajectory. 
 - The format of each line is 'tx ty tz qx qy qz qw'. 
 - tx ty tz (3 floats) give the position of IMU sensor to the world origin in the world frame.
 - qx qy qz qw (4 floats) give the orientation of IMU in the form of a unit quaternion with respect to the world frame. 
