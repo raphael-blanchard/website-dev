@@ -784,6 +784,23 @@ Enormous gratitude to our esteemed sponsor.
       <p>Carnegie Mellon University</p>
     </td>
   </tr>
+ <tr>
+      <td style="text-align: center;">
+      <img class="circular_image" src="img/iccv_organizers/iccv_members/canxu.png" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="www.linkedin.com/in/cmucanxu">Can Xu</a>
+      </p>
+      <p style="margin-bottom: 3px;">Research Associate</p>
+      <p>Carnegie Mellon University</p>
+    </td>
+   <td>
+   </td>
+    <td>
+   </td>
+    <td>
+   </td>
+ </tr>
+   
 </table>
 
 
