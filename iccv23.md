@@ -750,7 +750,7 @@ Enormous gratitude to our esteemed sponsor.
       <p style="margin-bottom: 3px;">Graduate Student</p>
       <p>Carnegie Mellon University</p>
      <tr>
-    </td> 
+    <!-- </td>  -->
      <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/yuanjun.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
@@ -801,6 +801,6 @@ Enormous gratitude to our esteemed sponsor.
    </td>
  </tr>
    
-</table>
+<!-- </table> -->
 
 

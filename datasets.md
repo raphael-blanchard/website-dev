@@ -7,7 +7,7 @@ hide_footer: false
 menubar_toc: true
 hero_height: is-large
 hero_image: /img/datasets/dataset_video_short.gif
-hero_link: /datasets#download
+hero_link: /datasets/#iccv-2023-slam-challenge
 hero_link_text: Download
 ---
 
@@ -164,7 +164,7 @@ Join us now to become a vital part of cutting-edge advancements in robotics and 
 <iframe width="100%" height="400" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"  src="https://www.youtube.com/embed/G8KaflyapIE" title="Website - Sensor Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <img src="/img/datasets/specs.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
-
+<!-- 
 ## Download our Sample Datasets
 
 Easily search for the datasets you require by inputting <b> "visual" or "lidar" or "subt" </b> to find precisely what you need. Our tool ensures you get the specific datasets you're looking for hassle-free. Try it now and access the data you require for your projects with ease! 📁🔍
@@ -192,13 +192,13 @@ Easily search for the datasets you require by inputting <b> "visual" or "lidar" 
 
 <tbody id="datasetTable"></tbody>
 </table>
-<br>
+<br> -->
 
 ## Sponsors
 
 We thank Nvidia for supporting our challenge! 
 The winning team will be awarded with an Orin Developer Kit and Orin Nano Developer Kit!
-<img src="https://media-cdn.seeedstudio.com/media/wysiwyg/NVIDIA_ElitePartner_Default_RGB.png">
+<center><img src="/img/sponsor/NVIDIA.png" width="300" height="300"></center>
 
 ## Contact us
 
