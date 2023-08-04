@@ -214,7 +214,7 @@ Zhao, Shibo, et al. "SubT-MRS: A Subterranean, Multi-Robot, Multi-Spectral and M
 ```
 @misc{zhao2023subtmrs,
       title={SubT-MRS: A Subterranean, Multi-Robot, Multi-Spectral and Multi-Degraded Dataset for Robust SLAM}, 
-      author={Shibo Zhao and Damanpreet Singh and Haoxiang Sun and Rushan Jiang and YuanJun Gao and Tianhao Wu and Jay Karhade and Chuck Whittaker and Ian Higgins and Jiahe Xu and Yuheng Qiu and Sourojit Saha and Chen Wang and Wenshan Wang and Sebastian Scherer},
+      author={Shibo Zhao and Damanpreet Singh and Haoxiang Sun and Rushan Jiang and Yuanjun Gao and Tianhao Wu and Jay Karhade and Chuck Whittaker and Ian Higgins and Jiahe Xu and Yuheng Qiu and Sourojit Saha and Chen Wang and Wenshan Wang and Sebastian Scherer},
       year={2023},
       eprint={2307.07607},
       archivePrefix={arXiv},
