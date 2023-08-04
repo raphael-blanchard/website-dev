@@ -127,7 +127,7 @@ menubar_toc: false
     <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/yuanjun.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/damanpreet-singh-289a46163/">Yuanjun Gao</a>
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/yuanjun-gao/">Yuanjun Gao</a>
       </p>
       <p style="margin-bottom: 3px;">Research Associate</p>
       <p>Carnegie Mellon University</p>
@@ -218,7 +218,7 @@ menubar_toc: false
      <!-- <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/yuanjun.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/damanpreet-singh-289a46163/">Yuanjun Gao</a>
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/yuanjun-gao/">Yuanjun Gao</a>
       </p>
       <p style="margin-bottom: 3px;">Research Associate</p>
       <p>Carnegie Mellon University</p>
