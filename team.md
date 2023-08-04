@@ -177,7 +177,7 @@ menubar_toc: false
     <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/jay.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/damanpreet-singh-289a46163/">Jay Karhade</a>
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/jay-karhade-70177a182/">Jay Karhade</a>
       </p>
       <p style="margin-bottom: 3px;">MSR Student</p>
       <p>Carnegie Mellon University</p>
@@ -250,7 +250,7 @@ menubar_toc: false
       <td style="text-align: center;">
       <img class="circular_image" src="img/iccv_organizers/iccv_members/canxu.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="www.linkedin.com/in/cmucanxu">Can Xu</a>
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/cmucanxu/">Can Xu</a>
       </p>
       <p style="margin-bottom: 3px;">Research Associate</p>
       <p>Carnegie Mellon University</p>
