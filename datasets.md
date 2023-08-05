@@ -7,7 +7,7 @@ hide_footer: false
 menubar_toc: true
 hero_height: is-large
 hero_image: /img/datasets/dataset_video_short.gif
-hero_link: /datasets/#iccv-2023-slam-challenge
+hero_link: https://superodometry.com/iccv23_challenge_VI
 hero_link_text: Download
 ---
 
