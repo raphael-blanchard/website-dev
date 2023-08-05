@@ -7,8 +7,6 @@ hide_footer: false
 menubar_toc: true
 hero_height: is-large
 hero_image: /img/datasets/dataset_video_short.gif
-hero_link: https://superodometry.com/iccv23_challenge_VI
-hero_link_text: Download
 ---
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
