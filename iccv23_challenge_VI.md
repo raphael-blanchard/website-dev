@@ -188,9 +188,7 @@ This will aid in a comprehensive evaluation of the algorithms and showcase their
 
 
 ## Evaluation 
-The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE,RPE).
-
-We will directly use ATE and RPE to evaluate the accuracy of trajectory. 
+The submission will be ranked based on Absolute Trajectory Error (ATE) and Relative Pose Error (RPE). Specifically, The ATE and RPE of every trajectory in the visual inertial track and its bonus track will be evaluated. The final score for a submitted trajectory will be assigned according to which interval the weighted sum of the ATE and RPE lies in.  
 
 ## Submit the results. 
 
@@ -267,6 +265,11 @@ To submit the estimated trajectory into the submission system, you can follow th
 - Note: 
     1. You must submit all the 9 trajectories for visual inertial track.
     2. The trajecotry should be complete. The duration of estimated trajecotry should be roughly same with ground truth trajectory. 
+
+## Rules 
+1. A person cannot be in multiple teams or have multiple accounts.
+2. Every day a team can submit for at most once on gradescope.
+3. The size of every trajectory file submitted should be no more than 1 MB.  
 
 ##  🎉Visual-inertial Leaderboard 🎉
 

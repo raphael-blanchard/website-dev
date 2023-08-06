@@ -128,9 +128,7 @@ To download the sensor data for multi-modal sensor fusion track, <span style="fo
 
 
 ## Evaluation 
-The submission will be ranked based on completeness of the trajectory as well as on the position accuracy (ATE,RPE).
-
-We will directly use ATE and RPE to evaluate the accuracy of trajectory. 
+The submission will be ranked based on Absolute Trajectory Error (ATE) and Relative Pose Error (RPE). Specifically, The ATE and RPE of every trajectory in the sensor fusion track and its bonus track will be evaluated. The final score for a submitted trajectory will be assigned according to which interval the weighted sum of the ATE and RPE lies in.  
 
 
 ## Submit the results. 
@@ -196,6 +194,11 @@ To submit the estimated trajectory into the submission system, you can follow th
 4. Click the assignment and upload your `Multi_Model_Sensor_Fusion.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
     - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
 5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
+
+## Rules 
+1. A person cannot be in multiple teams or have multiple accounts.
+2. Every day a team can submit for at most once on gradescope.
+3. The size of every trajectory file submitted should be no more than 1 MB.  
 
 ##  🎉Sensor-Fusion Leaderboard 🎉
 
