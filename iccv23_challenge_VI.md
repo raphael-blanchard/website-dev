@@ -268,7 +268,7 @@ To submit the estimated trajectory into the submission system, you can follow th
 
 ## Rules 
 1. A person cannot be in multiple teams or have multiple accounts.
-2. Every day a team can submit for at most once on gradescope and the submission must be in a certain submission window: 12:00 P.M. - 12:00 A.M. UTC.
+2. Every day a team can submit for at most once on gradescope and the submission must be in a certain time window: 12:00 P.M. - 12:00 A.M. UTC.
 3. The size of every trajectory file submitted should be no more than 2 MB.  
 
 ##  🎉Visual-inertial Leaderboard 🎉
