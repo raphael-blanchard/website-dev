@@ -9,18 +9,46 @@ hero_height: is-medium
 hero_image: /img/iccv/Mul.gif
 ---
 
-# 🎉 Welcome to ICCV'23 Sensor-Fusion SLAM Challenge! 🎉
+# 🎉 Welcome to ICCV'23 Sensor Fusion SLAM Challenge! 🎉
 
-# Challenge
+In the sensor fusion track, we exclusively offer access to high-quality **sensor-fusion** datasets sourced from SubT-MRS. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"**. For the other two tracks, see here: [Visual-Inertial SLAM Challenge](https://superodometry.com/iccv23_challenge_VI) and [Lidar-Inertial SLAM Challenge](https://superodometry.com/iccv23_challenge_LiI).
 
-In this track, we exclusively offer access to high-quality **sensor-fusion** datasets sourced from SubT-MRS. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"**.
-
+Seize this chance to demonstrate your skills and compete among the finest in the field!
 
 Three separate awards will be given for each track.
 Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks.
-Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion!  
-🤖💡 Let your expertise shine in this thrilling competition!
+Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
 
+File structure: 
+```
+rosbag
+└── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+    └── (zipped) raw_data_{...}yyyy-mm-dd-hh-mm-ss{...}.bag
+folder
+├── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+│   ├── (zipped) cam_0
+│   │   ├── {...}.png
+│   │   └── timestamps.txt
+│   ├── (zipped) imu
+│   │   └── imu_data.csv
+│   ├── (zipped) lidar
+│   │   ├── {...}.las
+│   │   └── timestamps.txt
+│   └── (zipped) tf
+│       └── tf_data.csv
+└── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+    ├── (zipped) cam_0
+    │   ├── {...}.png
+    │   └── timestamps.txt
+    ├── (zipped) imu
+    │   └── imu_data.csv
+    ├── (zipped) tf
+    │   └── tf_data.csv
+    └── (zipped) thermal
+        ├── {...}.png
+        └── timestamps.txt
+```
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## SubT-MRS Datasets
 
@@ -36,94 +64,23 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 - <b> Heterogeneous Kinematic Profiles:</b>
   The SubT-MRS Dataset uniquely features time-synchronized sensor data from diverse vehicles, including RC cars, legged robots, drones, and handheld devices, each operating within distinct speed ranges. 
 
-   File structure: 
-
-    ```
-    Multi_Modal_Sensor_Fusion_Track
-    ├── rosbag
-    │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
-    │       └── (zipped) raw_data_{...}yyyy-mm-dd-hh-mm-ss{...}.bag
-    ├── folder
-    │   ├── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
-    │   │   ├── (zipped) cam_0
-    │   │   │   ├── {...}.png
-    │   │   │   └── timestamps.txt
-    │   │   ├── (zipped) imu
-    │   │   │   └── imu_data.csv
-    │   │   ├── (zipped) lidar
-    │   │   │   ├── {...}.las
-    │   │   │   └── timestamps.txt
-    │   │   └── (zipped) tf
-    │   │       └── tf_data.csv
-    │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
-    │       ├── (zipped) cam_0
-    │       │   ├── {...}.png
-    │       │   └── timestamps.txt
-    │       ├── (zipped) imu
-    │       │   └── imu_data.csv
-    │       ├── (zipped) tf
-    │       │   └── tf_data.csv
-    │       └── (zipped) thermal
-    │           ├── {...}.png
-    │           └── timestamps.txt
-    └── calibration
-        ├── SubT_MRS_{trajectory names ...}_{robot types ...}_Extrinsics.yaml
-        └── SubT_MRS_{trajectory names ...}_{robot types ...}_Intrinsics.yaml
-    ```
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
 <!-- ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
 ![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif) -->
 
-
-
 ## Download
 
-To download the sensor data for multi-modal sensor fusion track, <span style="font-size:1.3em;">**click [here](https://drive.google.com/drive/folders/1bV5oCLrpVoc6xKcIduUcco47nG0jPH6i) for ROS bags and click [here](https://drive.google.com/drive/folders/1E4EFVY-Bnef7sSBprnfL5Z49HAc89dLr) for processed folders**</span>.
+<span style="font-size:1.3em;">ROS bag format:&emsp;**[Google](https://drive.google.com/drive/folders/1bV5oCLrpVoc6xKcIduUcco47nG0jPH6i)** Baidu</span>  
+<span style="font-size:1.3em;">Folder format:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1E4EFVY-Bnef7sSBprnfL5Z49HAc89dLr)** Baidu</span>
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory | Duration  |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|Multi_Floor|SubT-MRS|Hawkins|SP1|Lidar,RGB,IMU|Multi Floor|270|480|[link](https://youtu.be/QcHjVLlsyXE)| [Baidu](dummy) [google](https://drive.google.com/file/d/1BV87D60W35UGzIaHjKD64c_J1G0U70jf/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) |
-|Long_Corridor|SubT-MRS|Hawkins|RC2|Lidar,RGB,IMU|Multi Floor|616.45|332|[link](https://youtu.be/prmBxGRGwNY)| [Baidu](dummy) [google](https://drive.google.com/file/d/1bB3jfEJeTf_XoLUHKOaxCNF_MCkiQTol/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/10rv5dg5un7kUveTPS3XBx8IuIYGg9r2h/view?usp=drive_link) |
-|BlockLiDAR|SubT-MRS|Mill19|SP1|Lidar,RGB,IMU|Block Lidar|307.55|677|[link](https://youtu.be/2r4Z1XKTJHs)| [Baidu](dummy) [google](https://drive.google.com/file/d/1NscQVVsQc_CN-16O_VLpLQnmTWgBmf93/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1zCqwibpnmJ6I9lv29OUEnjyK2SxN4TbV/view?usp=drive_link) |
-|BlockVisual|SubT-MRS|Mill19|SP1|Lidar,RGB,IMU,Thermal|Block Visual/Thermal|186.02|359|[link](https://youtu.be/_vl2ClHvxPE)| [Baidu](dummy) [google](https://drive.google.com/file/d/136vuMpzb7OrO_6f8w2-p6g1xyXn09u--/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1f8DjHgZHH9-fCVUq1Q7kra5Tr5OtNBe-/view?usp=drive_link) |
-|SmokeRoom|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|104.84|418|[link](https://youtu.be/Ti2eAbDRMNk)| [Baidu](dummy) [google](https://drive.google.com/file/d/1HjWlRVQQvgrFGlgRxcczRt92Xy_P-5Ij/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1Q0JiqiIgGZ-7DZKZDNJ68F7rpC2rrLtT/view?usp=drive_link) |
-|OutdoorNight|SubT-MRS|Hawkins|SP1|RGB,Thermal,IMU|Visual Degraded|254.03|484|[link](https://youtu.be/p3Gmdem0LoU)|  [Baidu](dummy) [google](https://drive.google.com/file/d/1Zkb4FybZBx2skEXxYnffL4jNneTmd8pQ/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1hbIyPUJ24YSyX1vISjkMUeqX5K0rrSkU/view?usp=drive_link) |
-|FlashLight|SubT-MRS|Hawkins|SP1|RGB,Thermal,IMU|Visual Degraded|147.75|279|[link](https://youtu.be/RybUmK27fyY)|  [Baidu](dummy) [google](https://drive.google.com/file/d/10YJQ3FMRw95F3_yhOsX2bbuMuvQbtnVV/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/13iTBn_po_GWxt3X8kNWVGZ2wwQ38Eou0/view?usp=drive_link) |
+|Multi_Floor|SubT-MRS|Hawkins|SP1|Lidar,RGB,IMU|Multi Floor|270|480|[link](https://youtu.be/QcHjVLlsyXE)| [Google](https://drive.google.com/file/d/1BV87D60W35UGzIaHjKD64c_J1G0U70jf/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) Baidu |
+|Long_Corridor|SubT-MRS|Hawkins|RC2|Lidar,RGB,IMU|Multi Floor|616.45|332|[link](https://youtu.be/prmBxGRGwNY)| [Google](https://drive.google.com/file/d/1bB3jfEJeTf_XoLUHKOaxCNF_MCkiQTol/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/10rv5dg5un7kUveTPS3XBx8IuIYGg9r2h/view?usp=drive_link) Baidu |
+|BlockLiDAR|SubT-MRS|Mill19|SP1|Lidar,RGB,IMU|Block Lidar|307.55|677|[link](https://youtu.be/2r4Z1XKTJHs)| [Google](https://drive.google.com/file/d/1NscQVVsQc_CN-16O_VLpLQnmTWgBmf93/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1zCqwibpnmJ6I9lv29OUEnjyK2SxN4TbV/view?usp=drive_link) Baidu |
+|BlockVisual|SubT-MRS|Mill19|SP1|Lidar,RGB,IMU,Thermal|Block Visual/Thermal|186.02|359|[link](https://youtu.be/_vl2ClHvxPE)| [Google](https://drive.google.com/file/d/136vuMpzb7OrO_6f8w2-p6g1xyXn09u--/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1f8DjHgZHH9-fCVUq1Q7kra5Tr5OtNBe-/view?usp=drive_link) Baidu |
+|SmokeRoom|SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|104.84|418|[link](https://youtu.be/Ti2eAbDRMNk)| [Google](https://drive.google.com/file/d/1HjWlRVQQvgrFGlgRxcczRt92Xy_P-5Ij/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1Q0JiqiIgGZ-7DZKZDNJ68F7rpC2rrLtT/view?usp=drive_link) Baidu |
+|OutdoorNight|SubT-MRS|Hawkins|SP1|RGB,Thermal,IMU|Visual Degraded|254.03|484|[link](https://youtu.be/p3Gmdem0LoU)|  [Google](https://drive.google.com/file/d/1Zkb4FybZBx2skEXxYnffL4jNneTmd8pQ/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1hbIyPUJ24YSyX1vISjkMUeqX5K0rrSkU/view?usp=drive_link) Baidu |
+|FlashLight|SubT-MRS|Hawkins|SP1|RGB,Thermal,IMU|Visual Degraded|147.75|279|[link](https://youtu.be/RybUmK27fyY)| [Google](https://drive.google.com/file/d/10YJQ3FMRw95F3_yhOsX2bbuMuvQbtnVV/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/13iTBn_po_GWxt3X8kNWVGZ2wwQ38Eou0/view?usp=drive_link) Baidu |
 
 
 
@@ -138,13 +95,13 @@ For each of the 6 trajectories of **sensor-fusion track**, you need to compute t
 
 ```
     Multi_Model_Sensor_Fusion.zip
-    --- SubT_MRS_Hawkins_Long_Corridor_RC.txt            # result file for the trajectory Long Corridor 
-    --- SubT_MRS_Hawkins_Multi_Floor_LegRobot.txt        # result file for the trajectory Multi Floor 
-    --- SubT_MRS_MILL19_Block_LiDAR.txt                  # result file for the trajectory Block LiDAR 
-    --- SubT_MRS_MILL19_Block_Visual.txt                 # result file for the trajectory Block Visual   
-    --- SubT_MRS_Flash_Light_LegRobot.txt                # result file for the trajectory Flash Light
-    --- SubT_MRS_Hawkins_Smoke_Handheld.txt              # result file for the smoke room 
-    --- Subt_MRS_Outdoor_Night_LegRobot.txt              # result file for the outdoor night
+    ├── SubT_MRS_Hawkins_Long_Corridor_RC.txt            # result file for the trajectory Long Corridor 
+    ├── SubT_MRS_Hawkins_Multi_Floor_LegRobot.txt        # result file for the trajectory Multi Floor 
+    ├── SubT_MRS_MILL19_Block_LiDAR.txt                  # result file for the trajectory Block LiDAR 
+    ├── SubT_MRS_MILL19_Block_Visual.txt                 # result file for the trajectory Block Visual   
+    ├── SubT_MRS_Flash_Light_LegRobot.txt                # result file for the trajectory Flash Light
+    ├── SubT_MRS_Hawkins_Smoke_Handheld.txt              # result file for the smoke room 
+    └── Subt_MRS_Outdoor_Night_LegRobot.txt              # result file for the outdoor night
   
 ```
 <br>

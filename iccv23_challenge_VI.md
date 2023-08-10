@@ -11,9 +11,38 @@ hero_image: /img/iccv/VI.gif
 
 # 🎉 Welcome to ICCV'23 Visual-Inertial SLAM Challenge! 🎉
 
-# Challenge
+In the visual-inertial track, we exclusively offer access to high-quality **visual-inertial** datasets sourced from SubT-MRS and TartanAir. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"** providing a test from **simulation to real-world**. For the other two tracks, see here: [Lidar-Inertial SLAM Challenge](https://superodometry.com/iccv23_challenge_LiI) and [Sensor Fusion SLAM Challenge](https://superodometry.com/iccv23_challenge_Mul).
 
-In this track, we exclusively offer access to high-quality **visual-inertial** datasets sourced from SubT-MRS and TartanAir. These datasets encompass various challenging conditions such as **"lighting changes, darkness, smoke, self-similar environments and more"** providing a test from **simulation to real-world**.
+Seize this chance to demonstrate your skills and compete among the finest in the field!
+
+Three separate awards will be given for each track.
+Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
+
+File structure: 
+
+```
+rosbag
+├── TartanAir_visual_{places ...}_noise0.bag
+└── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+    └── (zipped) raw_data_{...}yyyy-mm-dd-hh-mm-ss{...}.bag
+
+folder
+├── TartanAir_visual_{places ...}.zip
+│   ├── (zipped) imu
+│   │   └── [acc/gyro/imu/imu_time].[npy/txt]
+│   └── (zipped) image_lcam_front
+│       ├── {...}_lcam_front.png
+│       └── timestamps.txt
+└── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
+    ├── (zipped) cam_0
+    │   ├── {...}.png
+    │   └── timestamps.txt
+    ├── (zipped) imu
+    │   └── imu_data.csv
+    └── (zipped) tf
+        └── tf_data.csv
+```
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## SubT-MRS Datasets
 
@@ -29,58 +58,6 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 - <b> Heterogeneous Kinematic Profiles:</b>
   The SubT-MRS Dataset uniquely features time-synchronized sensor data from diverse vehicles, including RC cars, legged robots, drones, and handheld devices, each operating within distinct speed ranges. 
 
-   File structure inside Subt-MRS datasets:  
-
-    ```
-    Visual_Inertial_Track
-    ├── rosbag
-    │   ├── TartanAir_visual_{places ...}_noise0.bag
-    │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
-    │       └── (zipped) raw_data_{...}yyyy-mm-dd-hh-mm-ss{...}.bag
-    ├── folder
-    │   ├── TartanAir_visual_{places ...}.zip
-    │   │   ├── (zipped) imu
-    │   │   │   └── [acc/gyro/imu/imu_time].[npy/txt]
-    │   │   └── (zipped) image_lcam_front
-    │   │       ├── {...}_lcam_front.png
-    │   │       └── timestamps.txt
-    │   └── SubT_MRS_{trajectory names ...}_{robot types ...}.zip
-    │       ├── (zipped) cam_0
-    │       │   ├── {...}.png
-    │       │   └── timestamps.txt
-    │       ├── (zipped) imu
-    │       │   └── imu_data.csv
-    │       └── (zipped) tf
-    │           └── tf_data.csv
-    └── calibration
-        ├── SubT_MRS_{trajectory names ...}_{robot types ...}_Extrinsics.yaml
-        └── SubT_MRS_{trajectory names ...}_{robot types ...}_Intrinsics.yaml
-    ```
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
 ## Tartan Air Datasets
 
 This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanair-dataset/), which is collected in photo-realistic simulation environments based on the AirSim project. A special goal of this dataset is to focus on the challenging environments with changing light conditions, adverse weather, and dynamic objects. The four most important features of our dataset are:
@@ -90,77 +67,51 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
    - **Diversity of motion patterns.**  Our dataset covers much more diverse motion combinations in 3D space, which is significantly more difficult than existing datasets.
    - **Challenging Scenes.** We include challenging scenes with difficult lighting conditions, day-night alternating, low illumination, weather effects (rain, snow, wind and fog) and seasonal changes.Please refer to the TartanAir Dataset and the paper for more information. 
 
-   File structure inside the Tartan Air dataset: 
+   Folder structure inside the Tartan Air dataset: 
 
 ```
     visual_envname
-    |
-    --- image_lcam_front                        # image folder 
-    |       |
-    |       ---- timestamps.txt                 # image timestamp
-    |       ---- 000000_lcam_front.png          # RGB image 000000
-    |       ---- 000001_lcam_front.png          # RGB image 000001
-    |       .
-    |       .
-    |       ---- 000xxx_lcam_front.png          # RGB image 000xxx
-    |
-    --- imu                                     # IMU folder 
-    |       |
-    |       ---- acc.npy                        # IMU acceleration
-    |       ---- acc.txt                        # IMU acceleration
-    |       ---- gyro.npy                       # IMU gyroscope
-    |       ---- gyro.txt                       # IMU gyroscope
-    |       ---- imu.npy                        # IMU acceleration and gyroscope
-    |       ---- imu.txt                        # IMU acceleration and gyroscope
-    |       ---- imu_time.npy                   # IMU timestamp
-    |       ---- imu_time.txt                   # IMU timestamp
+    ├── image_lcam_front                        # image folder
+    │   ├── timestamps.txt                      # image timestamp
+    │   ├── 000000_lcam_front.png               # RGB image 000000
+    │   ├── 000001_lcam_front.png               # RGB image 000001
+    │   ├── ... ...
+    │   └── 000xxx_lcam_front.png               # RGB image 000xxx
+    │
+    └── imu                                     # IMU folder
+        ├── acc.npy                             # IMU acceleration
+        ├── acc.txt                             # IMU acceleration
+        ├── gyro.npy                            # IMU gyroscope
+        ├── gyro.txt                            # IMU gyroscope
+        ├── imu.npy                             # IMU acceleration and gyroscope
+        ├── imu.txt                             # IMU acceleration and gyroscope
+        ├── imu_time.npy                        # IMU timestamp
+        └── imu_time.txt                        # IMU timestamp
 
 ```
 
 
 <!-- ![GIF Figure 1](img/slam_challenge/abandonedfactory.gif) ![GIF Figure 2](img/slam_challenge/gascola.gif) \\
 ![GIF Figure 3](img/slam_challenge/hospital.gif) ![GIF Figure 4](img/slam_challenge/jananesealley.gif) -->
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Download
 
-To download the sensor data for visual-inertial sensor fusion track, <span style="font-size:1.3em;">**click [here](https://drive.google.com/drive/folders/1drrdOTp7L02QhPJtIvpKo6zB21NoNlYb) for ROS bags and click [here](https://drive.google.com/drive/folders/1GR9vavG2iPbXpwlEoH_WzchHspF0ZfQ6) for processed folders**</span>.
+<span style="font-size:1.3em;">ROS bag format:&emsp;**[Google](https://drive.google.com/drive/folders/1drrdOTp7L02QhPJtIvpKo6zB21NoNlYb)** Baidu</span>  
+<span style="font-size:1.3em;">Folder format:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1GR9vavG2iPbXpwlEoH_WzchHspF0ZfQ6)** Baidu</span>
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory Length (m)| Duration (s) |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
-|Handheld1|SubT-MRS|Lauren Cavern      |RC7 Payload|IMU,RGB|Darkness     |400.61|816|[link](https://youtu.be/4L7FiBxsMR0)| [google](https://drive.google.com/file/d/1_ULJWK00Ul41KTwGt_8cpI56BLwg5Ko6/view?usp=drive_link)| [google](https://drive.google.com/file/d/1pt92EAS_5QQoGIKX0c2eu_umdnanx3EJ/view?usp=drive_link)|
-|Handheld2|SubT-MRS|Lauren Cavern      |RC7 Payload|IMU,RGB|Darkness     |583.19|739|[link](https://youtu.be/QYLY2Zc3j1w)| [google](https://drive.google.com/file/d/1f7P6IKrLUrIp2icrOr4fQCk2WcDQl_Nh/view?usp=drive_link)| [google](https://drive.google.com/file/d/1z8CCOMW-FkgGNgM_Vct8RvhpvmWWE4KI/view?usp=drive_link)|
-|OverExposure      |SubT-MRS|Hawkins   |RC7 Payload|IMU,RGB|Over Exposure|456.26|2128|[link](https://youtu.be/uxAn72fgroM)| [google](https://drive.google.com/file/d/1CN8Jt5d6BpE01_pyU-8xgSeur0jlS7k5/view?usp=drive_link)| [google](https://drive.google.com/file/d/1UrtFgdCWRvJdO-LexkXiaVSBNLh3DCdj/view?usp=drive_link)|
-|Endofworld        | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Fog              | 280 | 70.8  |[link](https://youtu.be/umIsv2jDHCY)|[google](https://drive.google.com/file/d/1myGAvGuNf0FcYAteNVHC73ElsglPmMO4/view?usp=drive_link)   |[google](https://drive.google.com/file/d/1Rss0KOY22kyXQ_7LA5-cIERgva3xz4R2/view?usp=drive_link)   |
-|Moon              | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Shaddow          | 850 | 346.9 |[link](https://youtu.be/-xiAdl6mOXY)|[google](https://drive.google.com/file/d/1myGAvGuNf0FcYAteNVHC73ElsglPmMO4/view?usp=drive_link)   |[google](https://drive.google.com/file/d/1Rss0KOY22kyXQ_7LA5-cIERgva3xz4R2/view?usp=drive_link)   |
-|Westerndesert     | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Day-night Circle | 600 | 180.5 |[link](https://youtu.be/YVAnT3mVF90)|[google](https://drive.google.com/file/d/1myGAvGuNf0FcYAteNVHC73ElsglPmMO4/view?usp=drive_link)   |[google](https://drive.google.com/file/d/1Rss0KOY22kyXQ_7LA5-cIERgva3xz4R2/view?usp=drive_link)   |
+|Handheld1|SubT-MRS|Lauren Cavern      |RC7|IMU,RGB|Darkness     |400.61|816|[link](https://youtu.be/4L7FiBxsMR0)| [Google](https://drive.google.com/file/d/1_ULJWK00Ul41KTwGt_8cpI56BLwg5Ko6/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1pt92EAS_5QQoGIKX0c2eu_umdnanx3EJ/view?usp=drive_link) Baidu |
+|Handheld2|SubT-MRS|Lauren Cavern      |RC7|IMU,RGB|Darkness     |583.19|739|[link](https://youtu.be/QYLY2Zc3j1w)| [Google](https://drive.google.com/file/d/1f7P6IKrLUrIp2icrOr4fQCk2WcDQl_Nh/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1z8CCOMW-FkgGNgM_Vct8RvhpvmWWE4KI/view?usp=drive_link) Baidu |
+|OverExposure      |SubT-MRS|Hawkins   |RC7|IMU,RGB|Over Exposure|456.26|2128|[link](https://youtu.be/uxAn72fgroM)| [Google](https://drive.google.com/file/d/1CN8Jt5d6BpE01_pyU-8xgSeur0jlS7k5/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1UrtFgdCWRvJdO-LexkXiaVSBNLh3DCdj/view?usp=drive_link) Baidu |
+|Endofworld        | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Fog              | 280 | 70.8  |[link](https://youtu.be/umIsv2jDHCY)|[Google](https://drive.google.com/file/d/1myGAvGuNf0FcYAteNVHC73ElsglPmMO4/view?usp=drive_link) Baidu |[Google](https://drive.google.com/file/d/1Rss0KOY22kyXQ_7LA5-cIERgva3xz4R2/view?usp=drive_link) Baidu |
+|Moon              | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Shaddow          | 850 | 346.9 |[link](https://youtu.be/-xiAdl6mOXY)|[Google](https://drive.google.com/file/d/1myGAvGuNf0FcYAteNVHC73ElsglPmMO4/view?usp=drive_link) Baidu |[Google](https://drive.google.com/file/d/1Rss0KOY22kyXQ_7LA5-cIERgva3xz4R2/view?usp=drive_link) Baidu |
+|Westerndesert     | TartanAir | Simulation | Virtual Sensors| IMU,RGB | Day-night Circle | 600 | 180.5 |[link](https://youtu.be/YVAnT3mVF90)|[Google](https://drive.google.com/file/d/1myGAvGuNf0FcYAteNVHC73ElsglPmMO4/view?usp=drive_link) Baidu |[Google](https://drive.google.com/file/d/1Rss0KOY22kyXQ_7LA5-cIERgva3xz4R2/view?usp=drive_link) Baidu |
 
-## Bonus Tracks(Can also be found in the Multi Modal Fusion Track)
+## Bonus Tracks
 
-🚀 We also provide 3 extra datasets from   [Sensor Fusion Challenge](/iccv23_challenge_Mul) as bonus in the competition. 
+🚀 We also provide 3 extra datasets from   [Sensor Fusion Challenge](/iccv23_challenge_Mul) as bonuses in the competition. 
 You will get **extra scores** if you test your algoithm on Bonus Track and submit the results to us. 
 
 <!-- 
@@ -182,9 +133,9 @@ This will aid in a comprehensive evaluation of the algorithms and showcase their
 
 | Name | Source    | Location  | Robot     |Sensor     | Description | Trajectory | Duration  |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
 |------|-----------|-----------|-----------|-----------|-------------|-----------|-------------|-----------|---------------|--------------|
-|Smoke_Room   |SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|104.84|418|[link](https://youtu.be/Ti2eAbDRMNk)| [google](https://drive.google.com/file/d/1HjWlRVQQvgrFGlgRxcczRt92Xy_P-5Ij/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1Q0JiqiIgGZ-7DZKZDNJ68F7rpC2rrLtT/view?usp=drive_link) |
-|Outdoor_Night|SubT-MRS|Hawkins|SP1|RGB,Thermal,IMU|Visual Degraded|254.03|484|[link](https://youtu.be/p3Gmdem0LoU)| [google](https://drive.google.com/file/d/1Zkb4FybZBx2skEXxYnffL4jNneTmd8pQ/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/1hbIyPUJ24YSyX1vISjkMUeqX5K0rrSkU/view?usp=drive_link) |
-|FlashLight   |SubT-MRS|Hawkins|SP1|RGB,Thermal,IMU|Visual Degraded|147.75|279|[link](https://youtu.be/RybUmK27fyY)| [google](https://drive.google.com/file/d/10YJQ3FMRw95F3_yhOsX2bbuMuvQbtnVV/view?usp=drive_link) | [Baidu](dummy) [google](https://drive.google.com/file/d/13iTBn_po_GWxt3X8kNWVGZ2wwQ38Eou0/view?usp=drive_link) |
+|Smoke_Room   |SubT-MRS|Hawkins|RC7|RGB,Thermal,IMU|Visual Degraded|104.84|418|[link](https://youtu.be/Ti2eAbDRMNk)| [Google](https://drive.google.com/file/d/1HjWlRVQQvgrFGlgRxcczRt92Xy_P-5Ij/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1Q0JiqiIgGZ-7DZKZDNJ68F7rpC2rrLtT/view?usp=drive_link) Baidu |
+|Outdoor_Night|SubT-MRS|Hawkins|SP1|RGB,Thermal,IMU|Visual Degraded|254.03|484|[link](https://youtu.be/p3Gmdem0LoU)| [Google](https://drive.google.com/file/d/1Zkb4FybZBx2skEXxYnffL4jNneTmd8pQ/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1hbIyPUJ24YSyX1vISjkMUeqX5K0rrSkU/view?usp=drive_link) Baidu |
+|FlashLight   |SubT-MRS|Hawkins|SP1|RGB,Thermal,IMU|Visual Degraded|147.75|279|[link](https://youtu.be/RybUmK27fyY)| [Google](https://drive.google.com/file/d/10YJQ3FMRw95F3_yhOsX2bbuMuvQbtnVV/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/13iTBn_po_GWxt3X8kNWVGZ2wwQ38Eou0/view?usp=drive_link) Baidu |
 
 
 ## Evaluation 
@@ -198,16 +149,16 @@ For each of the 9 trajectories of **visual-inertial track**, you need to compute
 
 ```
     visual_inertial_track.zip
-    --- SubT_MRS_Laurel_Caverns_Handheld1.txt     # result file for the trajectory Laurel_Caverns_Handheld1
-    --- SubT_MRS_Laurel_Caverns_Handheld2.txt     # result file for the trajectory Laurel_Caverns_Handheld2
-    --- SubT_MRS_OverExposure_LegRobot.txt        # result of te trajectory OverExposure_LegRobot
-    --- TartanAir_visual_endofworld.txt           # result file for the trajectory Urban_Challenge_UGV1
-    --- TartanAir_visual_moon.txt                 # result file for the trajectory Urban_Challenge_UGV2
-    --- TartanAir_visual_westerndesert.txt        # result file for the trajectory Laurel_Cavern
-    Bonus_track 
-    --- SubT_MRS_Flash_Light_LegRobot.txt         # result file for the trajectory Flash Light
-    --- SubT_MRS_Hawkins_Smoke_Handheld.txt       # result file for the smoke room 
-    --- Subt_MRS_Outdoor_Night_LegRobot.txt       # result file for the outdoor night
+    ├── SubT_MRS_Laurel_Caverns_Handheld1.txt     # result file for the trajectory Laurel_Caverns_Handheld1
+    ├── SubT_MRS_Laurel_Caverns_Handheld2.txt     # result file for the trajectory Laurel_Caverns_Handheld2
+    ├── SubT_MRS_OverExposure_LegRobot.txt        # result of te trajectory OverExposure_LegRobot
+    ├── TartanAir_visual_endofworld.txt           # result file for the trajectory Urban_Challenge_UGV1
+    ├── TartanAir_visual_moon.txt                 # result file for the trajectory Urban_Challenge_UGV2
+    ├── TartanAir_visual_westerndesert.txt        # result file for the trajectory Laurel_Cavern
+    │   (Below are Bonuses)
+    ├── SubT_MRS_Flash_Light_LegRobot.txt         # result file for the trajectory Flash Light
+    ├── SubT_MRS_Hawkins_Smoke_Handheld.txt       # result file for the smoke room 
+    └── Subt_MRS_Outdoor_Night_LegRobot.txt       # result file for the outdoor night
 
 ```
 
@@ -250,7 +201,7 @@ It is a text file containing the translation and orientation of the IMU in a fix
 - qx qy qz qw (4 floats) give the orientation of IMU in the form of a unit quaternion with respect to the world frame. 
 - The trajectory can have an arbitrary initial position and orientation. However, we are using the IMU frame to define the motion. That is to say, the x-axis is pointing to forward, the y-axis is pointing left, the z-axis is pointing up.
 
-### Submit in Gradescope  (@wenshan)
+### Submit in Gradescope
 
 To submit the estimated trajectory into the submission system, you can follow the steps listed below:
 
@@ -273,7 +224,7 @@ To submit the estimated trajectory into the submission system, you can follow th
 4. Organizers reserve the right to make changes to the rules and timeline.  
 5. Violation of the rules or other unfair activities may result in disqualification.  
 
-##  🎉Visual-inertial Leaderboard 🎉
+##  🎉Visual-inertial Leaderboard🎉
 
 | Rank | Algorithm       | ATE (m)  | RPE (%)  | Use Loop Closure | Learning/Traditional|sensor | Run-time (ms) | Memory (MB) |
 |------|-----------------|----------|----------|------------------|---------------------|------------------|---------------|------------|

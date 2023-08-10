@@ -7,7 +7,7 @@
       link: /iccv23_challenge_VI
     - name: LiDAR Inertial Track
       link: /iccv23_challenge_LiI
-    - name: Multi Modal Fusion Track
+    - name: Sensor Fusion Track
       link: /iccv23_challenge_Mul
 - name: TP-TIO
   link: /tptio
