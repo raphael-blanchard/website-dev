@@ -283,10 +283,12 @@ Here are some requirements for your estimated_trajectory.txt
     1. You must submit all the 12 trajectories for lidar inertial track.
     2. The trajecotry should be complete. The duration of estimated trajecotry should be roughly same with ground truth trajectory. 
 
-## Rules 
-1. A person cannot be in multiple teams or have multiple accounts.
-2. Every day a team can submit for at most once on gradescope and the submission must be in a certain time window: 12:00 P.M. - 12:00 A.M. UTC.
+## Challenge Rules 
+1. Participants are welcome to form teams. A participant cannot be in multiple teams and a team must make submissions under a single account.  
+2. Every day a team can submit for at most once on gradescope and the submission must be in a certain time window: 12:00 P.M. - 11:59 P.M. UTC. 
 3. The size of every trajectory file submitted should be no more than 2 MB.  
+4. Organizers reserve the right to make changes to the rules and timeline.  
+5. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Lidar-inertial Leaderboard 🎉
 

@@ -195,10 +195,12 @@ To submit the estimated trajectory into the submission system, you can follow th
     - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
 5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
 
-## Rules 
-1. A person cannot be in multiple teams or have multiple accounts.
-2. Every day a team can submit for at most once on gradescope and the submission must be in a certain time window: 12:00 PM - 12:00 AM UTC.  
+## Challenge Rules 
+1. Participants are welcome to form teams. A participant cannot be in multiple teams and a team must make submissions under a single account.  
+2. Every day a team can submit for at most once on gradescope and the submission must be in a certain time window: 12:00 P.M. - 11:59 P.M. UTC. 
 3. The size of every trajectory file submitted should be no more than 2 MB.  
+4. Organizers reserve the right to make changes to the rules and timeline.  
+5. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Sensor-Fusion Leaderboard 🎉
 
