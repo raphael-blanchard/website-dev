@@ -171,5 +171,5 @@ To submit the estimated trajectory into the submission system, you can follow th
 
 ## Contact us
 
-If you have any issues on the SLAM challenge, please post issues on this [github](https://github.com/shibowing/ICCV2023_SLAM_Challenge.git).
+If you have any questions about the SLAM challenge, please post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git).
 
