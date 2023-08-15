@@ -50,7 +50,7 @@ folder
 ```
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<span style="font-size:1.3em;">If you have any question or see anything wrong, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span>
+<!-- <span style="font-size:1.3em;">If you have any question or see anything wrong, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span> -->
 
 ## SubT-MRS Datasets
 
@@ -150,17 +150,28 @@ To submit the estimated trajectory into the submission system, you can follow th
 1. Register a account in the [GradeScope](http://gradescope.com/) and log into the website.
 2. Click the right-bottom `Add Course` button and enter the course-entry code: `G2YGGB`, Then you can find the `iccv-mul` courses in your GradeScope homepage.
 3. Click the `iccv-mul` course and you will see the assignment named `Trajectory-result-submission` in the dashboard.
-4. Click the assignment and upload your `Multi_Model_Sensor_Fusion.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
+4. Click the assignment and upload your `Sensor_Fusion.zip` file. Also please remember to input the group name as the leaderboard name. Then click the upload button.
     - You should directly compress the estimated result files of the trajectories into a zip file, not the folder containing the result files.
 5. After around 1 minutes, you will see the APE and RPE result of your trajectory in the leaderboard.
+
+
+### Submit Report
+
+Participants are requested to submit a report describing their methods along with the gradescope submission. A template for the same is provided here : <a href="Report/ICCV_Report_Template.zip" download> ICCV_Template_Report </a> . Please include your report pdf in the `Sensor_Fusion.zip` file.
+
 
 ## Challenge Rules 
 1. Participants are welcome to form teams. A participant cannot be in multiple teams and a team must make submissions under a single account.  
 2. Every day a team can submit for at most once on gradescope and the submission must be in a certain time window: 12:00 P.M. - 11:59 P.M. UTC. 
 3. The size of every trajectory file submitted should be no more than 2 MB.  
-4. Organizers reserve the right to make changes to the rules and timeline.  
-5. Violation of the rules or other unfair activities may result in disqualification.  
+4. Every team must submit a report along with the gradescope submissions.  
+5. Organizers reserve the right to make changes to the rules and timeline.  
+6. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Sensor-Fusion Leaderboard 🎉
 
 Leaderboard will be open on Gradescope when there is still enough time before the challenge ends.
+
+## Contact us
+
+If you have any question or see anything wrong, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.

@@ -46,7 +46,7 @@ folder
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-<span style="font-size:1.3em;">If you have any question or see anything wrong, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span>
+<!-- <span style="font-size:1.3em;">If you have any question or see anything wrong, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span> -->
 
 ## SubT-MRS Datasets
 
@@ -228,13 +228,25 @@ Here are some requirements for your estimated_trajectory.txt
     1. You must submit all the 12 trajectories for lidar inertial track.
     2. The trajecotry should be complete. The duration of estimated trajecotry should be roughly same with ground truth trajectory. 
 
+### Submit Report
+
+Participants are requested to submit a report describing their methods along with the gradescope submission. A template for the same is provided here : <a href="Report/ICCV_Report_Template.zip" download> ICCV_Template_Report </a> . Please include your report pdf in the `lidar_inertial_track.zip` file.
+
+
+
 ## Challenge Rules 
 1. Participants are welcome to form teams. A participant cannot be in multiple teams and a team must make submissions under a single account.  
 2. Every day a team can submit for at most once on gradescope and the submission must be in a certain time window: 12:00 P.M. - 11:59 P.M. UTC. 
-3. The size of every trajectory file submitted should be no more than 2 MB.  
-4. Organizers reserve the right to make changes to the rules and timeline.  
-5. Violation of the rules or other unfair activities may result in disqualification.  
+3. The size of every trajectory file submitted should be no more than 2 MB.
+4. Every team must submit a report along with the gradescope submissions.  
+5. Organizers reserve the right to make changes to the rules and timeline.  
+6. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Lidar-inertial Leaderboard🎉
 
 Leaderboard will be open on Gradescope when there is still enough time before the challenge ends.
+
+## Contact us
+
+If you have any question or see anything wrong, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.
+
