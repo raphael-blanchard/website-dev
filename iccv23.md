@@ -95,7 +95,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <p>Harvard University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TDB</p>
+      <p style="margin-bottom: 3px;">TBD</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">8:40 - 9:00 AM</p>

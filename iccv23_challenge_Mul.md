@@ -50,6 +50,8 @@ folder
 ```
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+<span style="font-size:1.3em;">If you have any question or see anything wrong, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span>
+
 ## SubT-MRS Datasets
 
 - <b> Multiple Modalities: </b>
@@ -161,15 +163,4 @@ To submit the estimated trajectory into the submission system, you can follow th
 
 ##  🎉Sensor-Fusion Leaderboard 🎉
 
-| Rank | Algorithm       | ATE (m)  | RPE (%)  | Use Loop Closure | Learning/Traditional|sensor | Run-time (ms) | Memory (MB) |
-|------|-----------------|----------|----------|------------------|---------------------|------------------|---------------|------------|
-| 1    | Algorithm A     | 0.15     | 0.85     | True             | 90.2                | Visual, IMU              | 28.3          | 235.5      |
-| 2    | Algorithm B     | 0.21     | 1.20     | False            | 89.1                | Visual, IMU             | 35.6          | 281.8      |
-| 3    | Algorithm C     | 0.28     | 1.55     | False            | 85.6                | Visual, IMU            | 43.2          | 320.1      |
-| 4    | Algorithm D     | 0.35     | 2.01     | False            |  82.4               | Visual, IMU              | 50.8          | 352.5      |
-| 5    | Algorithm E     | 0.41     | 2.45     | False            | 79.8                | Visual, IMU            | 58.1          | 389.7      |
-
-## Contact us
-
-If you have any questions about the SLAM challenge, please post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git).
-
+Leaderboard will be open on Gradescope when there is still enough time before the challenge ends.

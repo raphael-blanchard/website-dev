@@ -116,32 +116,4 @@ Due to the scale ambiguity of the monocular image, a global scale factor is calc
 
 # SLAM Benchmark Leaderboard
 
-## Visual Benchmark
-
-| Rank | Algorithm       | ATE (m)  | RPE (%)  | Loop Closure (%) | Map Completeness (%) | Map Accuracy (%) | Run-time (ms) | Memory (MB) |
-|------|-----------------|----------|----------|------------------|---------------------|------------------|---------------|------------|
-| 1    | Algorithm A     | 0.15     | 0.85     | 98.5             | 90.2                | 92.8             | 28.3          | 235.5      |
-| 2    | Algorithm B     | 0.21     | 1.20     | 97.8             | 89.1                | 91.4             | 35.6          | 281.8      |
-| 3    | Algorithm C     | 0.28     | 1.55     | 95.6             | 85.6                | 89.3             | 43.2          | 320.1      |
-| 4    | Algorithm D     | 0.35     | 2.01     | 93.2             | 82.4                | 87.0             | 50.8          | 352.5      |
-| 5    | Algorithm E     | 0.41     | 2.45     | 91.4             | 79.8                | 85.2             | 58.1          | 389.7      |
-
-## LiDAR Benchmark
-
-| Rank | Algorithm       | ATE (m)  | RPE (%)  | Loop Closure (%) | Map Completeness (%) | Map Accuracy (%) | Run-time (ms) | Memory (MB) |
-|------|-----------------|----------|----------|------------------|---------------------|------------------|---------------|------------|
-| 1    | Algorithm C     | 0.18     | 1.10     | 95.8             | 88.6                | 91.1             | 29.5          | 240.2      |
-| 2    | Algorithm A     | 0.24     | 1.45     | 94.2             | 86.9                | 89.8             | 37.1          | 289.8      |
-| 3    | Algorithm B     | 0.32     | 1.92     | 92.4             | 82.3                | 87.3             | 45.6          | 325.6      |
-| 4    | Algorithm D     | 0.38     | 2.35     | 89.6             | 79.1                | 85.6             | 52.8          | 361.5      |
-| 5    | Algorithm E     | 0.45     | 2.78     | 87.1             | 76.2                | 82.3             | 61.2          | 399.3      |
-
-## Multi-modal Challenging Benchmark
-
-| Rank | Algorithm       | ATE (m)  | RPE (%)  | Loop Closure (%) | Map Completeness (%) | Map Accuracy (%) | Run-time (ms) | Memory (MB) |
-|------|-----------------|----------|----------|------------------|---------------------|------------------|---------------|------------|
-| 1    | Algorithm A     | 0.12     | 0.75     | 99.2             | 91.3                | 93.5             | 23.1          | 225.5      |
-| 2    | Algorithm C     | 0.19     | 1.10     | 97.6             | 88.7                | 91.2             | 31.8          | 275.8      |
-| 3    | Algorithm B     | 0.26     | 1.60     | 96.1             | 86.4                | 89.1             | 40.5          | 318.3      |
-| 4    | Algorithm D     | 0.33     | 2.05     | 93.8             | 83.2                | 87.6             | 48.9          | 358.9      |
-| 5    | Algorithm E     | 0.39     | 2.50     | 91.5             | 80.6                | 85.3             | 57.3          | 395.5      |
+Leaderboard will be open on Gradescope when there is still enough time before the challenge ends.
