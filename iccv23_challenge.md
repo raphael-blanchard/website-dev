@@ -41,25 +41,17 @@ This document outlines the benchmarking procedure for evaluating Simultaneous Lo
 
     ```
     mono
-    |
-    --- ME000                             # monocular easy trajectory 0 
-    |       |
-    |       ---- 000000.png          # RGB image 000000
-    |       ---- 000001.png          # RGB image 000001
-    |       .
-    |       .
-    |       ---- 000xxx.png           # RGB image 000xxx
-    |
-    +-- ME001                             # monocular easy trajectory 1 
-    .
-    .
-    +-- ME007                            # monocular easy trajectory 7 
-    |
-    +-- MH000                            # monocular hard trajectory 0 
-    .
-    .
-    |
-    +-- MH007                            # monocular hard trajectory 7
+    ├── ME000                   # monocular easy trajectory 0 
+    │   ├── 000000.png          # RGB image 000000
+    │   ├── 000001.png          # RGB image 000001
+    │   ├── ...                 # ...
+    │   └── 000xxx.png          # RGB image 000xxx
+    ├── ME001                   # monocular easy trajectory 1 
+    ├── ...                     # ...
+    ├── ME007                   # monocular easy trajectory 7 
+    ├── MH000                   # monocular hard trajectory 0 
+    ├── ...                     # ...
+    └── MH007                   # monocular hard trajectory 7
     ```
 
 2. Download the evaluation tools. 
@@ -80,18 +72,14 @@ For each of the 16 trajectories (ME00X or MH00X) in the testing data, compute th
 
 ```
     FILENAME.zip
-    |
-    --- ME000.txt                             # result file for the trajectory ME000 
-    --- ME001.txt                             # result file for the trajectory ME001
-    |          ..
-    |          ..
-    --- ME007.txt                             # result file for the trajectory ME007
-    |       
-    --- MH000.txt                             # result file for the trajectory MH000
-    --- MH001.txt                             # result file for the trajectory MH001
-    |          ..
-    |          ..
-    --- MH007.txt                             # result file for the trajectory MH007 
+    ├── ME000.txt                             # result file for the trajectory ME000 
+    ├── ME001.txt                             # result file for the trajectory ME001
+    ├── ...                                   # ...
+    ├── ME007.txt                             # result file for the trajectory ME007
+    ├── MH000.txt                             # result file for the trajectory MH000
+    ├── MH001.txt                             # result file for the trajectory MH001
+    ├── ...                                   # ...
+    └── MH007.txt                             # result file for the trajectory MH007 
 ```
 
 The camera pose file should have the same format as the ground truth file in the training data. It is a text file containing the translation and orientation of the camera in a fixed coordinate frame. Note that our automatic evaluation tool expects the estimated trajectory to be in this format. 
