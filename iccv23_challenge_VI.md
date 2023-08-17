@@ -198,7 +198,7 @@ The text file should have the following format:
 
 It is a text file containing the translation and orientation of the IMU in a fixed coordinate frame. The estimated trajectory file should satisfy the following requirements.
 - Each line in the text file contains a single pose.
-- The format of each line is 'tx ty tz qx qy qz qw'. 
+- The format of each line is 'timestamp_s tx ty tz qx qy qz qw'. 
 - tx ty tz (3 floats) give the position of IMU sensor to the world origin in the world frame.
 - qx qy qz qw (4 floats) give the orientation of IMU in the form of a unit quaternion with respect to the world frame. 
 - The trajectory can have an arbitrary initial position and orientation. However, we are using the IMU frame to define the motion. That is to say, the x-axis is pointing to forward, the y-axis is pointing left, the z-axis is pointing up.
@@ -219,13 +219,23 @@ To submit the estimated trajectory into the submission system, you can follow th
     1. You must submit all the 9 trajectories for visual inertial track.
     2. The trajecotry should be complete. The duration of estimated trajecotry should be roughly same with ground truth trajectory. 
 
+### Submit Report
+
+Participants are requested to submit a report describing their methods along with the gradescope submission. A template for the same is provided here : <a href="Report/ICCV_Report_Template.zip" download> ICCV_Template_Report </a> . Please include your report pdf in the `visual-inertial-track.zip` file.
+
 ## Challenge Rules 
 1. Participants are welcome to form teams. A participant cannot be in multiple teams and a team must make submissions under a single account.  
 2. Every day a team can submit for at most once on gradescope and the submission must be in a certain time window: 12:00 P.M. - 11:59 P.M. UTC. 
 3. The size of every trajectory file submitted should be no more than 2 MB.  
-4. Organizers reserve the right to make changes to the rules and timeline.  
-5. Violation of the rules or other unfair activities may result in disqualification.  
+4. Every team <b>must submit a report</b> along with the gradescope submissions.  
+5. Organizers reserve the right to make changes to the rules and timeline.  
+6. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Visual-inertial Leaderboard🎉
 
 Leaderboard will be open on Gradescope when there is still enough time before the challenge ends.
+
+## Contact us
+
+If you have any question or see anything wrong, please do not hesitate to <b>post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git) </b>. We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.
+
