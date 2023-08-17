@@ -79,6 +79,18 @@ We provide datasets <b>TartanAir</b> and <b> SubT-MRS</b>, aiming to push the ru
 <br>
 <br>
 <br>
+<br>
+<br>
+
+
+<font color="red"> <b> Please note challenge deadline: 25th September 2023 11:59 PM EST </b> </font> 
+
+
+Time remaining:
+<p1 id="demo"></p1>
+
+<br>
+
 
 ## SubT-MRS Dataset 
 
@@ -538,4 +550,65 @@ function makeRequest(url, data, callback) {
     httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     httpRequest.send(data);
 }
+</script>
+
+<!-- Display the countdown timer in an element -->
+<style>
+
+p1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-left: 150px;
+}
+</style>
+<!-- <p1 id="demo"></p1> -->
+
+<script>
+// Set the date we're counting down to
+// var countDownDate = new Date("Sept 25, 2023 15:37:25").getTime();
+var countDownDate = Date.UTC(2023, 08, 26, 4, 0, 0);
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+// var new=Date.UTC(date.getUTCMonth(),
+// date.getUTCDate(), 
+// date.getUTCFullYear(), 
+// date.getUTCHours(),
+// date.getUTCMinutes(), 
+// date.getUTCSeconds());
+// let utc= new Date(utcString);
+//   var now = new (Date().getTime()).getTimezoneOffset();
+// console.log(dt); // Gives Tue Mar 22 2016 09:30:00 GMT+0530 (IST)
+
+//   var now=dt.setTime(dt.getTime()+dt.getTimezoneOffset());
+// console.log(dt); // Gives Tue Mar 22 2016 04:00:00 GMT+0530 (IST)
+
+// var offset = -300; //Timezone offset for EST in minutes.
+// var estDate = new Date(dt.getTime() + offset*60*1000);
+// console.log(estDate); //Gives Mon Mar 21 2016 23:00:00 GMT+0530 (IST)
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var days=distance;
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 </script>
