@@ -209,7 +209,7 @@ The estimated_trajecotry.txt file should have the following format:
 Here are some requirements for your estimated_trajectory.txt
 
 - Each line in the text file contains a single pose.
-- The format of each line is 'tx ty tz qx qy qz qw'. 
+- The format of each line is 'timestamp_s tx ty tz qx qy qz qw'. 
 - tx ty tz (3 floats) give the position of IMU sensor to the world origin in the world frame.
 - qx qy qz qw (4 floats) give the orientation of IMU in the form of a unit quaternion with respect to the world frame. 
 - The trajectory can have an arbitrary initial position and orientation. However, we are using the IMU frame to define the motion. That is to say, the x-axis is pointing to forward, the y-axis is pointing left, the z-axis is pointing up.
