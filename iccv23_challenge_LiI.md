@@ -18,6 +18,8 @@ Seize this chance to demonstrate your skills and compete among the finest in the
 Three separate awards will be given for each track.
 Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
 
+<span style="font-size:1.3em;">If you have any question, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span>
+
 File structure: 
 
 ```
@@ -44,9 +46,6 @@ folder
 ```
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-<span style="font-size:1.3em;">If you have any question or see anything wrong, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span>
 
 ## SubT-MRS Datasets
 
