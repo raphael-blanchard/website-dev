@@ -109,15 +109,15 @@ A series of contributed and invited talks by academic leaders and renowned resea
   <tr>
     <td style="text-align: center;">
       <div class="circular_image">
-        <img src="/img/invited_speakers/johnleonard.jpg"/>
+        <img src="/img/invited_speakers/maurice_fallon.jpg"/>
       </div>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://meche.mit.edu/people/faculty/JLEONARD@MIT.EDU">John Leonard</a>
+        <a style="margin-bottom: 1px;" href="https://ori.ox.ac.uk/people/maurice-fallon/">Maurice Fallon</a>
       </p>
-      <p style="margin-bottom: 3px;">Professor of Mechanical and Ocean Engineering</p>
-      <p>Massachusetts Institute of Technology</p>
+      <p style="margin-bottom: 3px;">Associate Professor of Robotics</p>
+      <p>University of Oxford</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">TBD</p>
