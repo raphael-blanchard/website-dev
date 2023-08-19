@@ -1,6 +1,6 @@
 ---
 title: ICCV'23 Workshop on Robot Learning and SLAM
-subtitle: Oct 02 - Oct 06, 2023, Paris
+subtitle: Oct 03, 2023, Paris
 layout: page
 show_sidebar: false
 hide_footer: true
