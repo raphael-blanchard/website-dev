@@ -19,7 +19,7 @@ Three separate awards will be given for each track.
 Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
 
 <span style="font-size:1.3em;"><font color="red"> <b> Important Latest Updates:</b> </font></span><br>
-We've observed an issue with the extrinsics of three trajectories, i.e., Lidar_factory, Lidar_ocean, and Lidar_sewerage. Please download the calibration file again.
+We've observed an issue with the extrinsics of three trajectories, i.e., Lidar_factory, Lidar_ocean, and Lidar_sewerage. Please download the calibration file again. We are very sorry for any inconvenience caused.
 
 We've observed an issue with one trajectory that is released in the LiDAR-inertial track. The length of the <b>Final_Challenge_UGV3</b>  trajectory recorded by ROS bags is about 80 seconds shorter than the same trajectory recorded by the folder-format data. To solve this issue, we have updated the ZIP file containing ROS bags of that trajectory to match the length of the folder-format data. If you have already downloaded that ZIP file, you can avoid downloading lots of Gigabytes again by simply downloading the last two missing ROS bag files **[here](https://drive.google.com/drive/folders/1sucx66sjxVQKV9Wqc7doPp9YFGvo2WEz?usp=sharing)**. We are very sorry for any inconvenience caused.
 
