@@ -18,6 +18,9 @@ Seize this chance to demonstrate your skills and compete among the finest in the
 Three separate awards will be given for each track.
 Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
 
+<span style="font-size:1.3em;"><font color="red"> <b> Important Latest Updates:</b> </font></span><br>
+We've observed an issue with the extrinsics of three trajectories, i.e., Endofworld, Moon, and Westerndesert. Please download the extrinsics calibration file again. We are very sorry for any inconvenience caused.
+
 <span style="font-size:1.3em;">If you have any question, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span>
 
 <font color="red"> <b> Please note challenge deadline: 25th September 2023 11:59 PM EST </b> </font> 
