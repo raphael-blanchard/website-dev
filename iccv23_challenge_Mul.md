@@ -19,6 +19,10 @@ Three separate awards will be given for each track.
 Your SLAM performance in <b>the Sensor Fusion track will not impact</b> the scores in other tracks.
 Join us now to become a vital part of cutting-edge advancements in robotics and sensor fusion! 🤖💡 Let your expertise shine in this thrilling competition!
 
+<span style="font-size:1.3em;"><font color="red"> <b> Important Latest Updates:</b> </font></span><br>
+
+1. To facilitate better algorithm debugging for everyone recently, we allow multiple daily submissions until 20 Sept. Starting from 21 Sept, only one submission per day is allowed.
+
 <span style="font-size:1.3em;">If you have any question, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span>
 
 <font color="red"> <b> Please note challenge deadline: 25th September 2023 11:59 PM EST </b> </font> 
