@@ -39,7 +39,7 @@ This workshop aims to present the latest results on the **theory** and **practic
 It will be consist of a **seminar** and a **SLAM challenge**.
 A series of contributed and invited talks by academic leaders and renowned researchers will discuss ground-breaking perception and mapping methods for long-term autonomy based on current cutting-edge traditional solutions and modern learning methods. The workshop will also discuss the current challenges and future research directions and will include posters and spotlight talks to facilitate interaction between the speakers and the audience. We plan to have a hybrid format with in-person speakers/attendees and a live broadcast to convey the message to a broader audience.
 
-<br>
+<!-- <br>
 
 <center>
 <a href="https://forms.gle/GSxyrYSSVrBQCY8Z6" class="button is-info"><i class="far fa-envelope fa-2x"></i> &nbsp; Join our Mailing List</a >
@@ -49,14 +49,14 @@ A series of contributed and invited talks by academic leaders and renowned resea
 <a href="https://www.youtube.com/channel/UCCbJv86q7tA9titP3aFZTHw" class="button is-info"><i class="fab fa-youtube fa-2x"></i> &nbsp; Subscribe to the SAIR Lab YouTube Channel</a >
 &nbsp;
 <a href="https://discord.gg/v5FTsPaadN" class="button is-info"><i class="fab fa-discord fa-2x"></i> &nbsp; Join our Discord</a >
-</center>
+</center> -->
 
 
 <br>
 
 ## Seminar
 
-### Session 1 (8:30-10:00 AM)
+### Session 1 (9:00-10:45 AM)
 
  <table class="customFormat" style="width:100%border-collapse: collapse; border: none;">
   <tr>
@@ -73,7 +73,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
         <b style="margin-bottom: 3px;">Welcome message by organizers & overview of workshop</b>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">8:30 - 8:40 AM</p>
+      <p style="margin-bottom: 3px;">9:00 - 9:10 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -89,16 +89,16 @@ A series of contributed and invited talks by academic leaders and renowned resea
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://scholar.harvard.edu/letiziagionfrida/bio">Letizia Gionfrida</a>
+        <a style="margin-bottom: 1px;" href="https://www.kcl.ac.uk/people/letizia-gionfrida">Letizia Gionfrida</a>
       </p>
-      <p style="margin-bottom: 3px;">Postdoctoral Research Fellow, Biorobotics Lab</p>
-      <p>Harvard University</p>
+      <p style="margin-bottom: 3px;">Assistant Professor</p>
+      <p>King's College London</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">TBD</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">8:40 - 9:00 AM</p>
+      <p style="margin-bottom: 3px;">9:10 - 9:30 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -124,7 +124,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">9:00 - 9:20 AM</p>
+      <p style="margin-bottom: 3px;">9:35 - 9:55 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -149,7 +149,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <p style="margin-bottom: 3px;">From SLAM to Spatial Perception: Hierarchical Models, Certification, and Self-Supervision</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">9:20 - 9:40 AM</p>
+      <p style="margin-bottom: 3px;">10:00 - 10:20 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -161,18 +161,18 @@ A series of contributed and invited talks by academic leaders and renowned resea
     <td style="text-align: center;"> <img class="circular_image" src="/img/invited_speakers/basti.jpg"/> </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/">Sebastian Scherer</a>
+        <a style="margin-bottom: 1px;" href="https://frc.ri.cmu.edu/~zhangji/">Ji Zhang</a>
       </p>
-      <p style="margin-bottom: 3px;">Associate Research Professor, Robotics Institute</p>
+      <p style="margin-bottom: 3px;">Systems Scientist</p>
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">From Lidar SLAM to Full-scale Autonomy and Beyond</p>
       <!-- <button id="bastiButton" class="button6" onclick="myFunction('bastiButton', 'bastiBlock')">Expand Contents</button> -->
       <!-- <a href="#basti" onclick="myFunction('bastiButton', 'bastiBlock')"> Outline and Links</a> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">9:40 - 10:00 AM</p>
+      <p style="margin-bottom: 3px;">10:25 - 10:45 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -182,9 +182,9 @@ A series of contributed and invited talks by academic leaders and renowned resea
   </tr>
 </table>
 
-Coffee Break and Posters (10:00 - 10:25 AM)
+Coffee Break and Posters (10:45 - 11:00 AM)
 
-### Session 2 (10:25 AM - 12:00 PM)
+### Session 2 (11:00 AM - 12:25 PM)
 
 <table class="customFormat" style="width:100%border-collapse: collapse; border: none;">
   <tr>
@@ -212,22 +212,22 @@ Coffee Break and Posters (10:00 - 10:25 AM)
   <tr>
     <td style="text-align: center;">
       <div class="circular_image">
-        <img src="/img/invited_speakers/tim_barfoot.jpg"/>
+        <img src="/img/invited_speakers/marc_pollefeys.jpg"/>
       </div>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="http://asrl.utias.utoronto.ca/~tdb/">Tim Barfoot</a>
+        <a style="margin-bottom: 1px;" href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>
       </p>
-      <p style="margin-bottom: 3px;">Professor</p>
-      <p>University of Toronto</p>
+      <p style="margin-bottom: 3px;">Full Professor</p>
+      <p>ETH Zurich</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">TBD</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">10:40 - 11:00 AM</p>
+      <p style="margin-bottom: 3px;">11:00 - 11:20 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -249,11 +249,11 @@ Coffee Break and Posters (10:00 - 10:25 AM)
       <p>University of Buffalo</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">Imperative SLAM and PyPose Liabray for Robot Learning</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">11:20 - 11:40 AM</p>
+      <p style="margin-bottom: 3px;">11:25 - 11:45 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -279,7 +279,7 @@ Coffee Break and Posters (10:00 - 10:25 AM)
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">11:20 - 11:40 AM</p>
+      <p style="margin-bottom: 3px;">11:50 AM - 12:10 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -305,7 +305,7 @@ Coffee Break and Posters (10:00 - 10:25 AM)
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">11:40 - 11:59 AM</p>
+      <p style="margin-bottom: 3px;">12:15 - 12:35 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -316,9 +316,9 @@ Coffee Break and Posters (10:00 - 10:25 AM)
 
 </table>
 
-Lunck Break and Posters (12:00 - 13:00 PM)
+Lunck Break and Posters (12:35 - 1:30 PM)
 
-### Session 3 (1:00 - 3:20 PM)
+### Session 3 (1:30 - 3:40 PM)
 
 <table class="customFormat" style="width:100%border-collapse: collapse; border: none;">
   <tr>
@@ -330,51 +330,25 @@ Lunck Break and Posters (12:00 - 13:00 PM)
     <th style="width:20%;text-align: center;">YouTube Link</th>
     </b>
   </tr>
-  <tr style="height: 100px;">
-    <td style="text-align: center; vertical-align: middle;" colspan="3">
-        <b style="margin-bottom: 3px;">SubT-MRS SLAM Challenge Summary</b>
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">1:00 - 1:20 PM</p>
-    </td>
-    <td align="right;" style="vertical-align: middle;">
-      <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://www.youtube.com/embed/gaM4AsfgnNs" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </td>  
-  </tr>
-  <tr style="height: 100px;">
-    <td style="text-align: center; vertical-align: middle;" colspan="3">
-        <b style="margin-bottom: 3px;">TartanAir Challenge Summary</b>
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">1:20 - 1:40 PM</p>
-    </td>
-    <td align="right;" style="vertical-align: middle;">
-      <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://www.youtube.com/embed/gaM4AsfgnNs" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </td>  
-  </tr>
   <tr>
     <td style="text-align: center;">
       <div class="circular_image">
-        <img src="/img/invited_speakers/marc_pollefeys.jpg"/>
+        <img src="/img/invited_speakers/tim_barfoot.jpg"/>
       </div>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>
+        <a style="margin-bottom: 1px;" href="http://asrl.utias.utoronto.ca/~tdb/">Tim Barfoot</a>
       </p>
-      <p style="margin-bottom: 3px;">Full Professor</p>
-      <p>ETH Zurich</p>
+      <p style="margin-bottom: 3px;">Professor</p>
+      <p>University of Toronto</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">TBD</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">1:40 - 2:00 PM</p>
+      <p style="margin-bottom: 3px;">1:30 - 1:50 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -384,10 +358,10 @@ Lunck Break and Posters (12:00 - 13:00 PM)
   </tr>
   <tr style="height: 100px;">
     <td style="text-align: center; vertical-align: middle;" colspan="3">
-        <b style="margin-bottom: 3px;">Spotlight Talk 2</b>
+        <b style="margin-bottom: 3px;">SLAM Challenge Summary</b>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">2:00 - 2:20 PM</p>
+      <p style="margin-bottom: 3px;">1:55 - 2:20 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -435,11 +409,11 @@ Lunck Break and Posters (12:00 - 13:00 PM)
       <p>Seoul National University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">Advancing SLAM with Learning: Integrating High-Level Scene Understanding with Non-conventional Sensors</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">2:40 - 2:55 PM</p>
+      <p style="margin-bottom: 3px;">2:45 - 3:05 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -465,33 +439,7 @@ Lunck Break and Posters (12:00 - 13:00 PM)
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">2:55 - 3:10 PM</p>
-    </td>
-    <td align="right;" style="vertical-align: middle;">
-      <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://www.youtube.com/embed/gaM4AsfgnNs" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </td>  
-  </tr>
-  <tr>
-    <td style="text-align: center;">
-      <div class="circular_image">
-        <img src="/img/invited_speakers/ji_zhang.png"/>
-      </div>
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://frc.ri.cmu.edu/~zhangji/">Ji Zhang</a>
-      </p>
-      <p style="margin-bottom: 3px;">Systems Scientist</p>
-      <p>Carnegie Mellon University</p>
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
-      <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">3:10 - 3:25 PM</p>
+      <p style="margin-bottom: 3px;">3:10 - 3:30 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -504,7 +452,7 @@ Lunck Break and Posters (12:00 - 13:00 PM)
         <b style="margin-bottom: 3px;">Concluding Remarks</b>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">3:25 - 3:40 PM</p>
+      <p style="margin-bottom: 3px;">3:30 - 3:40 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -520,17 +468,25 @@ Lunck Break and Posters (12:00 - 13:00 PM)
 
 ### Pushing SLAM Towards All-weather Environments
 
-<p><font color="red"><b>Challenge is Live now! </b></font> Please join our three tracks of challenges from the links below</p>
+<p><font color="red"><b>Challenge is Live now! </b></font> Please visit the main page join our three tracks of challenges from the links below</p>
 
+<p align="center">
+  <a href="https://superodometry.com/datasets">
+    <img src="https://img.shields.io/badge/ICCV%202023-SLAM%20Challenge%20Main%20Page-red?style=for-the-badge&logo=piazza&logoColor=white&labelColor=gray" alt="Challenge Main Page">
+  </a>
+</p>
 
-<center>
-<a href="/iccv23_challenge_VI" class="button is-info"> &nbsp; Visual Inertial Track </a >
-&nbsp;
-<a href="/iccv23_challenge_LiI" class="button is-info"> &nbsp; LiDAR Inertial Track </a >
-&nbsp;
-<a href="/iccv23_challenge_Mul" class="button is-info"> &nbsp; Sensor Fusion Track</a >
-&nbsp;
-</center>
+<p align="center">
+  <a href="https://superodometry.com/iccv23_challenge_VI">
+    <img src="https://img.shields.io/badge/Track-Visual%20Visual-red?style=for-the-badge&logo=piazza&logoColor=white&labelColor=gray" alt="Visual Inertial">
+  </a>
+  <a href="https://superodometry.com/iccv23_challenge_LiI">
+    <img src="https://img.shields.io/badge/Track-LiDAR%20Visual-red?style=for-the-badge&logo=piazza&logoColor=white&labelColor=gray" alt="LiDAR Inertial">
+  </a>
+  <a href="https://superodometry.com/iccv23_challenge_Mul">
+    <img src="https://img.shields.io/badge/Track-Sensor%20Fusion-red?style=for-the-badge&logo=piazza&logoColor=white&labelColor=gray" alt="Sensor Fusion">
+  </a>
+</p>
 
 
 <br>
@@ -606,21 +562,8 @@ Announce the winner of Competition -->
 </script>
 
 
-## Sponsor 
 
-Enormous gratitude to our esteemed sponsor.
-
-<table class="customFormat" style="width:100%border-collapse: collapse; border: none;">
-  <tr>
-    <td style="text-align: center;">
-      <img class="box_image" src="/img/sponsor/nvidia.png" style="margin-bottom: 0px;"/>
-    </td>
-</tr>
-</table>
-
-
-
-## Organizers & Committee
+## Workshop Organizers & Committee
 
 <hr>
  <table class="customFormat" style="width:100%border-collapse: collapse; border: none;">
@@ -694,14 +637,6 @@ Enormous gratitude to our esteemed sponsor.
   </tr>
   <tr>
     <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/shaoshu.png" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://sairlab.org/team/shaoshu/">Shaoshu Su</a>
-      </p>
-      <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab </p>
-      <p>University at Buffalo</p>
-    </td> 
-    <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/mashuang.jpeg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://www.shuangma.me/">Shuang Ma</a>
@@ -710,23 +645,13 @@ Enormous gratitude to our esteemed sponsor.
       <p>Microsoft</p>
     </td> 
     <td style="text-align: center;">
-      <img class="circular_image" src="/img/team/rushan_jiang.png" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/shaoshu.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://drive.google.com/file/d/1qWiMQoJsAF4oOikU0akjOOveBn-SUOLl/view">Rushan Jiang</a>
+        <a style="margin-bottom: 1px;" href="https://sairlab.org/team/shaoshu/">Shaoshu Su</a>
       </p>
-      <p style="margin-bottom: 3px;">Undergradate Student</p>
-      <p>Carnegie Mellon University</p>
-    </td>
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/team/haoxiangsun.jpg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://seansun.org">Haoxiang Sun</a>
-      </p>
-      <p style="margin-bottom: 3px;">Undergradate Student</p>
-      <p>Carnegie Mellon University</p>
-    </td>
-  </tr>
-  <tr>
+      <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab </p>
+      <p>University at Buffalo</p>
+    </td> 
     <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/yidu.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
@@ -735,80 +660,7 @@ Enormous gratitude to our esteemed sponsor.
       <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab</p>
       <p>University at Buffalo</p>
     </td>
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/tianhao.jpg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/mwlite/in/tianhao-wu-112688a6">Tian Hao Wu</a>
-      </p>
-      <p style="margin-bottom: 3px;">Research Associate</p>
-      <p>Carnegie Mellon University</p>
-    </td> 
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/team/tingting.jpg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/tingting-da-6b87b4250/">Tingting Da</a >
-      </p >
-      <p style="margin-bottom: 3px;">Undergraduate Student</p >
-      <p>Carnegie Mellon University</p >
-    </td>
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/daman.png" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/damanpreet-singh-289a46163/">Damanpreet Singh</a>
-      </p>
-      <p style="margin-bottom: 3px;">Graduate Student</p>
-      <p>Carnegie Mellon University</p>
-     <tr>
-    <!-- </td>  -->
-     <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yuanjun.jpg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/yuanjun-gao/">Yuanjun Gao</a>
-      </p>
-      <p style="margin-bottom: 3px;">Research Associate</p>
-      <p>Carnegie Mellon University</p>
-    </td> 
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/jay.png" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/damanpreet-singh-289a46163/">Jay Karhade</a>
-      </p>
-      <p style="margin-bottom: 3px;">MSR Student</p>
-      <p>Carnegie Mellon University</p>
-    </td>
-    <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/mansi.jpg" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/mansi-sarawata">Mansi Sarawata</a>
-      </p>
-      <p style="margin-bottom: 3px;">MSME Student</p>
-      <p>Carnegie Mellon University</p>
-    </td> 
-     <td style="text-align: center;">
-      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yaohe.png" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.ri.cmu.edu/ri-people/yao-he/">Yao He</a>
-      </p>
-      <p style="margin-bottom: 3px;">Research Associate</p>
-      <p>Carnegie Mellon University</p>
-    </td>
   </tr>
- <tr>
-      <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/iccv_members/canxu.png" style="margin-bottom: 6px;"/>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="www.linkedin.com/in/cmucanxu">Can Xu</a>
-      </p>
-      <p style="margin-bottom: 3px;">Research Associate</p>
-      <p>Carnegie Mellon University</p>
-    </td>
-   <td>
-   </td>
-    <td>
-   </td>
-    <td>
-   </td>
- </tr>
    
 <!-- </table> -->
 

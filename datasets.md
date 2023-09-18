@@ -331,8 +331,69 @@ We're delighted to receive your challenging datasets! Contributing to this datas
       </p>
       <p style="margin-bottom: 3px;">Graduate Student</p>
       <p>Carnegie Mellon University</p>
-     <tr>
+    <tr>
+  <tr>
   
+  <tr>
+    <td style="text-align: center;">
+      <img class="circular_image" src="img/iccv_organizers/iccv_members/canxu.png" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="www.linkedin.com/in/cmucanxu">Can Xu</a>
+      </p>
+      <p style="margin-bottom: 3px;">Research Associate</p>
+      <p>Carnegie Mellon University</p>
+    </td>
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/tianhao.jpg" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/mwlite/in/tianhao-wu-112688a6">Tian Hao Wu</a>
+      </p>
+      <p style="margin-bottom: 3px;">Research Associate</p>
+      <p>Carnegie Mellon University</p>
+    </td> 
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/team/tingting.jpg" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/tingting-da-6b87b4250/">Tingting Da</a >
+      </p >
+      <p style="margin-bottom: 3px;">Undergraduate Student</p >
+      <p>Carnegie Mellon University</p >
+    </td>
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yuanjun.jpg" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/yuanjun-gao/">Yuanjun Gao</a>
+      </p>
+      <p style="margin-bottom: 3px;">Research Associate</p>
+      <p>Carnegie Mellon University</p>
+    </td> 
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/jay.png" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/damanpreet-singh-289a46163/">Jay Karhade</a>
+      </p>
+      <p style="margin-bottom: 3px;">MSR Student</p>
+      <p>Carnegie Mellon University</p>
+    </td>
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/mansi.jpg" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/in/mansi-sarawata">Mansi Sarawata</a>
+      </p>
+      <p style="margin-bottom: 3px;">MSME Student</p>
+      <p>Carnegie Mellon University</p>
+    </td> 
+    <td style="text-align: center;">
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/yaohe.png" style="margin-bottom: 6px;"/>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://www.ri.cmu.edu/ri-people/yao-he/">Yao He</a>
+      </p>
+      <p style="margin-bottom: 3px;">Research Associate</p>
+      <p>Carnegie Mellon University</p>
+    </td>
+  <tr>
+</hr>
+
 
 <script>
 let calibrations;
