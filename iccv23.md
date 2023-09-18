@@ -158,7 +158,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
     </td>  
   </tr>
   <tr>
-    <td style="text-align: center;"> <img class="circular_image" src="/img/invited_speakers/basti.jpg"/> </td>
+    <td style="text-align: center;"> <img class="circular_image" src="/img/invited_speakers/ji_zhang.png"/> </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="https://frc.ri.cmu.edu/~zhangji/">Ji Zhang</a>
