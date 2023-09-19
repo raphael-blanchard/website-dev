@@ -336,7 +336,7 @@ We're delighted to receive your challenging datasets! Contributing to this datas
   
   <tr>
     <td style="text-align: center;">
-      <img class="circular_image" src="img/iccv_organizers/iccv_members/canxu.png" style="margin-bottom: 6px;"/>
+      <img class="circular_image" src="/img/iccv_organizers/iccv_members/canxu.png" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
         <a style="margin-bottom: 1px;" href="www.linkedin.com/in/cmucanxu">Can Xu</a>
       </p>
@@ -346,7 +346,7 @@ We're delighted to receive your challenging datasets! Contributing to this datas
     <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/tianhao.jpg" style="margin-bottom: 6px;"/>
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/mwlite/in/tianhao-wu-112688a6">Tian Hao Wu</a>
+        <a style="margin-bottom: 1px;" href="https://www.linkedin.com/mwlite/in/tianhao-wu-112688a6">Tianhao Wu</a>
       </p>
       <p style="margin-bottom: 3px;">Research Associate</p>
       <p>Carnegie Mellon University</p>
@@ -392,7 +392,7 @@ We're delighted to receive your challenging datasets! Contributing to this datas
       <p>Carnegie Mellon University</p>
     </td>
   <tr>
-</hr>
+
 
 
 <script>
