@@ -95,7 +95,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <p>King's College London</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">Advancing the Role of SLAM-Based Active Mapping in Wearable Robotics</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">9:10 - 9:30 AM</p>
@@ -120,7 +120,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <p>University of Oxford</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">Robust Multi Sensor SLAM with Learning and Sensor Fusion</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -262,7 +262,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
       <p>Imperial College London</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">Distributed Estimation and Learning for Robotics</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -288,7 +288,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
       <p>Technical University of Munich</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">From Monocular SLAM to 3D Dynamic Scene Understanding</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -331,7 +331,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       <p>University of Toronto</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">Learning Perception Components for Long-Term Path Following</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -370,7 +370,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">Probabilistic Pose Prediction</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
