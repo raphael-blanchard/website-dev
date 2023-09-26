@@ -44,13 +44,13 @@ We wish you the best of luck in the challenge! ^^
 
 1. To facilitate better algorithm debugging for everyone recently, we allow multiple daily submissions until 20 Sept. Starting from 21 Sept, only one submission per day is allowed.
 
+
 <span style="font-size:1.3em;">If you have any question, please do not hesitate to post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git). We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.<span>
 
 <font color="red"> <b> Please note challenge deadline updated: 15th October 2023 11:59 PM EDT. </b> </font> 
 <br>
 Time remaining:
 <p1 id="demo"></p1>
-
 
 
 File structure: 
