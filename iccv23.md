@@ -233,7 +233,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/chen/">Chen Wang</a>
       </p>
       <p style="margin-bottom: 3px;">Assistant Professor in Department of Computer Science and Engineering</p>
-      <p>University of Buffalo</p>
+      <p>University at Buffalo, SUNY</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">Imperative SLAM and PyPose Liabray for Robot Learning</p>
@@ -561,7 +561,7 @@ Announce the winner of Competition -->
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/chen/">Chen Wang</a>
       </p>
       <p style="margin-bottom: 3px;">Assistant Professor, Spatial AI & Robotics Lab</p>
-      <p>University at Buffalo</p>
+      <p>University at Buffalo, SUNY</p>
     </td>
     <td style="text-align: center;">
       <img class="circular_image" src="/img/team/shibozNew.png" style="margin-bottom: 6px;"/>
@@ -637,7 +637,7 @@ Announce the winner of Competition -->
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/shaoshu/">Shaoshu Su</a>
       </p>
       <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab </p>
-      <p>University at Buffalo</p>
+      <p>University at Buffalo, SUNY</p>
     </td> 
     <td style="text-align: center;">
       <img class="circular_image" src="/img/iccv_organizers/iccv_members/yidu.jpg" style="margin-bottom: 6px;"/>
@@ -645,7 +645,7 @@ Announce the winner of Competition -->
         <a style="margin-bottom: 1px;" href="https://sairlab.org/team/yidu/">Yi Du</a>
       </p>
       <p style="margin-bottom: 3px;">Ph.D. student, Spatial AI & Robotics Lab</p>
-      <p>University at Buffalo</p>
+      <p>University at Buffalo, SUNY</p>
     </td>
   </tr>
    
