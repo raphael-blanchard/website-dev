@@ -478,7 +478,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
 
 <br>
 
-<b> Please note deadline for submissions: 25th September 2023 11:59 PM EST </b> 
+<b> Please note deadline for submissions: 15th October 2023 11:59 PM EDT </b> 
 
 Time remaining:
 <p1 id="demo"></p1>
@@ -667,7 +667,7 @@ p1 {
 <script>
 // Set the date we're counting down to
 // var countDownDate = new Date("Sept 25, 2023 15:37:25").getTime();
-var countDownDate = Date.UTC(2023, 08, 26, 4, 0, 0);
+var countDownDate = Date.UTC(2023, 09, 16, 4, 0, 0);
 
 // Update the count down every 1 second
 var x = setInterval(function() {
