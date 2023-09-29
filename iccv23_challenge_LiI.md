@@ -278,7 +278,7 @@ Participants are requested to submit a report describing their methods along wit
 6. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Lidar-inertial Leaderboard🎉
-As of Sept 25, 11 AM, EDT.
+<!-- As of Sept 25, 11 AM, EDT.
 
 | ATE Rank | Team       | Mean(1/ATE)  |
 |------|-----------------|----------|
@@ -300,7 +300,8 @@ As of Sept 25, 11 AM, EDT.
 | 6    | Zhiqiang LI    | 8.1355 |
 | 7    | shiteng wang   | 7.4313 |
 
-Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length.
+Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length. -->
+Leaderboard will be open when there is still enough time before the challenge ends.
 
 ## Contact us
 

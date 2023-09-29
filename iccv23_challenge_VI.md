@@ -265,7 +265,7 @@ Participants are requested to submit a report describing their methods along wit
 6. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Visual-inertial Leaderboard🎉
-As of Sept 25, 11 AM, EDT.
+<!-- As of Sept 25, 11 AM, EDT.
 
 | ATE Rank | Team       | Mean(1/ATE)  |
 |------|-----------------|----------|
@@ -283,7 +283,8 @@ As of Sept 25, 11 AM, EDT.
 | 3    | Haoxin Zhang    | 5.1592 |
 | 4    | Yunlong Jiang   | 1.5001 |
 | 5    |zhiweidong / Ti Shutong / Songkang dai| 1.3427 |
-| 6    | HL J            | 0.0000 |
+| 6    | HL J            | 0.0000 | -->
+Leaderboard will be open when there is still enough time before the challenge ends.
 
 Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length.
 
