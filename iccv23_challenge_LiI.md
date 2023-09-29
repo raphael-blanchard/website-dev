@@ -278,8 +278,29 @@ Participants are requested to submit a report describing their methods along wit
 6. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Lidar-inertial Leaderboard🎉
+As of Sept 25, 11 AM, EDT.
 
-Leaderboard will be open on Gradescope when there is still enough time before the challenge ends.
+| ATE Rank | Team       | Mean(1/ATE)  |
+|------|-----------------|----------|
+| 1    | samsdolphin    | 3.1481 |
+| 2    | Faker          | 3.0668 |
+| 3    | TAEYOUNG KIM   | 2.6377 |
+| 4    | Li Hua         | 1.8428 |
+| 5    | shiteng wang   | 1.3725 |
+| 6    | Yibin Wu       | 1.3184 |
+| 7    | Zhiqiang LI    | 0.3229 |
+
+| RPE Rank | Team       | Mean(1/RPE)  |
+|------|-----------------|----------|
+| 1    | samsdolphin    | 16.7958 |
+| 2    | Faker          | 16.6591 |
+| 3    | TAEYOUNG KIM   | 13.3024 |
+| 4    | Li Hua         | 11.8857 |
+| 5    | Yibin Wu       | 8.9971 |
+| 6    | Zhiqiang LI    | 8.1355 |
+| 7    | shiteng wang   | 7.4313 |
+
+Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length.
 
 ## Contact us
 

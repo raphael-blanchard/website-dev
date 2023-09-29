@@ -265,8 +265,27 @@ Participants are requested to submit a report describing their methods along wit
 6. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Visual-inertial Leaderboard🎉
+As of Sept 25, 11 AM, EDT.
 
-Leaderboard will be open on Gradescope when there is still enough time before the challenge ends.
+| ATE Rank | Team       | Mean(1/ATE)  |
+|------|-----------------|----------|
+| 1    | Xiongfeng Peng  | 6.5149 |
+| 2    | Thien Nguyen    | 0.6690 |
+| 3    | Yunlong Jiang   | 0.5749 |
+| 4    | Haoxin Zhang    | 0.1361 |
+| 5    |zhiweidong / Ti Shutong / Songkang dai| 0.0764 |
+| 6    | HL J            | 0.0000 |
+
+| RPE Rank | Team       | Mean(1/RPE)  |
+|------|-----------------|----------|
+| 1    | Xiongfeng Peng  | 73.9029 |
+| 2    | Thien Nguyen    | 36.9474 |
+| 3    | Haoxin Zhang    | 5.1592 |
+| 4    | Yunlong Jiang   | 1.5001 |
+| 5    |zhiweidong / Ti Shutong / Songkang dai| 1.3427 |
+| 6    | HL J            | 0.0000 |
+
+Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length.
 
 ## Contact us
 
