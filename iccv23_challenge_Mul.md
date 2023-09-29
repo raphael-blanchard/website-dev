@@ -214,7 +214,7 @@ Participants are requested to submit a report describing their methods along wit
 | 2    |   Jiahao Wang    | 3.4267  | -->
 Leaderboard will be open when there is still enough time before the challenge ends.
 
-Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length.
+<!-- Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length. -->
 
 ## Contact us
 
