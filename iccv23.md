@@ -441,7 +441,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">TBD</p>
+      <p style="margin-bottom: 3px;">Learning for Sonar and Radar SLAM</p>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
