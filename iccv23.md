@@ -343,6 +343,32 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       </div>
     </td>  
   </tr>
+  <tr>
+    <td style="text-align: center;">
+      <div class="circular_image">
+        <img src="/img/invited_speakers/shubham_tulsiani.jpg"/>
+      </div>
+    </td>
+    <td style="text-align: center;vertical-align: middle;">
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="http://shubhtuls.github.io/">Shubham Tulsiani</a>
+      </p>
+      <p style="margin-bottom: 3px;">Assistant Professor, Robotics Institute</p>
+      <p>Carnegie Mellon University</p>
+    </td>
+    <td style="text-align: center;vertical-align: middle;">
+      <p style="margin-bottom: 3px;">Probabilistic Pose Prediction</p>
+      <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
+    </td>
+    <td style="text-align: center;vertical-align: middle;">
+      <p style="margin-bottom: 3px;">1:55 - 2:15 PM</p>
+    </td>
+    <td align="right;" style="vertical-align: middle;">
+      <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </td>  
+  </tr>
   <tr style="height: 100px;">
     <td style="text-align: center;">
       <div class="circular_image">
@@ -367,33 +393,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
         <b style="margin-bottom: 3px;">SLAM Challenge Summary</b>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">1:55 - 2:20 PM</p>
-    </td>
-    <td align="right;" style="vertical-align: middle;">
-      <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </td>  
-  </tr>
-  <tr>
-    <td style="text-align: center;">
-      <div class="circular_image">
-        <img src="/img/invited_speakers/shubham_tulsiani.jpg"/>
-      </div>
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="http://shubhtuls.github.io/">Shubham Tulsiani</a>
-      </p>
-      <p style="margin-bottom: 3px;">Assistant Professor, Robotics Institute</p>
-      <p>Carnegie Mellon University</p>
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">Probabilistic Pose Prediction</p>
-      <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">2:20 - 2:40 PM</p>
+      <p style="margin-bottom: 3px;">2:20 - 2:45 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
