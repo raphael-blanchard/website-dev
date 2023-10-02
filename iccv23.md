@@ -81,24 +81,31 @@ A series of contributed and invited talks by academic leaders and renowned resea
       </div>
     </td>  
   </tr>
-  <tr>
+  <tr style="height: 100px;">
     <td style="text-align: center;">
       <div class="circular_image">
-        <img src="/img/iccv_organizers/letizia.jpg"/>
+        <img src="/img/team/shibozNew.png"/>
+      </div>
+      <div class="circular_image">
+        <img src="/img/iccv_organizers/wenshan_wang.jpg"/>
       </div>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://www.kcl.ac.uk/people/letizia-gionfrida">Letizia Gionfrida</a>
+        <a style="margin-bottom: 1px;" href="https://theairlab.org/team/shiboz/">Shibo Zhao</a>
       </p>
-      <p style="margin-bottom: 3px;">Assistant Professor</p>
-      <p>King's College London</p>
+      <p style="margin-bottom: 3px;">PhD Candidate </p>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="http://www.wangwenshan.com/">Wenshan Wang</a>
+      </p>
+      <p style="margin-bottom: 3px;">Project Scientist, Robotics Institute</p>
+      <p>Carnegie Mellon University</p>
+    </td>
+    <td style="text-align: center; vertical-align: middle;">
+        <b style="margin-bottom: 3px;">SLAM Challenge Summary</b>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">Advancing the Role of SLAM-Based Active Mapping in Wearable Robotics</p>
-    </td>
-    <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">9:10 - 9:30 AM</p>
+      <p style="margin-bottom: 3px;">9:10 - 9:35 AM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
@@ -369,31 +376,24 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       </div>
     </td>  
   </tr>
-  <tr style="height: 100px;">
+  <tr>
     <td style="text-align: center;">
       <div class="circular_image">
-        <img src="/img/team/shibozNew.png"/>
-      </div>
-      <div class="circular_image">
-        <img src="/img/iccv_organizers/wenshan_wang.jpg"/>
+        <img src="/img/iccv_organizers/letizia.jpg"/>
       </div>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="https://theairlab.org/team/shiboz/">Shibo Zhao</a>
+        <a style="margin-bottom: 1px;" href="https://www.kcl.ac.uk/people/letizia-gionfrida">Letizia Gionfrida</a>
       </p>
-      <p style="margin-bottom: 3px;">PhD Candidate </p>
-      <p style="margin-bottom: 3px;">
-        <a style="margin-bottom: 1px;" href="http://www.wangwenshan.com/">Wenshan Wang</a>
-      </p>
-      <p style="margin-bottom: 3px;">Project Scientist, Robotics Institute</p>
-      <p>Carnegie Mellon University</p>
-    </td>
-    <td style="text-align: center; vertical-align: middle;">
-        <b style="margin-bottom: 3px;">SLAM Challenge Summary</b>
+      <p style="margin-bottom: 3px;">Assistant Professor</p>
+      <p>King's College London</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">2:20 - 2:45 PM</p>
+      <p style="margin-bottom: 3px;">Advancing the Role of SLAM-Based Active Mapping in Wearable Robotics</p>
+    </td>
+    <td style="text-align: center;vertical-align: middle;">
+      <p style="margin-bottom: 3px;">2:20 - 2:40 PM</p>
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
