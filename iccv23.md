@@ -344,7 +344,26 @@ Lunck Break and Posters (12:35 - 1:30 PM)
     </td>  
   </tr>
   <tr style="height: 100px;">
-    <td style="text-align: center; vertical-align: middle;" colspan="3">
+    <td style="text-align: center;">
+      <div class="circular_image">
+        <img src="/img/team/shibozNew.png"/>
+      </div>
+      <div class="circular_image">
+        <img src="/img/iccv_organizers/wenshan_wang.jpg"/>
+      </div>
+    </td>
+    <td style="text-align: center;vertical-align: middle;">
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="https://theairlab.org/team/shiboz/">Shibo Zhao</a>
+      </p>
+      <p style="margin-bottom: 3px;">PhD Candidate </p>
+      <p style="margin-bottom: 3px;">
+        <a style="margin-bottom: 1px;" href="http://www.wangwenshan.com/">Wenshan Wang</a>
+      </p>
+      <p style="margin-bottom: 3px;">Project Scientist, Robotics Institute</p>
+      <p>Carnegie Mellon University</p>
+    </td>
+    <td style="text-align: center; vertical-align: middle;">
         <b style="margin-bottom: 3px;">SLAM Challenge Summary</b>
     </td>
     <td style="text-align: center;vertical-align: middle;">
