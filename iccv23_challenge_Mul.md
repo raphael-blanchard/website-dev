@@ -205,13 +205,15 @@ As of Sept 25, 11 AM, EDT.
 
 | ATE Rank | Team       | Mean(1/ATE)  |
 |------|------------------|----------|
-| 1    |zxr / Yang Qianwen| 2.4588  |
-| 2    |   Jiahao Wang    | 0.4999  |
+| 1    |   Yang Qianwen  | 2.4588  |
+| 2    |   zxr           | 2.4588  |
+| 3    |   Jiahao Wang   | 0.4999  |
 
 | RPE Rank | Team       | Mean(1/RPE)  |
 |------|------------------|----------|
-| 1    |zxr / Yang Qianwen| 12.4388 |
-| 2    |   Jiahao Wang    | 3.4267  |
+| 1    |   Yang Qianwen   | 12.4388 |
+| 2    |   zxr            | 12.4388 |
+| 3    |   Jiahao Wang    | 3.4267  |
 
 Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length.
 
