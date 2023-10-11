@@ -127,7 +127,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <p>University of Oxford</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/18e4w8k9RRWn6840OY_7h3_pHbMaXOZa5/view?usp=drive_link">Robust Multi Sensor SLAM with Learning and Sensor Fusion</a>
+      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/18e4w8k9RRWn6840OY_7h3_pHbMaXOZa5/view?usp=drive_link" target="_blank">Robust Multi Sensor SLAM with Learning and Sensor Fusion</a>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
       <p style="margin-bottom: 3px;"></p>
     </td>
@@ -154,7 +154,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <p>Massachusetts Institute of Technology</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1nJE2ZgEZh0C_EpLMCl_wOEcKsxHO7zXi/view?usp=drive_link">From SLAM to Spatial Perception: Hierarchical Models, Certification, and Self-Supervision</a>
+      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1nJE2ZgEZh0C_EpLMCl_wOEcKsxHO7zXi/view?usp=drive_link" target="_blank">From SLAM to Spatial Perception: Hierarchical Models, Certification, and Self-Supervision</a>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">10:00 - 10:20 AM</p>
@@ -175,7 +175,7 @@ A series of contributed and invited talks by academic leaders and renowned resea
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://docs.google.com/presentation/d/1bPxvYX49CssjuQ-w1AFpdld1ft_s05dw/edit?usp=drive_link&ouid=105372488899494971704&rtpof=true&sd=true">From Lidar SLAM to Full-scale Autonomy and Beyond</a>
+      <a style="margin-bottom: 3px;" href="https://docs.google.com/presentation/d/1bPxvYX49CssjuQ-w1AFpdld1ft_s05dw/edit?usp=drive_link&ouid=105372488899494971704&rtpof=true&sd=true" target="_blank">From Lidar SLAM to Full-scale Autonomy and Beyond</a>
       <!-- <button id="bastiButton" class="button6" onclick="myFunction('bastiButton', 'bastiBlock')">Expand Contents</button> -->
       <!-- <a href="#basti" onclick="myFunction('bastiButton', 'bastiBlock')"> Outline and Links</a> -->
     </td>
@@ -218,7 +218,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
       <p>ETH Zurich</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1BBRK6DZAY1r7kEdmkS-2aspCI3sNjJqf/view?usp=drive_link">Visual Localization and Mapping: From Classical to Modern</a>
+      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1BBRK6DZAY1r7kEdmkS-2aspCI3sNjJqf/view?usp=drive_link" target="_blank">Visual Localization and Mapping: From Classical to Modern</a>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -244,7 +244,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
       <p>University at Buffalo, SUNY</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://docs.google.com/presentation/d/1AX4yDhvlIml48QANoaTAd8pOUFyM3Z3v2TxNEt4VihE/edit?usp=drive_link">Imperative SLAM and PyPose Library for Robot Learning</a>
+      <a style="margin-bottom: 3px;" href="https://docs.google.com/presentation/d/1AX4yDhvlIml48QANoaTAd8pOUFyM3Z3v2TxNEt4VihE/edit?usp=drive_link" target="_blank">Imperative SLAM and PyPose Library for Robot Learning</a>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -270,7 +270,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
       <p>Imperial College London</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1p9sPRaPvJoqxC1mX9TXl5MxXb82NxZv5/view?usp=drive_link">Distributed Estimation and Learning for Robotics</a>
+      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1p9sPRaPvJoqxC1mX9TXl5MxXb82NxZv5/view?usp=drive_link" target="_blank">Distributed Estimation and Learning for Robotics</a>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -339,7 +339,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       <p>University of Toronto</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1aloHNj23anUmCsN9oewNjbNyLz8SN78_/view?usp=drive_link">Learning Perception Components for Long-Term Path Following</a>
+      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1aloHNj23anUmCsN9oewNjbNyLz8SN78_/view?usp=drive_link" target="_blank">Learning Perception Components for Long-Term Path Following</a>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -365,7 +365,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <p style="margin-bottom: 3px;">Probabilistic Pose Prediction</p>
+      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/13K-p_5-aJ1Qa7fmLprY3r-ZWawNGh655/view?usp=drive_link" target="_blank">Probabilistic Pose Prediction</a>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -391,7 +391,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       <p>King's College London</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://docs.google.com/presentation/d/1ziZDRWtWbYvFa2yQKdfi8rC6CxdRw-sY/edit?usp=drive_link&ouid=105372488899494971704&rtpof=true&sd=true">Advancing the Role of SLAM-Based Active Mapping in Wearable Robotics</a>
+      <a style="margin-bottom: 3px;" href="https://docs.google.com/presentation/d/1ziZDRWtWbYvFa2yQKdfi8rC6CxdRw-sY/edit?usp=drive_link&ouid=105372488899494971704&rtpof=true&sd=true" target="_blank">Advancing the Role of SLAM-Based Active Mapping in Wearable Robotics</a>
     </td>
     <td style="text-align: center;vertical-align: middle;">
       <p style="margin-bottom: 3px;">2:20 - 2:40 PM</p>
@@ -416,7 +416,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       <p>Seoul National University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1TN6jz8zwGqDlybaGEuJjMyb4pG0NPKW3/view?usp=drive_link">Advancing SLAM with Learning: Integrating High-Level Scene Understanding with Non-conventional Sensors</a>
+      <a style="margin-bottom: 3px;" href="https://drive.google.com/file/d/1TN6jz8zwGqDlybaGEuJjMyb4pG0NPKW3/view?usp=drive_link" target="_blank">Advancing SLAM with Learning: Integrating High-Level Scene Understanding with Non-conventional Sensors</a>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
@@ -442,7 +442,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
       <p>Carnegie Mellon University</p>
     </td>
     <td style="text-align: center;vertical-align: middle;">
-      <a style="margin-bottom: 3px;" href="https://docs.google.com/presentation/d/1ZMegAS8InS9QNi-iPyoRIrEcUWuIzAxc/edit?usp=drive_link&ouid=105372488899494971704&rtpof=true&sd=true">Learning for Sonar and Radar SLAM</a>
+      <a style="margin-bottom: 3px;" href="https://docs.google.com/presentation/d/1ZMegAS8InS9QNi-iPyoRIrEcUWuIzAxc/edit?usp=drive_link&ouid=105372488899494971704&rtpof=true&sd=true" target="_blank">Learning for Sonar and Radar SLAM</a>
       <!-- <button id="danButton" class="button6" onclick="myFunction('danButton', 'danBlock')">Expand Contents</button> -->
     </td>
     <td style="text-align: center;vertical-align: middle;">
