@@ -226,7 +226,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/15U8qwFcL24" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
@@ -252,7 +252,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/_j5tJFC-Gbk" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
@@ -278,7 +278,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/1pw8xGlWkqI" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
