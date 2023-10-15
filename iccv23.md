@@ -304,7 +304,7 @@ Coffee Break and Posters (10:45 - 11:00 AM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/qQakQ0SZ5wI" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
@@ -347,7 +347,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/G8ic5IMwV_c" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
@@ -373,7 +373,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/gpQuEVcbog8" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
@@ -398,7 +398,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/NIiHXJ9k5kU" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
@@ -424,7 +424,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/iIxQkmfok5Q" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
@@ -450,7 +450,7 @@ Lunck Break and Posters (12:35 - 1:30 PM)
     </td>
     <td align="right;" style="vertical-align: middle;">
       <div style="position:relative;width: 100%;height: 0;padding-bottom:56.25%;">
-        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/k2tquhx4FsQ" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;position:absolute;" src="https://youtube.com/embed/xZn_y7TM1O8" title="ICCV'23 Workshop on Robot Learning and SLAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </td>  
   </tr>
