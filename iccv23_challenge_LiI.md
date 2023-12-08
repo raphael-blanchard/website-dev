@@ -278,25 +278,25 @@ Participants are requested to submit a report describing their methods along wit
 6. Violation of the rules or other unfair activities may result in disqualification.  
 
 ##  🎉Lidar-inertial Leaderboard🎉
-As of Sept 25, 11 AM, EDT.
+As of 11:59 PM EDT, October 15th, 2023.
 
-| ATE Rank | Team       | Mean(1/ATE)  |
-|------|-----------------|----------|
-| 1    | samsdolphin    | 3.1481 |
-| 2    | CILAB@Yonsei   | 2.6377 |
-| 3    | Li Hua         | 1.8428 |
-| 4    | shiteng wang   | 1.3725 |
-| 5    | Yibin Wu       | 1.3184 |
-| 6    | Zhiqiang LI    | 0.3229 |
+| ATE Rank | Team           | Mean(1/ATE) |
+|------|-------------------------|--------|
+| 1    | HKU-MaRS-Lab            | 3.1636 |
+| 2    | Weitong Wu, et al.      | 3.0571 |
+| 3    | CILAB@Yonsei            | 2.6442 |
+| 4    | Yibin Wu, et al.        | 1.3184 |
+| 5    | Shipeng Zhong, et al.   | 0.6218 |
+| 6    | Zhiqiang LI             | 0.3229 |
 
-| RPE Rank | Team       | Mean(1/RPE)  |
-|------|-----------------|----------|
-| 1    | samsdolphin    | 16.7958 |
-| 2    | CILAB@Yonsei   | 13.3024 |
-| 3    | Li Hua         | 11.8857 |
-| 4    | Yibin Wu       | 8.9971 |
-| 5    | Zhiqiang LI    | 8.1355 |
-| 6    | shiteng wang   | 7.4313 |
+| RPE Rank | Team            | Mean(1/RPE) |
+|------|-------------------------|---------|
+| 1    | Weitong Wu, et al.      | 16.4595 |
+| 2    | HKU-MaRS-Lab            | 14.2443 |
+| 3    | CILAB@Yonsei            | 13.3206 |
+| 4    | Yibin Wu, et al.        |  8.9971 |
+| 5    | Zhiqiang LI             |  8.1355 |
+| 6    | Shipeng Zhong, et al.   |  5.2747 |
 
 Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length.
 <!-- Leaderboard will be open when there is still enough time before the challenge ends. -->
