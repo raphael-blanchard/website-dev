@@ -291,6 +291,26 @@ Note: The ATE(RPE) rank is according to the mean of the reciprocal of each traje
 
 If you have any question or see anything wrong, please do not hesitate to <b>post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git) </b>. We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.
 
+## Summary 
+We summarized the SLAM performance of above top teams. Feel free to check our [Paper](https://arxiv.org/abs/2307.07607) 
+
+```
+@misc{zhao2023subtmrs,
+      title={SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments}, 
+      author={Shibo Zhao and Yuanjun Gao and Tianhao Wu and Damanpreet Singh and Rushan Jiang and Haoxiang Sun and Mansi Sarawata and Yuheng Qiu and Warren Whittaker and Ian Higgins and Yi Du and Shaoshu Su and Can Xu and John Keller and Jay Karhade and Lucas Nogueira and Sourojit Saha and Ji Zhang and Wenshan Wang and Chen Wang and Sebastian Scherer},
+      year={2023},
+      eprint={2307.07607},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+
+```
+
+## Disclaimer
+Due to the rapidly changing nature of the SLAM, the above competitation results and SLAM summary is updated on October 15th 2023.
+In addition, due to the rich body of literature, there
+may be inaccuracies or mistakes in the paper. We welcome readers to send pull requests to our GitHub repository (inside https://github.com/water-horse/ICCV2023_SLAM_Challenge.git) so we may continue to update our references, correct the mistakes and inaccuracies,
+as well as updating the entries of the studies in the paper. 
 
 <!-- Display the countdown timer in an element -->
 <style>

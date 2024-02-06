@@ -217,12 +217,12 @@ If you have any question, please do not hesitate to post issues on this [github 
 ## Citation 
 
 
-Zhao, Shibo, et al. "SubT-MRS: A Subterranean, Multi-Robot, Multi-Spectral and Multi-Degraded Dataset for Robust SLAM" [Paper](https://arxiv.org/abs/2307.07607)
+Zhao, Shibo, et al. "SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments" [Paper](https://arxiv.org/abs/2307.07607)
 
 ```
 @misc{zhao2023subtmrs,
-      title={SubT-MRS: A Subterranean, Multi-Robot, Multi-Spectral and Multi-Degraded Dataset for Robust SLAM}, 
-      author={Shibo Zhao and Damanpreet Singh and Haoxiang Sun and Rushan Jiang and Yuanjun Gao and Tianhao Wu and Jay Karhade and Chuck Whittaker and Ian Higgins and Jiahe Xu and Yuheng Qiu and Sourojit Saha and Chen Wang and Wenshan Wang and Sebastian Scherer},
+      title={SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments}, 
+      author={Shibo Zhao and Yuanjun Gao and Tianhao Wu and Damanpreet Singh and Rushan Jiang and Haoxiang Sun and Mansi Sarawata and Yuheng Qiu and Warren Whittaker and Ian Higgins and Yi Du and Shaoshu Su and Can Xu and John Keller and Jay Karhade and Lucas Nogueira and Sourojit Saha and Ji Zhang and Wenshan Wang and Chen Wang and Sebastian Scherer},
       year={2023},
       eprint={2307.07607},
       archivePrefix={arXiv},
