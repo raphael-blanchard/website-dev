@@ -301,11 +301,6 @@ As of 11:59 PM EDT, October 15th, 2023.
 Note: The ATE(RPE) rank is according to the mean of the reciprocal of each trajectory's ATE(RPE) score, weighted by the trajectory length.
 <!-- Leaderboard will be open when there is still enough time before the challenge ends. -->
 
-
-## Contact us
-
-If you have any question or see anything wrong, please do not hesitate to <b>post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git)</b>. We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.
-
 ## Summary 
 We summarized the SLAM performance of above top teams. Feel free to check our [Paper](https://arxiv.org/abs/2307.07607) and cite our work.
 
@@ -320,6 +315,12 @@ We summarized the SLAM performance of above top teams. Feel free to check our [P
 }
 
 ```
+
+## Contact us
+
+If you have any question or see anything wrong, please do not hesitate to <b>post issues on this [github website](https://github.com/water-horse/ICCV2023_SLAM_Challenge.git)</b>. We would love to hear from your feedback! Every post will be responded with no spared effort within 36 hours.
+
+
 
 ## Disclaimer
 Due to the rapidly changing nature of the SLAM, the above competitation results and SLAM summary is updated on October 15th 2023.
