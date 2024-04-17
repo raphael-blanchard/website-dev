@@ -33,9 +33,6 @@ In response to your requests, we have open-sourced our [Ground Truth Trajectory]
 
 Looking ahead, we will release more datasets and Ground Truth Map. Stay tuned! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
 
-<br>
-<br>
-<br>
 Thank you for your participation and contribution to the challenge! ^^
 <br>
 <br>

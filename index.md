@@ -34,7 +34,7 @@ We propose Super Odometry, a high-precision multi-modal sensor fusion framework,
 <br>
 <br>
 <br>
-We conducted extensive testing of Super Odometry on various platforms, including Unmanned Ground Vehicles (UGV), Unmanned Aerial Vehicles (UAV), and Legged Robots during the prestigious DARPA Challenge. The following results showcase the state estimation and  mapping performance achieved running on the embedded system. 
+conducted extensive testing of Super Odometry on various platforms, including Unmanned Ground Vehicles (UGV), Unmanned Aerial Vehicles (UAV), and Legged Robots during the prestigious DARPA Challenge. The following results showcase the state estimation and  mapping performance achieved running on the embedded system. 
 
 
 <div>
