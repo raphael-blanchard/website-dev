@@ -29,7 +29,7 @@ Thanks for participating the SLAM challenge and try our dataset!
 <br>
 The first ICCV SLAM Challenge has concluded. We have summarized the winning teams' solutions and provided a detailed analysis of the submitted results. For more insights, please review our [Paper](https://arxiv.org/abs/2307.07607).
 
-In response to your requests, we have open-sourced our [Ground Truth Trajectory](https://drive.google.com/drive/folders/1el51myR4Zzmxz6Tq2lq660zUVQSH9PoQ?usp=sharing) data to facilitate easier evaluation. This will be valuable for your research and benchmarking.
+In response to your requests, we have open-sourced our [Ground Truth Trajectory](https://drive.google.com/drive/folders/1el51myR4Zzmxz6Tq2lq660zUVQSH9PoQ) data to facilitate easier evaluation. This will be valuable for your research and benchmarking.
 
 Looking ahead, we will release more datasets and Ground Truth Map. Stay tuned! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
 

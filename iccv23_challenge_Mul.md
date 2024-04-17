@@ -31,14 +31,10 @@ Thanks for participating the SLAM challenge and try our dataset!
 The first ICCV SLAM Challenge has concluded. We have summarized the winning teams' solutions and provided a detailed analysis of the submitted results. For more insights, please review our [Paper](https://arxiv.org/abs/2307.07607).
 
 In response to your requests, we have open-sourced our [Ground Truth Trajectory](https://drive.google.com/drive/folders/1el51myR4Zzmxz6Tq2lq660zUVQSH9PoQ?usp=sharing) data to facilitate easier evaluation.
-
-
-We extend our submission deadline to **June 15th, 2024** only on sensor fusion challenge.  You still have the opportunity to submit your results. We will promptly update the rankings on our website accordingly. Following this deadline, we will release the Ground Truth Trajectory and Map.
-
+<!-- We extend our submission deadline to **June 15th, 2024** only on sensor fusion challenge.  You still have the opportunity to submit your results. We will promptly update the rankings on our website accordingly. Following this deadline, we will release the Ground Truth Trajectory and Map. -->
 Looking ahead, we will release more datasets and Ground Truth Map. Stay tuned! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
-
-<br>
 Thank you for your participation and contribution to the challenge! ^^
+
 <br>
 <br>
 
