@@ -29,7 +29,7 @@ Thanks for participating the SLAM challenge and try our dataset!
 <br>
 The first ICCV SLAM Challenge has concluded. We have summarized the winning teams' solutions and provided a detailed analysis of the submitted results. For more insights, please review our [Paper](https://arxiv.org/abs/2307.07607).
 
-In response to your requests, we have open-sourced our [Ground Truth Trajectory](https://drive.google.com/drive/folders/1el51myR4Zzmxz6Tq2lq660zUVQSH9PoQ?usp=sharing) data to facilitate easier evaluation. This will be valuable for your research and benchmarking.
+In response to your requests, we have open-sourced our [Ground Truth Trajectory](https://drive.google.com/drive/folders/1KyM_OO14G6z4NeDZdEfa7hntLLhfdAPp?usp=sharing) data to facilitate easier evaluation. This will be valuable for your research and benchmarking.
 
 Looking ahead, we're planning to launch a second competition with an expanded selection of datasets. Stay tuned for more details! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
 
@@ -136,6 +136,8 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
 <span style="font-size:1.3em;">ROS bag format:&emsp;**[Google](https://drive.google.com/drive/folders/1hHCsnc-gANmK6Oox-Im3hqRwsGGaJIuJ)** Baidu</span>  
 <span style="font-size:1.3em;">Folder format:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1zVG63JVmRCWSpTCe0F2iOb-E00NaS1JK)** Baidu</span>
+
+<span style="font-size:1.3em;">Ground Truth:&emsp;**[Google](https://drive.google.com/drive/folders/1KyM_OO14G6z4NeDZdEfa7hntLLhfdAPp?usp=sharing)** Baidu</span> 
 
 | Name | Source  | Location  | Robot |Sensor | Description |  Trajectory Length(m)| Duration (s) | Video | Calibration (Extrinsics) |
 |---|-----------|---------|-----------|-----------|------------|-----------|-----------|---------------|--------------|
