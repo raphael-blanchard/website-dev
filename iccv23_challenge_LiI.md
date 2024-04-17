@@ -24,19 +24,19 @@ Join us now to become a vital part of cutting-edge advancements in robotics and 
 Hello everyone!
 <br>
 <br>
-Thanks for participating the SLAM challenge!
+Thanks for participating the SLAM challenge and try our dataset!
 <br>
 <br>
-As the competition deadline approaches, many teams asked for an extension. To ensure fairness, we've extended **the deadline to 11:59 PM EDT, October 15th, 2023**. It is important to note that each team **must provide answers to all questions in the report template**. A high-quality report will also be **factored into your final score** and assessed as a reference for the submitted trajectory.
+The first ICCV SLAM Challenge has concluded. We have summarized the winning teams' solutions and provided a detailed analysis of the submitted results. For more insights, please review our [Paper](https://arxiv.org/abs/2307.07607).
+
+In response to your requests, we have open-sourced our [Ground Truth Trajectory](https://drive.google.com/drive/folders/1el51myR4Zzmxz6Tq2lq660zUVQSH9PoQ?usp=sharing) data to facilitate easier evaluation. This will be valuable for your research and benchmarking.
+
+Looking ahead, we're planning to launch a second competition with an expanded selection of datasets. Stay tuned for more details! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
+
 <br>
 <br>
-Starting from September 25th, each team is limited to a maximum of 30 submissions. Please be aware that exceeding this limit will result in the **30th submission being considered as the final one**.
 <br>
-<br>
-Additionally, registering multiple accounts is strictly prohibited now. Feel free to let us know if you have more questions.
-<br>
-<br>
-We wish you the best of luck in the challenge! ^^
+Thank you for your participation and contribution to the challenge! ^^
 <br>
 <br>
 <span style="font-size:1.3em;"><font color="red"> <b> Previous Updates:</b> </font></span>
