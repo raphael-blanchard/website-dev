@@ -31,7 +31,7 @@ The first ICCV SLAM Challenge has concluded. We have summarized the winning team
 
 In response to your requests, we have open-sourced our [Ground Truth Trajectory](https://drive.google.com/drive/folders/1qdva6PujKXlLzI5LWDE_kJyS9FYu6JRg?usp=sharing) data to facilitate easier evaluation. This will be valuable for your research and benchmarking.
 
-Looking ahead, we're planning to launch a second competition with an expanded selection of datasets. Stay tuned for more details! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
+Looking ahead, we're planning to launch a second competition with an expanded selection of datasets and release the Ground Truth Map. Stay tuned for more details! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
 
 <br>
 <br>
@@ -134,6 +134,7 @@ This benchmark is based on the [TartanAir dataset](http://theairlab.org/tartanai
 
 <span style="font-size:1.3em;">ROS bag format:&emsp;**[Google](https://drive.google.com/drive/folders/1drrdOTp7L02QhPJtIvpKo6zB21NoNlYb)** Baidu</span>  
 <span style="font-size:1.3em;">Folder format:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1GR9vavG2iPbXpwlEoH_WzchHspF0ZfQ6)** Baidu</span>
+
 <span style="font-size:1.3em;">Ground Truth:&emsp;**[Google](https://drive.google.com/drive/folders/1qdva6PujKXlLzI5LWDE_kJyS9FYu6JRg?usp=sharing)** Baidu</span> 
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory Length (m)| Duration (s) |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
