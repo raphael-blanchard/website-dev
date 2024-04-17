@@ -30,9 +30,12 @@ Thanks for participating the SLAM challenge and try our dataset!
 <br>
 The first ICCV SLAM Challenge has concluded. We have summarized the winning teams' solutions and provided a detailed analysis of the submitted results. For more insights, please review our [Paper](https://arxiv.org/abs/2307.07607).
 
-We are extend our submission deadline to **June 15th, 2024** only on sensor fusion challenge.  You still have the opportunity to submit your results. We will promptly update the rankings on our website accordingly. Following this deadline, we will release the Ground Truth Trajectory and Map. 
+In response to your requests, we have open-sourced our [Ground Truth Trajectory](https://drive.google.com/drive/folders/1el51myR4Zzmxz6Tq2lq660zUVQSH9PoQ?usp=sharing) data to facilitate easier evaluation.
 
-Looking ahead, we're preparing to launch a second competition, release more datasets and Ground Truth Map. Stay tuned for more details! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
+
+We extend our submission deadline to **June 15th, 2024** only on sensor fusion challenge.  You still have the opportunity to submit your results. We will promptly update the rankings on our website accordingly. Following this deadline, we will release the Ground Truth Trajectory and Map.
+
+Looking ahead, we will release more datasets and Ground Truth Map. Stay tuned! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
 
 <br>
 Thank you for your participation and contribution to the challenge! ^^
@@ -104,6 +107,9 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
 
 <span style="font-size:1.3em;">ROS bag format:&emsp;**[Google](https://drive.google.com/drive/folders/1bV5oCLrpVoc6xKcIduUcco47nG0jPH6i)** Baidu</span>  
 <span style="font-size:1.3em;">Folder format:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1E4EFVY-Bnef7sSBprnfL5Z49HAc89dLr)** Baidu</span>
+
+<span style="font-size:1.3em;">Ground Truth:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1bSGDe1FFQYEjs20P8L15pTx7T0HCn2L0)** Baidu</span>
+
 
 | Name | Source  | Location  | Robot |Sensor | Description | Trajectory Length(m) | Duration  |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
 |---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
