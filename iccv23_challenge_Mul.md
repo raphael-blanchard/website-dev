@@ -35,6 +35,20 @@ In response to your requests, we have open-sourced our [Ground Truth Trajectory]
 Looking ahead, we will release more datasets and Ground Truth Map. Stay tuned! To stay informed with the latest updates, be sure to sign up for our mailing [list](https://docs.google.com/forms/d/e/1FAIpQLSfG3YfsC-_qOIATpRJi5qLHDt27j_XyGg-r6fFCn6QIC9kTvg/viewform?vc=0&c=0&w=1&flr=0)
 Thank you for your participation and contribution to the challenge! ^^
 
+Feel free to check our [Paper](https://arxiv.org/abs/2307.07607) and cite our work if it is useful ^ ^. 
+
+```
+@inproceedings{zhao2024subt,
+	title        = {{SubT-MRS} Dataset: Pushing SLAM Towards All-weather Environments},
+	author       = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Whittaker, Warren C and Higgins, Ian and Su, Shaoshu and Du, Yi and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Qiu, Yuheng and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
+	year         = 2024,
+	booktitle    = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+	url          = {https://arxiv.org/pdf/2307.07607.pdf},
+	video        = {https://youtu.be/mkN72Lv8S7A}
+}
+
+```
+
 <br>
 <br>
 
@@ -224,13 +238,13 @@ Note: The ATE(RPE) rank is according to the mean of the reciprocal of each traje
 We summarized the SLAM performance of above top teams. Feel free to check our [Paper](https://arxiv.org/abs/2307.07607) and cite our work.
 
 ```
-@misc{zhao2023subtmrs,
-      title={SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments}, 
-      author={Shibo Zhao and Yuanjun Gao and Tianhao Wu and Damanpreet Singh and Rushan Jiang and Haoxiang Sun and Mansi Sarawata and Yuheng Qiu and Warren Whittaker and Ian Higgins and Yi Du and Shaoshu Su and Can Xu and John Keller and Jay Karhade and Lucas Nogueira and Sourojit Saha and Ji Zhang and Wenshan Wang and Chen Wang and Sebastian Scherer},
-      year={2023},
-      eprint={2307.07607},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
+@inproceedings{zhao2024subt,
+	title        = {{SubT-MRS} Dataset: Pushing SLAM Towards All-weather Environments},
+	author       = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Whittaker, Warren C and Higgins, Ian and Su, Shaoshu and Du, Yi and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Qiu, Yuheng and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
+	year         = 2024,
+	booktitle    = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+	url          = {https://arxiv.org/pdf/2307.07607.pdf},
+	video        = {https://youtu.be/mkN72Lv8S7A}
 }
 
 ```
