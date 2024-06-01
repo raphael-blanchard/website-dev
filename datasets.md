@@ -54,6 +54,21 @@ opacity: 40%;
 We provide datasets <b>TartanAir</b> and <b> SubT-MRS</b>, aiming to push the rubustness of SLAM algorithms in <b>challenging</b> environments, as well as advancing <b>sim-to-real transfer</b>. Our datasets contain a set of perceptually degraded environments such as darkness, airborne obscurant conditions such as fog, dust, smoke and lack of prominent perceptual features in self-similar areas. One of our hypotheses is that in such challenging cases, the robot needs to rely on multiple sensors to reliably track and localize itself. We provide a rich set of sensory modalities including RGB images, LiDAR points, IMU measurements, thermal images and so on. 
 
 
+Feel free to check our [Paper](https://arxiv.org/abs/2307.07607) and cite our work if it is useful ^ ^. 
+
+```
+@inproceedings{zhao2024subt,
+	title        = {{SubT-MRS} Dataset: Pushing SLAM Towards All-weather Environments},
+	author       = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Whittaker, Warren C and Higgins, Ian and Su, Shaoshu and Du, Yi and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Qiu, Yuheng and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
+	year         = 2024,
+	booktitle    = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+	url          = {https://arxiv.org/pdf/2307.07607.pdf},
+	video        = {https://youtu.be/mkN72Lv8S7A}
+}
+
+```
+
+
 
 <div>
 <br>
