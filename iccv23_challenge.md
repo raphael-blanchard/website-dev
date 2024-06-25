@@ -13,13 +13,13 @@ hero_image: /img/iccv/iccv2023_background.jpg
 This document outlines the benchmarking procedure for evaluating Simultaneous Localization and Mapping (SLAM) algorithms. SLAM is a crucial component in robotics and computer vision systems, enabling real-time mapping of the environment while simultaneously estimating the robot's position within it. This benchmark aims to assess the performance of various SLAM algorithms under different conditions and datasets. We summarized the SLAM performance of our top teams. Feel free to check our [Paper](https://arxiv.org/abs/2307.07607) and cite our work if it is useful ^ ^. 
 
 ```
-@inproceedings{zhao2024subt,
-	title        = {{SubT-MRS} Dataset: Pushing SLAM Towards All-weather Environments},
-	author       = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Whittaker, Warren C and Higgins, Ian and Su, Shaoshu and Du, Yi and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Qiu, Yuheng and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
-	year         = 2024,
-	booktitle    = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-	url          = {https://arxiv.org/pdf/2307.07607.pdf},
-	video        = {https://youtu.be/mkN72Lv8S7A}
+@InProceedings{Zhao_2024_CVPR,
+    author    = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Qiu, Yuheng and Whittaker, Warren and Higgins, Ian and Du, Yi and Su, Shaoshu and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
+    title     = {SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {22647-22657}
 }
 
 ```

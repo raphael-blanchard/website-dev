@@ -57,13 +57,13 @@ We provide datasets <b>TartanAir</b> and <b> SubT-MRS</b>, aiming to push the ru
 Feel free to check our [Paper](https://arxiv.org/abs/2307.07607) and cite our work if it is useful ^ ^. 
 
 ```
-@inproceedings{zhao2024subt,
-	title        = {{SubT-MRS} Dataset: Pushing SLAM Towards All-weather Environments},
-	author       = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Whittaker, Warren C and Higgins, Ian and Su, Shaoshu and Du, Yi and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Qiu, Yuheng and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
-	year         = 2024,
-	booktitle    = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-	url          = {https://arxiv.org/pdf/2307.07607.pdf},
-	video        = {https://youtu.be/mkN72Lv8S7A}
+@InProceedings{Zhao_2024_CVPR,
+    author    = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Qiu, Yuheng and Whittaker, Warren and Higgins, Ian and Du, Yi and Su, Shaoshu and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
+    title     = {SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {22647-22657}
 }
 
 ```
@@ -235,13 +235,13 @@ If you have any question, please do not hesitate to post issues on this [github 
 Zhao, Shibo, et al. "SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments" [Paper](https://arxiv.org/abs/2307.07607)
 
 ```
-@misc{zhao2023subtmrs,
-      title={SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments}, 
-      author={Shibo Zhao and Yuanjun Gao and Tianhao Wu and Damanpreet Singh and Rushan Jiang and Haoxiang Sun and Mansi Sarawata and Yuheng Qiu and Warren Whittaker and Ian Higgins and Yi Du and Shaoshu Su and Can Xu and John Keller and Jay Karhade and Lucas Nogueira and Sourojit Saha and Ji Zhang and Wenshan Wang and Chen Wang and Sebastian Scherer},
-      year={2023},
-      eprint={2307.07607},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
+@InProceedings{Zhao_2024_CVPR,
+    author    = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Qiu, Yuheng and Whittaker, Warren and Higgins, Ian and Du, Yi and Su, Shaoshu and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
+    title     = {SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {22647-22657}
 }
 ```
 
