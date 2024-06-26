@@ -114,6 +114,5 @@ For a known ground truth trajectory ME000_gt.txt and an estimated trajectory ME0
 Due to the scale ambiguity of the monocular image, a global scale factor is calculated before the error computation. 
 
 
-# SLAM Benchmark Leaderboard
-
-Leaderboard will be open on Gradescope when there is still enough time before the challenge ends.
+## License 
+The SubT-MRS Dataset has been licensed under the [CC by 4.0 License](https://creativecommons.org/licenses/by/4.0/deed.en) and has been collected by the AirLab.

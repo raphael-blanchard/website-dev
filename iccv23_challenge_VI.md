@@ -327,6 +327,9 @@ In addition, due to the rich body of literature, there
 may be inaccuracies or mistakes in the paper. We welcome readers to send pull requests to our GitHub repository (inside https://github.com/water-horse/ICCV2023_SLAM_Challenge.git) so we may continue to update our references, correct the mistakes and inaccuracies,
 as well as updating the entries of the studies in the paper. 
 
+## License 
+The SubT-MRS Dataset has been licensed under the [CC by 4.0 License](https://creativecommons.org/licenses/by/4.0/deed.en) and has been collected by the AirLab.
+
 <!-- Display the countdown timer in an element -->
 <style>
 
