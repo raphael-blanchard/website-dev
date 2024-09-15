@@ -11,6 +11,8 @@
       link: /iccv23_challenge_Mul
 - name: TP-TIO
   link: /tptio
+- name: SuperLoc
+  link: /superloc
 # - name: Super Loop
 #   link: /superloop
 # - name: Super Odometry 2
