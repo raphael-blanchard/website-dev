@@ -314,7 +314,7 @@ hero_image: img/superloc/superloc_title.gif
         </video> -->
     </div>
     <div class="bonus-video">
-        <video class="lazy-video" data-src="./video/superloc/multi_floor_comparsion_wesbite.mp4" muted loop playsinline controls>
+        <video class="lazy-video" data-src="./video/superloc/cave_comparsion_website.mp4" muted loop playsinline controls>
         </video>
         <!-- <video controls="metadata">
             <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
