@@ -9,7 +9,6 @@ hero_image: img/superloc/superloc_title.gif
 ---
 
 <script>
-
     window.onload = function () {
         let p = document.getElementsByClassName("title is-2")[0].parentElement;
         p.style.background = "rgba(10, 10, 10, 0.5)";
@@ -60,6 +59,11 @@ hero_image: img/superloc/superloc_title.gif
             width: 100%;
             max-width: 800px; /* Adjust this value to make the video smaller */
             margin: 0 auto;
+        }
+        .bonus-video h4 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1em;
         }
         .video-container video {
             width: 100%;
@@ -179,6 +183,54 @@ hero_image: img/superloc/superloc_title.gif
             max-height: 450px;
             object-fit: contain;
         }
+        .drag-bar {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        .preview-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 0 30px;
+        }
+        .preview-image {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .preview-image:hover, .preview-image.active {
+            transform: scale(1.1);
+        }
+        .drag-handle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 33.33%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            cursor: grab;
+            transition: left 0.3s ease;
+        }
+        .drag-handle:active {
+            cursor: grabbing;
+        }
+        .preview-wrapper {
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -198,11 +250,10 @@ hero_image: img/superloc/superloc_title.gif
         &nbsp;
         <a href="#" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Code</a >
         &nbsp;
+        <a href="https://github.com/adrienzhh/Robustness_Metric" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Robustness Metrics</a >
+        &nbsp;
         </center>
     </div>
-    <!-- <div class="figure-container">
-        <img src="img/superloc/superloc_title.gif" alt="SuperLoc demonstration">
-    </div> -->
 </body>
 <style>
 .small-logo {
@@ -212,11 +263,19 @@ hero_image: img/superloc/superloc_title.gif
 </style>
 </html>
 <body>
+
 <section class="hero is-light is-small">
     <div class="hero-body">
         <div class="container">
             <div class="carousel-container">
                 <div id="results-carousel" class="carousel">
+                    <div class="item">
+                        <video muted loop playsinline controls>
+                            <source src="video/superloc/website_intro3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="item-description">Predict Alignment Risks✅</p>
+                    </div>
                     <div class="item">
                         <video muted loop playsinline controls>
                             <source src="video/superloc/website_intro1.mp4" type="video/mp4">
@@ -231,60 +290,88 @@ hero_image: img/superloc/superloc_title.gif
                         </video>
                         <p class="item-description">ICP Failure under Degeneracy❓</p>
                     </div>
-                    <div class="item">
-                        <video muted loop playsinline controls>
-                            <source src="video/superloc/website_intro3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p class="item-description">Predict Alignment Risks✅</p>
+                </div>
+            </div>
+            <div class="drag-bar">
+                <div class="preview-container">
+                    <div class="preview-wrapper">
+                        <img src="img/superloc/preview3.png" alt="Preview 1" class="preview-image active" data-index="0">
+                    </div>
+                    <div class="preview-wrapper">
+                        <img src="img/superloc/preview1.png" alt="Preview 2" class="preview-image" data-index="1">
+                    </div>
+                    <div class="preview-wrapper">
+                        <img src="img/superloc/preview2.png" alt="Preview 3" class="preview-image" data-index="2">
                     </div>
                 </div>
-                <button class="nav-button prev">&#10094;</button>
-                <button class="nav-button next">&#10095;</button>
+                <div class="drag-handle"></div>
             </div>
         </div>
     </div>
 </section>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const carousel = document.querySelector('#results-carousel');
-        const items = carousel.querySelectorAll('.item');
-        const prevButton = document.querySelector('.nav-button.prev');
-        const nextButton = document.querySelector('.nav-button.next');
-        const videos = carousel.querySelectorAll('video');
-        let currentIndex = 0;
 
-        function showItem(index) {
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-            videos.forEach(video => {
-                video.pause();
-                video.currentTime = 0;
-            });
-            const currentVideo = videos[index];
-            currentVideo.play().catch(e => console.error("Error playing video:", e));
-        }
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('#results-carousel');
+    const dragBar = document.querySelector('.drag-bar');
+    const dragHandle = document.querySelector('.drag-handle');
+    const previewImages = document.querySelectorAll('.preview-image');
+    const items = carousel.querySelectorAll('.item');
+    const videos = carousel.querySelectorAll('video');
+    let isDragging = false;
+    let startX, startLeft;
 
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            showItem(currentIndex);
+    function showItem(index) {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+        videos.forEach(video => {
+            video.pause();
+            video.currentTime = 0;
         });
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            showItem(currentIndex);
+        videos[index].play().catch(e => console.error("Error playing video:", e));
+        previewImages.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
         });
+        dragHandle.style.left = `${index * 33.33}%`;
+    }
 
-        // Initialize
-        showItem(currentIndex);
+    dragHandle.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX - dragHandle.offsetLeft;
+        startLeft = dragHandle.offsetLeft;
     });
-    </script>
-</body>
 
+    document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        let newLeft = e.clientX - startX;
+        newLeft = Math.max(0, Math.min(newLeft, dragBar.offsetWidth - dragHandle.offsetWidth));
+        dragHandle.style.left = `${newLeft}px`;
+        
+        const progress = newLeft / (dragBar.offsetWidth - dragHandle.offsetWidth);
+        const index = Math.round(progress * (items.length - 1));
+        showItem(index);
+    });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
+
+    previewImages.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            showItem(index);
+        });
+    });
+
+    // Initialize
+    showItem(0);
+});
+</script>
+</body>
 
 <h1 class="centered-title">Overview Video</h1>
 <div>
 <br>
-    <iframe width="100%" height="400" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"  src="https://www.youtube.com/embed/G05INI0eIug" title="Website - Sensor Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="400" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"  src="https://www.youtube.com/embed/Rk41pO6Wds0" title="Website - Sensor Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
  <h1 class="centered-title">About SuperLoc</h1>
@@ -309,16 +396,10 @@ hero_image: img/superloc/superloc_title.gif
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/cave_website1.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_robust_initialization_10.mp4" type="video/mp4">
-        </video> -->
     </div>
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/cave_comparsion_website.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
-        </video> -->
     </div>
 </div>
 
@@ -329,16 +410,10 @@ hero_image: img/superloc/superloc_title.gif
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/multi_floor_website1.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_robust_initialization_10.mp4" type="video/mp4">
-        </video> -->
     </div>
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/multi_floor_comparsion_wesbite.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
-        </video> -->
     </div>
 </div>
 
@@ -350,16 +425,10 @@ hero_image: img/superloc/superloc_title.gif
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/long_corridor_website1.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_robust_initialization_10.mp4" type="video/mp4">
-        </video> -->
     </div>
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/long_corridor_comparsion_website.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
-        </video> -->
     </div>
 </div>
 
@@ -431,33 +500,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize
     showItem(currentIndex);
 });
 </script>
 
+<br>
 
-
-<h1>Bonus</h1>
+<h4>To benefit the open community, our localization package also includes following features,</h4>
 <div class="about-section">
-    <p>To benefit the open community, our localization package also includes following features:</p>
 </div>
 <div class="bonus-videos">
     <div class="bonus-video">
         <h3>Robust Initialization</h3>
         <video class="lazy-video" data-src="./video/superloc/cic_robust_initialization_10.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_robust_initialization_10.mp4" type="video/mp4">
-        </video> -->
     </div>
     <div class="bonus-video">
         <h3>Transition between mapped and unmapped region</h3>
         <video class="lazy-video" data-src="./video/superloc/cic_mapped_unmapped_4.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
-        </video> -->
     </div>
 </div>
 
@@ -485,9 +546,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+## Dataset
 
+coming soon
 
 ## Citation
+
+coming soon
 
 ## Contacts
 
