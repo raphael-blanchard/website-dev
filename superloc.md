@@ -9,7 +9,6 @@ hero_image: img/superloc/superloc_title.gif
 ---
 
 <script>
-
     window.onload = function () {
         let p = document.getElementsByClassName("title is-2")[0].parentElement;
         p.style.background = "rgba(10, 10, 10, 0.5)";
@@ -60,6 +59,11 @@ hero_image: img/superloc/superloc_title.gif
             width: 100%;
             max-width: 800px; /* Adjust this value to make the video smaller */
             margin: 0 auto;
+        }
+        .bonus-video h4 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1em;
         }
         .video-container video {
             width: 100%;
@@ -179,6 +183,54 @@ hero_image: img/superloc/superloc_title.gif
             max-height: 450px;
             object-fit: contain;
         }
+        .drag-bar {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        .preview-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 0 30px;
+        }
+        .preview-image {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .preview-image:hover, .preview-image.active {
+            transform: scale(1.1);
+        }
+        .drag-handle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 33.33%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            cursor: grab;
+            transition: left 0.3s ease;
+        }
+        .drag-handle:active {
+            cursor: grabbing;
+        }
+        .preview-wrapper {
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -198,11 +250,10 @@ hero_image: img/superloc/superloc_title.gif
         &nbsp;
         <a href="#" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Code</a >
         &nbsp;
+        <a href="https://github.com/adrienzhh/Robustness_Metric" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Robustness Metrics</a >
+        &nbsp;
         </center>
     </div>
-    <!-- <div class="figure-container">
-        <img src="img/superloc/superloc_title.gif" alt="SuperLoc demonstration">
-    </div> -->
 </body>
 <style>
 .small-logo {
@@ -212,11 +263,19 @@ hero_image: img/superloc/superloc_title.gif
 </style>
 </html>
 <body>
+
 <section class="hero is-light is-small">
     <div class="hero-body">
         <div class="container">
             <div class="carousel-container">
                 <div id="results-carousel" class="carousel">
+                    <div class="item">
+                        <video muted loop playsinline controls>
+                            <source src="video/superloc/website_intro3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="item-description">Predict Alignment Risks✅</p>
+                    </div>
                     <div class="item">
                         <video muted loop playsinline controls>
                             <source src="video/superloc/website_intro1.mp4" type="video/mp4">
@@ -231,55 +290,83 @@ hero_image: img/superloc/superloc_title.gif
                         </video>
                         <p class="item-description">ICP Failure under Degeneracy❓</p>
                     </div>
-                    <div class="item">
-                        <video muted loop playsinline controls>
-                            <source src="video/superloc/website_intro3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p class="item-description">Predict Alignment Risks✅</p>
+                </div>
+            </div>
+            <div class="drag-bar">
+                <div class="preview-container">
+                    <div class="preview-wrapper">
+                        <img src="img/superloc/preview3.png" alt="Preview 1" class="preview-image active" data-index="0">
+                    </div>
+                    <div class="preview-wrapper">
+                        <img src="img/superloc/preview1.png" alt="Preview 2" class="preview-image" data-index="1">
+                    </div>
+                    <div class="preview-wrapper">
+                        <img src="img/superloc/preview2.png" alt="Preview 3" class="preview-image" data-index="2">
                     </div>
                 </div>
-                <button class="nav-button prev">&#10094;</button>
-                <button class="nav-button next">&#10095;</button>
+                <div class="drag-handle"></div>
             </div>
         </div>
     </div>
 </section>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const carousel = document.querySelector('#results-carousel');
-        const items = carousel.querySelectorAll('.item');
-        const prevButton = document.querySelector('.nav-button.prev');
-        const nextButton = document.querySelector('.nav-button.next');
-        const videos = carousel.querySelectorAll('video');
-        let currentIndex = 0;
 
-        function showItem(index) {
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-            videos.forEach(video => {
-                video.pause();
-                video.currentTime = 0;
-            });
-            const currentVideo = videos[index];
-            currentVideo.play().catch(e => console.error("Error playing video:", e));
-        }
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('#results-carousel');
+    const dragBar = document.querySelector('.drag-bar');
+    const dragHandle = document.querySelector('.drag-handle');
+    const previewImages = document.querySelectorAll('.preview-image');
+    const items = carousel.querySelectorAll('.item');
+    const videos = carousel.querySelectorAll('video');
+    let isDragging = false;
+    let startX, startLeft;
 
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            showItem(currentIndex);
+    function showItem(index) {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+        videos.forEach(video => {
+            video.pause();
+            video.currentTime = 0;
         });
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            showItem(currentIndex);
+        videos[index].play().catch(e => console.error("Error playing video:", e));
+        previewImages.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
         });
+        dragHandle.style.left = `${index * 33.33}%`;
+    }
 
-        // Initialize
-        showItem(currentIndex);
+    dragHandle.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX - dragHandle.offsetLeft;
+        startLeft = dragHandle.offsetLeft;
     });
-    </script>
-</body>
 
+    document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        let newLeft = e.clientX - startX;
+        newLeft = Math.max(0, Math.min(newLeft, dragBar.offsetWidth - dragHandle.offsetWidth));
+        dragHandle.style.left = `${newLeft}px`;
+        
+        const progress = newLeft / (dragBar.offsetWidth - dragHandle.offsetWidth);
+        const index = Math.round(progress * (items.length - 1));
+        showItem(index);
+    });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
+
+    previewImages.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            showItem(index);
+        });
+    });
+
+    // Initialize
+    showItem(0);
+});
+</script>
+</body>
 
 <h1 class="centered-title">Overview Video</h1>
 <div>
@@ -309,16 +396,10 @@ hero_image: img/superloc/superloc_title.gif
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/cave_website1.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_robust_initialization_10.mp4" type="video/mp4">
-        </video> -->
     </div>
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/cave_comparsion_website.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
-        </video> -->
     </div>
 </div>
 
@@ -329,16 +410,10 @@ hero_image: img/superloc/superloc_title.gif
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/multi_floor_website1.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_robust_initialization_10.mp4" type="video/mp4">
-        </video> -->
     </div>
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/multi_floor_comparsion_wesbite.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
-        </video> -->
     </div>
 </div>
 
@@ -350,16 +425,10 @@ hero_image: img/superloc/superloc_title.gif
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/long_corridor_website1.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_robust_initialization_10.mp4" type="video/mp4">
-        </video> -->
     </div>
     <div class="bonus-video">
         <video class="lazy-video" data-src="./video/superloc/long_corridor_comparsion_website.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
-        </video> -->
     </div>
 </div>
 
@@ -431,33 +500,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize
     showItem(currentIndex);
 });
 </script>
 
+<br>
 
-
-<h1>Bonus</h1>
+<h4>To benefit the open community, our localization package also includes following features,</h4>
 <div class="about-section">
-    <p>To benefit the open community, our localization package also includes following features:</p>
 </div>
 <div class="bonus-videos">
     <div class="bonus-video">
         <h3>Robust Initialization</h3>
         <video class="lazy-video" data-src="./video/superloc/cic_robust_initialization_10.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_robust_initialization_10.mp4" type="video/mp4">
-        </video> -->
     </div>
     <div class="bonus-video">
         <h3>Transition between mapped and unmapped region</h3>
         <video class="lazy-video" data-src="./video/superloc/cic_mapped_unmapped_4.mp4" muted loop playsinline controls>
         </video>
-        <!-- <video controls="metadata">
-            <source src="/video/superloc/cic_mapped_unmapped_4.mp4" type="video/mp4">
-        </video> -->
     </div>
 </div>
 
@@ -485,9 +546,65 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+## Ground Truth Map 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground Truth Maps</title>
+    <style>
+        .map-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .map-item {
+            width: 48%;
+            min-width: 300px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .map-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h4>To benefit the open community, we release the following ground truth maps for localization:</h4>
+    <div class="map-container">
+        <div class="map-item">
+            <h3><a href="https://hawkins-gt-map.s3.us-east-2.amazonaws.com/hawkins.html" target="_blank">Hawkins</a></h3>
+            <iframe src="https://hawkins-gt-map.s3.us-east-2.amazonaws.com/hawkins.html" width="100%" height="600"></iframe>
+        </div>
+        <div class="map-item">
+            <h3><a href="https://laurel-craven-gt-map.s3.us-east-2.amazonaws.com/laurel_craven.html" target="_blank">Laurel Craven</a></h3>
+            <iframe src="https://laurel-craven-gt-map.s3.us-east-2.amazonaws.com/laurel_craven.html" width="100%" height="600"></iframe>
+        </div>
+    </div>
+</body>
 
+
+## Dataset
+
+All datasets from our paper is released as follow, 
+
+| Name | Source    | Location  | Robot     |Sensor     | Trajectory | Duration  |  Rosbag | Calibration (Extrinsics) | Calibration (Intrinsics) | GT Map |
+|------|-----------|-----------|-----------|-----------|-------------|-----------|-------------|-----------|---------------|--------------|
+|Cave01    |SuperLoc|Laurel Craven|Handheld|RGB,LiDAR,IMU|416|838|[link](https://drive.google.com/file/d/1cyHbmxmJQGuK5UCm_f7SXomr8Gd6GEww/view?usp=sharing)| [Google](https://drive.google.com/file/d/1NscQVVsQc_CN-16O_VLpLQnmTWgBmf93/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1XfWfpjMqfPHUO8JNy1u9Ysky6vvTpn8_/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1JYSVgunLJj6Fj-MsDoNIDHRDx51YWsQP/view?usp=sharing)
+|Cave02    |SuperLoc|Laurel Craven|Handheld|RGB,LiDAR,IMU|475|986|[link](https://drive.google.com/file/d/1HwUYboHbCh4_GfyvZYQn25KmA12yiuMR/view?usp=sharing)| [Google](https://drive.google.com/file/d/1l7UYUVfygY3j1yHzsuovpdHnIClTfKkP/view?pli=1) Baidu | [Google](https://drive.google.com/file/d/1XfWfpjMqfPHUO8JNy1u9Ysky6vvTpn8_/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1JYSVgunLJj6Fj-MsDoNIDHRDx51YWsQP/view?usp=sharing)
+|Cave03    |SubT-MRS|Laurel Craven|Handheld|RGB,LiDAR,IMU|490|768|[link](https://drive.google.com/file/d/1cO5fStkj1oKpQojfrF8sji-Pbu8LqxPF/view?usp=drive_link)| [Google](https://drive.google.com/file/d/1TzIvJuJ3ulYSOdrXRy9wRm1E2Y5AE7g1/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1XfWfpjMqfPHUO8JNy1u9Ysky6vvTpn8_/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1JYSVgunLJj6Fj-MsDoNIDHRDx51YWsQP/view?usp=sharing)
+|Cave04    |SuperLoc|Laurel Craven|Handheld|RGB,LiDAR,IMU|597|959|[link](https://drive.google.com/file/d/19DXx6mspWBXiEqqZOa34b2bHz7cc1jTN/view?usp=sharing)| [Google](https://drive.google.com/file/d/1NscQVVsQc_CN-16O_VLpLQnmTWgBmf93/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1XfWfpjMqfPHUO8JNy1u9Ysky6vvTpn8_/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1JYSVgunLJj6Fj-MsDoNIDHRDx51YWsQP/view?usp=sharing)
+|Corridor01  |SubT-MRS|Hawkins|RC2     |RGB,LiDAR IMU|617|279|[link](https://drive.google.com/file/d/1aIIqPiE10nX3IhidpxKhc4Psq-AMER1X/view?usp=drive_link)| [Google](https://drive.google.com/file/d/1bB3jfEJeTf_XoLUHKOaxCNF_MCkiQTol/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1guy4Sa1jdfOdxmqBIGFiXX-X2qvXQLGa/view?usp=sharing) Baidu |[link](https://drive.google.com/file/d/1EH4NzINNLkHrneIxstrzkY9XTZ1JP5bf/view?usp=sharing)
+|Corridor02  |SuperLoc|Hawkins|RC1     |RGB,LiDAR IMU|690|893|[link](https://drive.google.com/file/d/1fbQIjza6zCVZ719VvXfNhAONDZflqGnf/view?usp=sharing)| [Google](https://drive.google.com/file/d/1FzepVzxan_9GjS0Rg_3f1LIjjwm2VZrR/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1gCjmOVcwhm55Rwosel79FMxG_WzvnV8g/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1d5vv4kfrTyntZw-82fGeTyih3H7DWxg5/view?usp=sharing)
+|Floor01    |SubT-MRS|Hawkins|SP1|RGB,LiDAR,IMU|270|480|[link](https://drive.google.com/file/d/13QQ8a-dEy56aHg8D0RNW0bfywWz6LKn9/view?usp=drive_link)| [Google](https://drive.google.com/file/d/1BV87D60W35UGzIaHjKD64c_J1G0U70jf/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) Baidu | [link](https://drive.google.com/file/d/1F46g0wnJVSedTJubFD_Ne1IwgZAGYvsU/view?usp=sharing)
+|Floor02 (bonus)    |SuperLoc|Hawkins|SP1|RGB,LiDAR,IMU|410|2190|[link](https://drive.google.com/file/d/1RnlqpHVG1I-BD0T7pxNkKELAGy_Vp0oI/view?usp=sharing)| [Google](https://drive.google.com/file/d/1BV87D60W35UGzIaHjKD64c_J1G0U70jf/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) Baidu | [link](https://drive.google.com/file/d/1F46g0wnJVSedTJubFD_Ne1IwgZAGYvsU/view?usp=sharing)
 
 ## Citation
+
+coming soon
 
 ## Contacts
 
