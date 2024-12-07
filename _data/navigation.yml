@@ -13,6 +13,8 @@
   link: /tptio
 - name: SuperLoc
   link: /superloc
+# - name: SuperLoc_supp
+#   link: /superloc_supplementary
 # - name: Super Loop
 #   link: /superloop
 # - name: Super Odometry 2

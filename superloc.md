@@ -26,6 +26,7 @@ hero_image: img/superloc/superloc_title.gif
     p.style.margin = "0px";
 </script>
 
+
 <html lang="en">
 
 <head>
@@ -231,6 +232,102 @@ hero_image: img/superloc/superloc_title.gif
         justify-content: center;
         align-items: center;
         }
+        .expandable-section {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .expandable-header {
+            background-color: #f5f5f5;
+            padding: 15px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        .expandable-header:hover {
+            background-color: #ebebeb;
+        }
+
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .expandable-content.active {
+            max-height: 10000px;
+            padding: 20px;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .arrow.active {
+            transform: rotate(180deg);
+        }
+
+        .math-content {
+            overflow-x: auto;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .reference-section {
+            margin-top: 40px;
+            border-top: 2px solid #eee;
+            padding-top: 20px;
+        }
+
+        .equation {
+            display: block;
+            text-align: center;
+            margin: 15px 0;
+        }
+        #references {
+            counter-reset: ref-counter;
+        }
+        #references .reference-item {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 10px;
+        }
+        #references .reference-item:before {
+            counter-increment: ref-counter;
+            content: "[" counter(ref-counter) "]";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
     </style>
 </head>
 <body>
@@ -246,7 +343,7 @@ hero_image: img/superloc/superloc_title.gif
         <center>
         <a href="#" class="button is-info"> &nbsp;📄Paper</a >
         &nbsp;
-        <a href="#" class="button is-info"> &nbsp;<img src="/img/logos/arxiv.png" class="small-logo">arXiv</a >
+        <a href="https://arxiv.org/abs/2412.02901" class="button is-info"> &nbsp;<img src="/img/logos/arxiv.png" class="small-logo">arXiv</a >
         &nbsp;
         <a href="#" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Code</a >
         &nbsp;
@@ -376,7 +473,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
  <h1 class="centered-title">About SuperLoc</h1>
 <div class="about-section">
-    <p>Map-based LiDAR localization, while widely used in autonomous systems, faces significant challenges in degraded environments due to lacking distinct geometric features. This paper introduces SuperLoc, a robust LiDAR localization package that addresses key limitations in existing methods. SuperLoc features a novel predictive alignment risk assessment technique, enabling early detection and mitigation of potential failures before optimization. This approach significantly improves performance in challenging scenarios such as corridors, tunnels, and caves. Unlike existing degeneracy mitigation algorithms that rely on post-optimization analysis and heuristic thresholds, SuperLoc evaluates the localizability of raw sensor measurements. Experimental results demonstrate significant performance improvements over state-of-the-art methods across various degraded environments. Our approach achieves a 49.7% increase in accuracy and exhibits the highest robustness. To facilitate further research, we will release our implementation along with datasets from eight challenging scenarios.</p>
+    <p>Map-based LiDAR localization, while widely used in autonomous systems, faces significant challenges in degraded environments due to lacking distinct geometric features. This paper introduces SuperLoc, a robust LiDAR localization package that addresses key limitations in existing methods. SuperLoc features a novel predictive alignment risk assessment technique, enabling early detection and mitigation of potential failures before optimization (check out Why Predictive Alignment Risk). This approach significantly improves performance in challenging scenarios such as corridors, tunnels, and caves. Unlike existing degeneracy mitigation algorithms that rely on post-optimization analysis and heuristic thresholds, SuperLoc evaluates the localizability of raw sensor measurements. Experimental results demonstrate significant performance improvements over state-of-the-art methods across various degraded environments. Our approach achieves a 49.7% increase in accuracy and exhibits the highest robustness. To facilitate further research, we will release our implementation along with datasets from eight challenging scenarios.</p>
     <div class="figure-container">
         <img src="/img/superloc/first_figure_compress.png" alt="SuperLoc Figure" />
     </div>
@@ -386,6 +483,155 @@ document.addEventListener('DOMContentLoaded', function() {
     before failure occurs. The entire process doesn't require predefined heuristic thresholds to detect degeneration and it has
     been evaluated in various challenging environments including caves, long corridors, flat open areas, and staircases.
     </p>
+</div>
+
+<div class="expandable-section">
+    <div class="expandable-header">
+        <h2 style="margin: 0;">Why Predictive Alignment Risk?</h2>
+        <span class="arrow">▼</span>
+    </div>
+    <div class="expandable-content">
+        <p>Dealing degeneracy with LiDAR-Inertial localization in SLAM (Simultaneous localization and mapping) community has been an active research topic for more than a decade. The motivation behind such research is to investigate failures in ICP (Iterative Closest Point), the principal algorithm used for LiDAR-Inertial localization. ICP calculates the optimal transformation between two sets of point clouds. As Censi<sup>[1]</sup> concluded, ICP failures occur due to three main reasons:</p>
+        <ol>
+            <li>Bad initial guess for ICP optimization</li>
+            <li>Sensor Noise</li>
+            <li><b>Degeneracy</b></li>
+        </ol>
+        <p>To address the question <b>Why Predict Alignment Risk?</b>, we examine common approaches to detecting and preventing degeneracy in robotics and their limitations. Approaches from previous literature can be best categorized into two methods:</p>
+        <ol>
+            <li>Detect ICP failures under degeneracy through ICP hessian analysis<sup>[2][4][5]</sup> and use this analysis to constrain ICP pose solving.</li>
+            <li>Fuse external sensor sources using pre-defined or ICP covariance<sup>[8]</sup> to prevent failures.</li>
+        </ol>
+        <p>However, there are two limitations associate with using ICP hessian analysis and covariance-based sensor fusion:</p>
+        <ol>
+            <li><b>Degeneracy detection using ICP hessian is difficult to generalize across different sensor modalities and environments.</b></li>
+            <li><b>Covariance under degeneracy is non-Gaussian.</b></li>
+        </ol>
+        <p>This article will unfold these limitations in more details. But first, let's revisit how can we obtain ICP covariance and its hessian to detect degeneracy, using Prakhya et al.<sup>[4]</sup> and Tuna et al.<sup>[3]</sup> as reference. </p>
+        <h3>ICP Covariance Modeling and Hessian Analysis</h3>
+        <p>Let assume z be the measurements and x be the output of an function A that minimizes an objective function J i.e.,</p>
+        <div class="equation">
+            \[\mathbf{x}=A(\mathbf{z})=\operatorname{argmin}_{\mathbf{X}} J(\mathbf{z}, \mathbf{x}) \tag{1}\]
+        </div>
+        <p>Then the approximate value of the covariance of \(\mathbf{x}\) in terms of \(A(\mathbf{z})\) will be,</p>
+        <div class="equation">
+            \[\operatorname{cov}(\mathbf{x})=\operatorname{cov}\left(\left.A(\mathbf{z})\right|_{\mathbf{z}=\mathbf{z}_o}\right) \approx \frac{\partial A}{\partial \mathbf{z}_o} \operatorname{cov}(\mathbf{z}) \frac{\partial A^T}{\partial \mathbf{z}_o}\tag{2}\]
+        </div>
+        <p>Using the implicit function theorem:</p>
+        <div class="equation">
+            \[\frac{\partial A}{\partial \mathbf{z}_o}=-\left(\frac{\partial^2 J}{\partial \mathbf{x}^2}\right)^{-1}\left(\frac{\partial^2 J}{\partial \mathbf{z} \partial \mathbf{x}}\right)\tag{3}\]
+        </div>
+        <p>Rewrite the equation into:</p>
+        <div class="equation">
+            \[\operatorname{cov}(\mathbf{x})=\left(\frac{\partial^2 J}{\partial \mathbf{x}^2}\right)^{-1}\left(\frac{\partial^2 J}{\partial \mathbf{z} \partial \mathbf{x}}\right) \operatorname{cov}(\mathbf{z})\left(\frac{\partial^2 J}{\partial \mathbf{z} \partial \mathbf{x}}\right)^T\left(\frac{\partial^2 J}{\partial \mathbf{x}^2}\right)^{-1}\tag{4}\]
+        </div>
+        <p>The objective function for point-to-point ICP is formulated as:</p>
+        <div class="equation">
+            \[J=\sum_{i=1}^n\left\|\mathbf{R} \mathbf{P}_{\mathbf{i}}+\mathbf{T}-\mathbf{Q}_{\mathbf{i}}\right\|^{\mathbf{2}}\tag{5}\]
+        </div>
+        <p>where \(\{\mathbf{P}_{\mathbf{i}},\mathbf{Q}_{\mathbf{i}}\}\) are the point cloud correspondences, and \([\mathbf{R}, \mathbf{T}]\) is the homogeneous transformation estimated by ICP. <b>The ICP covariance</b> can be calculated using the above equation, where \(\mathbf{x}=\left[\begin{array}{@{}llllll@{}}x & y & z & r & p & y\end{array}\right]\) and \(\mathbf{z}\) represents \(n\) sets of correspondences \(\{\mathbf{P}_{\mathbf{i}},\mathbf{Q}_{\mathbf{i}}\}\). \(\frac{\partial^2 \mathbf{J}}{\partial \mathbf{x}^2}\) is the <b>ICP hessian matrix \(\mathbf{H} \in \mathbb{R}^{6\times6}\)</b>.</p>
+        <p>Apply eigen-decomposition to \(\mathbf{H}\):</p>
+        <div class="equation">
+            \[\boldsymbol{H}=\boldsymbol{V} \Sigma \boldsymbol{V}\tag{6}\]
+        </div>
+        <p>where diagonal element of \(\Sigma \in\left\{\operatorname{diag}(\boldsymbol{v}): \boldsymbol{v} \in \mathbb{R}_{\geq 0}^n\right\}\) are eigenvalues and \(\boldsymbol{V} \in \mathbb{R}^{6 \times 6}\) are the eigenvectors in matrix form. The idea of degeneracy detection is to observe the null space of \(\mathbf{H}\). By examining \(\Sigma\), one can identify the <b>least-constrained pose elements of \(\mathbf{x}\)</b> by looking at the lowest eigenvalues.</p>
+        <h3>Degeneracy detection using ICP hessian is difficult to generalize</h3>
+        <p>The effectiveness of ICP hessian analysis for degeneracy detection varies significantly across different LiDAR sensors and environments. Nubert et al. <sup>[6]</sup> demonstrated this variability through an experiment comparing the lowest eigenvalues from two LiDAR sensors: Velodyne and Ouster, as shown in Fig. 1. Additional validation using the <a href="#dataset">SuperLoc dataset (Cave03 and Floor01)</a> revealed similar variations across different environments, as shown in Fig. 2. These large differences in lowest eigenvalues indicate that eigenvalue-based parameters cannot be over-applied across different sensor modalities or environments, limiting the Hessian’s generalizability. This makes constrained ICP using eigenvalue-based appraoch <sup>[5][6]</sup> less durable.</p>
+        <div class="image-container">
+            <img src="img/superloc/eigenvalue_sensor.png" alt="Eigenvalue comparison">
+            <p class="image-caption">Figure 1: Comparison between different LiDAR sensors (Nubert et al.)</p>
+        </div>
+        <div class="image-container">
+            <img src="img/superloc/eigenvalue_environment3.png" alt="Environment comparison">
+            <p class="image-caption">Figure 2: Comparison between different environments: Degeneracy period indicates the most degraded section of each dataset.</p>
+        </div>
+        <h3>Covariance under degeneracy is non-Gaussian</h3>
+        <p>A Gaussian noise model is crucial for performing sensor fusion. As mentioned earlier, sensor fusion with external sources such as visual odometry, GPS, etc. is a common method to prevent degeneracy. Sensor fusion is typically implemented using either Factor Graphs (<a href="https://gtsam.org/">GTSAM</a>)<sup>[7]</sup> or Extended Kalman Filters (EKF). Both approaches solve for pose estimates based on the assumption that all sensor measurements follow a Gaussian noise model. In other words, <b>the covariance matrix for each measurement needs to be non-singular or full rank</b>. In SuperLoc, we use Factor Graphs, which inference Maximum a Posteriori (MAP) estimation with Gaussian noise models into a nonlinear least-squares problem.</p>
+        <div class="image-container">
+            <img src="img/superloc/factor_graph.png" alt="Factor graph">
+            <p class="image-caption">Figure 3: Factor graph for the toy SLAM problem</p>
+        </div>
+        <div class="equation">
+            \[X^{\text {MAP }} =\underset{X}{\operatorname{argmax}} \phi(X) =\underset{X}{\operatorname{argmax}} \prod_i \phi_i\left(X_i\right)\tag{7}\]
+        </div>
+        <p>Here, \(\phi_i\left(X_i\right)\) are factors, represented by black dot in Fig. 3. Each factor is a function of state variable \(x_i\) and measurement \(z_i\). \(h_i\) is the measurement function that remap state variable \(x_i\) into measurement space.</p>
+        <div class="equation">
+            \[\phi_i\left(X_i\right) \propto \exp \left\{-\frac{1}{2}\left\|h_i\left(X_i\right)-z_i\right\|_{\Sigma_i}^2\right\}\tag{8}\]
+        </div>
+        <p>Take negative log of \(\underset{X}{\operatorname{argmax}}\) of Eq. 6, and drop \(\frac{1}{2}\) factor,</p>
+        <div class="equation">
+            \[X^{\text {MAP }}=\underset{X}{\operatorname{argmin}} \sum_i\left\|h_i\left(X_i\right)-z_i\right\|_{\Sigma_i}^2\tag{9}\]
+        </div>
+        <p>Rewrite the Mahalanobis norm as some term e:</p>
+        <div class="equation">
+            \[\|e\|_{\Sigma}^2 \triangleq e^{\top} \Sigma^{-1} e=\left(\Sigma^{-1 / 2} e\right)^{\top}\left(\Sigma^{-1 / 2} e\right)=\left\|\Sigma^{-1 / 2} e\right\|_2^2\tag{10}\]
+        </div>
+        <p>And with linearization of nonlinear problem,</p>
+        <div class="equation">
+            \[h_i\left(X_i\right)=h_i\left(X_i^0+\Delta_i\right) \approx h_i\left(X_i^0\right)+H_i \Delta_i\tag{11}\]
+        </div>
+        <p>where Jacobian \(H_i\) is \(\frac{\partial h_i\left(X_i\right)}{\partial X_i}\), and we can rewrite Eq. 9 into,</p>
+        <div class="equation">
+            \[\begin{aligned}
+            \Delta^* & =\underset{\Delta}{\operatorname{argmin}} \sum_i\left\|h_i\left(X_i^0\right)+H_i \Delta_i-z_i\right\|_{\Sigma_i}^2 \\
+            & =\underset{\Delta}{\operatorname{argmin}} \sum_i\left\|H_i \Delta_i-\left\{z_i-h_i\left(X_i^0\right)\right\}\right\|_{\Sigma_i}^2
+            \end{aligned}\tag{12}\]
+        </div>
+        <p>Pre-multiply Jacobian \(H_i\) and prediction error by \(\Sigma^{-1 / 2}\) using Eq. 10,</p>
+        <div class="equation">
+            \[\begin{aligned}
+            A_i & =\Sigma_i^{-1 / 2} H_i \\
+            b_i & =\Sigma_i^{-1 / 2}\left(z_i-h_i\left(X_i^0\right)\right)
+            \end{aligned}\tag{13}\]
+        </div>
+        <p>The final standard least-squares problem,</p>
+        <div class="equation">
+            \[\begin{aligned}
+            \Delta^* & =\underset{\Delta}{\operatorname{argmin}} \sum_i\left\|A_i \Delta_i-b_i\right\|_2^2 \\
+            & =\underset{\Delta}{\operatorname{argmin}}\|A \Delta-b\|_2^2
+            \end{aligned}\tag{14}\]
+        </div>
+        <p>To calculate Equation 10, one can either use a pre-defined covariance or ICP covariance. However, this covariance becomes non-Gaussian or rank-deficient under degeneracy. Our cave dataset demonstrates this through high condition numbers in the ICP covariance matrix just before localization failures, as shown in Fig. 4. This indicates imminent rank deficiency during degeneracy. Using rank-deficient covariance in factor graph optimization results in unconstrained pose estimates along the degenerate direction, as shown in Fig. 5. Therefore, maintaining a well-ranked ICP covariance is crucial for optimal sensor fusion.</p>
+        <div class="image-container">
+            <img src="img/superloc/condition_number.png" alt="Condition number">
+            <p class="image-caption">Figure 4: Large conditional number is present when degeneracy happened</p>
+        </div>
+        <div class="image-container">
+            <img src="img/superloc/cost_function.png" alt="Cost function">
+            <p class="image-caption">Figure 5: Visual representation of factor graph objective function: The red arrow indicates an unconstrained direction in the solution space for rank-deficient cases.</p>
+        </div>
+        <h3>Conclusion</h3>
+        <p>We have examined key limitations in using ICP hessian its covariance for degeneracy detection and prevention in LiDAR-inertial localization. First, we demonstrated that eigenvalue-based degeneracy detection lacks generalizability across different sensor modalities and environments, as evidenced by significantly varying eigenvalue patterns between different LiDAR sensors and testing environments. Second, we showed that ICP covariance becomes non-Gaussian under degeneracy, leading to unconstrained solutions in factor graph optimization. For our <b>Predict Alignment Risk</b>, we first detect degeneracy at front end rather then during ICP. Our method analyzes the geometric contribution of pointcloud features and quantify a scale between [0, 1], making it more applicable to different cases compared to eigenvalues. Next, we use this risk to formulate full rank covariance to allow sensor fusion with other sensors using our <b>Active Sensor Fusion</b>. This makes our Predict Alignment Risk more robust and reliable compare to ICP analysis approach.</p>
+        <div class="reference-section">
+            <h4>References</h4>
+            <div id="references">
+                <div class="reference-item">
+                    A. Censi, "An accurate closed-form estimate of icp's covariance", in Proceedings 2007 IEEE international conference on robotics and automation
+                </div>
+                <div class="reference-item">
+                    J. Zhang, M. Kaess, and S. Singh, "On degeneracy of optimization-based state estimation problems", in 2016 IEEE International Conference on Robotics and Automation (ICRA)
+                </div>
+                <div class="reference-item">
+                    S. M. Prakhya, L. Bingbing, Y. Rui and W. Lin, "A closed-form estimate of 3D ICP covariance", 2015 14th IAPR International Conference on Machine Vision Applications (MVA), Tokyo, Japan
+                </div>
+                <div class="reference-item">
+                    Tuna, T., Nubert, J., Nava, Y., Khattak, S., & Hutter, M. (2022). "X-ICP: Localizability-Aware LiDAR Registration for Robust Localization in Extreme Environments", arXiv preprint arXiv:2211.16335
+                </div>
+                <div class="reference-item">
+                    W. Talbot et al., "Principled ICP Covariance Modelling in Perceptually Degraded Environments for the EELS Mission Concept," 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA
+                </div>
+                <div class="reference-item">
+                    J. Nubert, E. Walther, S. Khattak and M. Hutter, "Learning-based Localizability Estimation for Robust LiDAR Localization," 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Kyoto, Japan, 2022
+                </div>
+                <div class="reference-item">
+                    M. Kaess, H. Johannsson, R. Roberts, V. Ila, J. Leonard and F. Dellaert, "iSAM2: Incremental smoothing and mapping with fluid relinearization and incremental variable reordering," 2011 IEEE International Conference on Robotics and Automation, Shanghai, China, 2011
+                </div>
+                <div class="reference-item">
+                    W. Xu and F. Zhang, "FAST-LIO: A Fast, Robust LiDAR-Inertial Odometry Package by Tightly-Coupled Iterated Kalman Filter," in IEEE Robotics and Automation Letters, vol. 6, no. 2, pp. 3317-3324, April 2021
+                </div>
+            </div>   
+        </div>
+    </div>
 </div>
 
 
@@ -502,6 +748,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showItem(currentIndex);
 });
+document.querySelector('.expandable-header').addEventListener('click', function() {
+    const content = document.querySelector('.expandable-content');
+    const arrow = document.querySelector('.arrow');
+    content.classList.toggle('active');
+    arrow.classList.toggle('active');
+});
+
+if (!window.MathJax) {
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML';
+    document.head.appendChild(script);
+}
 </script>
 
 <br>
@@ -587,7 +845,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </body>
 
 
-## Dataset
+<h2 id="dataset">Dataset</h2>
 
 All datasets from our paper is released as follow, 
 
