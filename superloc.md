@@ -340,6 +340,9 @@ hero_image: img/superloc/superloc_title.gif
             *Equal contribution<br>
             Carnegie Mellon University
         </p>
+        <p class="affiliation">
+            <b>Code will be released in early March</b>
+        </p>
         <center>
         <a href="#" class="button is-info"> &nbsp;📄Paper</a >
         &nbsp;
@@ -350,6 +353,7 @@ hero_image: img/superloc/superloc_title.gif
         <a href="https://github.com/adrienzhh/Robustness_Metric" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Robustness Metrics</a >
         &nbsp;
         </center>
+
     </div>
 </body>
 <style>
@@ -859,6 +863,8 @@ All datasets from our paper is released as follow,
 |Corridor02  |SuperLoc|Hawkins|RC1     |RGB,LiDAR IMU|690|893|[link](https://drive.google.com/file/d/1fbQIjza6zCVZ719VvXfNhAONDZflqGnf/view?usp=sharing)| [Google](https://drive.google.com/file/d/1FzepVzxan_9GjS0Rg_3f1LIjjwm2VZrR/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1gCjmOVcwhm55Rwosel79FMxG_WzvnV8g/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1d5vv4kfrTyntZw-82fGeTyih3H7DWxg5/view?usp=sharing) | [link](https://drive.google.com/file/d/1hb3IVu1OqyPZA61kBZG1raGTBcTv_h3H/view?usp=sharing)
 |Floor01    |SubT-MRS|Hawkins|SP1|RGB,LiDAR,IMU|270|480|[link](https://drive.google.com/file/d/13QQ8a-dEy56aHg8D0RNW0bfywWz6LKn9/view?usp=drive_link)| [Google](https://drive.google.com/file/d/1FAtf5IkUzNNrwxyqVAV6Vre5Pmvbp8Mj/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) Baidu | [link](https://drive.google.com/file/d/1F46g0wnJVSedTJubFD_Ne1IwgZAGYvsU/view?usp=sharing) | [link](https://drive.google.com/file/d/1T-p9TgDwD_9us7U94cT0guwPNTvx3KkI/view?usp=sharing)
 |Floor02 (bonus)    |SuperLoc|Hawkins|SP1|RGB,LiDAR,IMU|410|2190|[link](https://drive.google.com/file/d/1RnlqpHVG1I-BD0T7pxNkKELAGy_Vp0oI/view?usp=sharing)| [Google](https://drive.google.com/file/d/1FAtf5IkUzNNrwxyqVAV6Vre5Pmvbp8Mj/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) Baidu | [link](https://drive.google.com/file/d/1F46g0wnJVSedTJubFD_Ne1IwgZAGYvsU/view?usp=sharing) | link
+
+We also provide initialization poses for each dataset to support localization modules that allows initial pose configuration. <b>You can find corresponding initial pose config for each dataset [here](https://drive.google.com/drive/folders/1WZsyEYyU-_8ps1CUqRq3YO7IaARMdGNm?usp=sharing)</b>. 
 
 <b>Ground truth trajecotry</b> follows [TUM](https://github.com/MichaelGrupp/evo/wiki/Formats) format, 
 <pre><code>timestamp x y z q_x q_y q_z q_w</code></pre>
