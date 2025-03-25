@@ -13,6 +13,8 @@
   link: /tptio
 - name: SuperLoc
   link: /superloc
+- name: TartanIMU
+  link: /tartanimu
 # - name: SuperLoc_supp
 #   link: /superloc_supplementary
 # - name: Super Loop
