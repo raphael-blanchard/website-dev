@@ -348,7 +348,7 @@ hero_image: img/superloc/superloc_title.gif
         &nbsp;
         <a href="https://arxiv.org/abs/2412.02901" class="button is-info"> &nbsp;<img src="/img/logos/arxiv.png" class="small-logo">arXiv</a >
         &nbsp;
-        <a href="#" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Code</a >
+        <a href="https://github.com/superxslam/SuperOdom" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Code</a >
         &nbsp;
         <a href="https://github.com/adrienzhh/Robustness_Metric" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Robustness Metrics</a >
         &nbsp;
