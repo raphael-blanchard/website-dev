@@ -36,6 +36,11 @@ To achieve robust motion estimation in visually degraded environments, thermal o
     p.style.margin = "0px";
 </script>
 
+## Dataset
+
+You can download the dataset used in our experiments from the following [Google Drive link](https://drive.google.com/drive/folders/1xVYvYOhggDzeycH0feBkAnkhfMxuhgAX?usp=sharing)
+
+
 ## Citation
 
 Zhao, Shibo, et al. "Tp-tio: A robust thermal-inertial odometry with deep thermalpoint." 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2020. [Paper](https://arxiv.org/abs/2012.03455)
