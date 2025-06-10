@@ -359,7 +359,7 @@ hero_image: img/TartanIMU/FirstPage.png
         &nbsp;
         <a href="https://github.com/superxslam/SuperOdom" class="button is-info"> &nbsp;<i class="fab fa-github" style="font-size:24px"></i>Code</a >
         &nbsp;
-        <a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU" class="button is-info"> &nbsp;<img src="/img/logos/huggingface-logo.png" class="logo"> Dataset and Checkpoints</a >
+        <a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main" class="button is-info"> &nbsp;<img src="/img/logos/huggingface-logo.png" class="logo"> Dataset and Checkpoints</a >
         &nbsp;
 
         
@@ -901,11 +901,13 @@ We also provide initialization poses for each dataset to support localization mo
 
 Zhao, et al. "Tartan IMU: A Light Foundation Model for Inertial Positioning in Robotics." 2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). IEEE, 2025.
 ```
-@inproceedings{zhao2025tartanimu,
-  title = {Tartan IMU: A Light Foundation Model for Inertial Positioning in Robotics},
-  author = {Zhao, Shibo and Zhou, Sifan and Blanchard, Raphael and Qiu, Yuheng and Wang, Wenshan and Scherer, Sebastian},
-  year = {2025},
-  booktitle = {2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+@InProceedings{Zhao_2025_CVPR,
+    author    = {Zhao, Shibo and Zhou, Sifan and Blanchard, Raphael and Qiu, Yuheng and Wang, Wenshan and Scherer, Sebastian},
+    title     = {Tartan IMU: A Light Foundation Model for Inertial Positioning in Robotics},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {22520-22529}
 }
 ```
 
