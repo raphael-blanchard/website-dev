@@ -454,16 +454,7 @@ Our approach consists of three-stage: First, a pre-trained foundation model leve
     </div>
     <div class="expandable-content">
         <p>
-            To enable cross-platform generalization, we train a foundational inertial odometry model using over 100 hours of raw 6-DoF IMU data from four distinct platforms: a car, drone, dog, and human. 
-            Instead of using a monolithic network, we design a heterogeneous backbone architecture with modality-specific encoders that capture platform-specific motion patterns.
-        </p>
-        <p>
-            We avoid forcing a single representation space across modalities by incorporating a multi-head prediction strategy, with one head per platform. 
-            This allows the model to share a unified feature representation while maintaining tailored outputs for each platform’s kinematic structure.
-        </p>
-        <p>
-            Crucially, the model operates in the robot’s local body frame rather than a global frame, ensuring that learned dynamics reflect platform-intrinsic motion properties 
-            rather than global orientation or trajectory. This choice helps the network develop representations that are transferable and grounded in robot-specific behavior.
+            TBD.
         </p>
         <div class="image-container">
             <img src="img/TartanIMU/tsne_viz.PNG" alt="t-SNE visualization of learned features" style="width: 50%; height: auto;">
@@ -531,7 +522,7 @@ Our approach consists of three-stage: First, a pre-trained foundation model leve
             </p>
         </div>
         <p>
-            Beyond standalone IMU-based estimation, TartanIMU can also be integrated within a broader SLAM framework. When external pose sources (e.g., LiDAR-based SLAM) are reliable, their estimates are used to supervise the model through consistency loss. However, in degraded environments (e.g., dense smoke, snow, dust), where SLAM performance drops, we fallback to TartanIMU predictions to maintain continuity in pose estimation.
+            Beyond standalone IMU-based estimation, TartanIMU can also be integrated within a broader SLAM framework. When external pose sources (e.g., LiDAR-based SLAM) are reliable, we use their feedback to train the network. Then, in degraded environments (e.g., dense smoke, snow, dust), where traditional SLAM performance drops, we fallback to TartanIMU predictions to maintain continuity in pose estimation.
         </p>
         <div class="image-container">
             <img src="img/TartanIMU/lio_imu_switch_scheme.png" alt="SLAM and IMU fallback mechanism" style="width: 60%; height: auto;">
@@ -539,9 +530,6 @@ Our approach consists of three-stage: First, a pre-trained foundation model leve
                 Figure: Integration with SLAM pipelines. In clear conditions, LiDAR odometry supervises TartanIMU. When visual degradation (e.g., dense smoke) occurs, the system switches to TartanIMU predictions until reliability is restored.
             </p>
         </div>
-        <p>
-            This bidirectional fusion—SLAM supervising TartanIMU during reliable tracking and TartanIMU filling the gap during failure—allows our system to remain robust even in severely degraded or high-speed conditions. This design ensures persistent localization despite transient sensor degradation or extreme motion.
-        </p>
     </div>
 </div>
 
