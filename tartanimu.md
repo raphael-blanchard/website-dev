@@ -279,6 +279,24 @@ mathjax: true
             max-height: 600px;
             object-fit: contain;
             display: block;
+            background-color: #000;
+            border-radius: 8px;
+        }
+
+        /* Video Loading Optimization */
+        .item video:not([data-loaded]) {
+            background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
+                        linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
+                        linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
+                        linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            animation: loading 1s linear infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 0 0, 0 10px, 10px -10px, -10px 0px; }
+            100% { background-position: 20px 20px, 20px 30px, 30px 10px, 10px 20px; }
         }
 
         .item-description {
@@ -648,32 +666,36 @@ mathjax: true
             <div class="carousel-container">
                 <div id="results-carousel" class="carousel">
                     <div class="item">
-                        <video muted loop playsinline controls>
+                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/car_overview.png">
+                            <source src="/video/tartanimu/exp1_video_compare_car.m4v" type="video/mp4">
+                            <source src="/video/tartanimu/exp1_video_compare_car.m4v" type="video/quicktime">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="item-description">UGV (Foundation Model)</p>
+                    </div>
+                    <div class="item">
+                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/dog_overview.png">
                             <source src="/video/tartanimu/exp1_video_compare_dog.m4v" type="video/mp4">
+                            <source src="/video/tartanimu/exp1_video_compare_dog.m4v" type="video/quicktime">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">Quadruped (Foundation Model)</p>
                     </div>
                     <div class="item">
-                        <video muted loop playsinline controls>
+                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/drone_overview.png">
                             <source src="/video/tartanimu/exp1_video_compare_drone.m4v" type="video/mp4">
+                            <source src="/video/tartanimu/exp1_video_compare_drone.m4v" type="video/quicktime">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">Drone (Foundation Model)</p>
                     </div>
                     <div class="item">
-                        <video muted loop playsinline controls>
+                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/human_overview.png">
                             <source src="/video/tartanimu/exp1_video_compare_human.m4v" type="video/mp4">
+                            <source src="/video/tartanimu/exp1_video_compare_human.m4v" type="video/quicktime">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">Human (Foundation Model)</p>
-                    </div>
-                    <div class="item">
-                        <video muted loop playsinline controls>
-                            <source src="/video/tartanimu/exp1_video_compare_car.m4v" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p class="item-description">UGV (Foundation Model)</p>
                     </div>
                 </div>
             </div>
@@ -713,6 +735,25 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update active preview image
         previewImages.forEach((img, i) => {
             img.classList.toggle('active', i === index);
+        });
+        
+        // Video performance optimization
+        const videos = carousel.querySelectorAll('video');
+        videos.forEach((video, i) => {
+            if (i === index) {
+                // Load and play current video
+                if (video.readyState < 2) {
+                    video.load();
+                }
+                video.setAttribute('data-loaded', 'true');
+                // Auto-play current video (muted)
+                if (video.paused) {
+                    video.play().catch(e => console.log('Autoplay prevented:', e));
+                }
+            } else {
+                // Pause other videos to save bandwidth
+                video.pause();
+            }
         });
         
         currentIndex = index;
