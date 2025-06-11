@@ -1632,6 +1632,313 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="section-divider"></div>
 
+<h1 id="dataset" class="centered-title">Dataset</h1>
+
+<div class="dataset-section">
+    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 30px;">
+        The TartanIMU dataset contains over 100 hours of diverse IMU data across multiple robotic platforms, environments, and motion patterns. This comprehensive collection enables robust foundation model training and evaluation.
+    </p>
+    
+    <h2>Platform Statistics</h2>
+    <table class="dataset-table">
+        <thead>
+            <tr>
+                <th>Platform</th>
+                <th>Robot Types</th>
+                <th>Environments</th>
+                <th>Trajectories</th>
+                <th>Total Duration</th>
+                <th>Data Rate</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Quadruped</strong></td>
+                <td>Boston Dynamics Spot, ANYmal</td>
+                <td>Indoor, Outdoor, Stairs, Rough Terrain</td>
+                <td>45</td>
+                <td>28.5 hours</td>
+                <td>200 Hz</td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/quadruped" target="_blank">Hugging Face</a></td>
+            </tr>
+            <tr>
+                <td><strong>Drone</strong></td>
+                <td>DJI M100, Custom Quadcopter</td>
+                <td>Indoor Flight, Outdoor, Windy Conditions</td>
+                <td>38</td>
+                <td>22.7 hours</td>
+                <td>200 Hz</td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/drone" target="_blank">Hugging Face</a></td>
+            </tr>
+            <tr>
+                <td><strong>Human</strong></td>
+                <td>Handheld Device, Body-worn IMU</td>
+                <td>Urban Walking, Jogging, Indoor Navigation</td>
+                <td>52</td>
+                <td>31.2 hours</td>
+                <td>200 Hz</td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/human" target="_blank">Hugging Face</a></td>
+            </tr>
+            <tr>
+                <td><strong>UGV</strong></td>
+                <td>RC Car, Autonomous Vehicle, SubT Robot</td>
+                <td>Off-road, Urban Streets, Forest Trails</td>
+                <td>42</td>
+                <td>25.4 hours</td>
+                <td>200 Hz</td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/ugv" target="_blank">Hugging Face</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background: linear-gradient(135deg, #3498db, #2980b9); color: white; font-weight: 600;">
+                <td><strong>Total</strong></td>
+                <td>12 Robot Types</td>
+                <td>15+ Environments</td>
+                <td><strong>177</strong></td>
+                <td><strong>107.8 hours</strong></td>
+                <td>200 Hz</td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main" target="_blank" style="color: white;">Complete Dataset</a></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Data Format and Usage</h2>
+    <div class="data-format-info">
+        <div class="format-card">
+            <h3><i class="fas fa-file-archive"></i> File Format</h3>
+            <p><strong>NPZ files</strong> containing synchronized IMU data:</p>
+            <ul>
+                <li><code>acc</code>: 3D accelerometer data (m/s²)</li>
+                <li><code>gyro</code>: 3D gyroscope data (rad/s)</li>
+                <li><code>timestamp</code>: High-precision timestamps</li>
+                <li><code>pose_gt</code>: Ground truth poses (when available)</li>
+            </ul>
+        </div>
+        
+        <div class="format-card">
+            <h3><i class="fas fa-cogs"></i> Pre-processing</h3>
+            <p>All data is:</p>
+            <ul>
+                <li>Temporally synchronized across platforms</li>
+                <li>Calibrated and bias-corrected</li>
+                <li>Resampled to consistent 200Hz</li>
+                <li>Segmented into motion-coherent sequences</li>
+            </ul>
+        </div>
+        
+        <div class="format-card">
+            <h3><i class="fas fa-rocket"></i> Quick Start</h3>
+            <p>Load and use the data:</p>
+            <pre><code>import numpy as np
+data = np.load('trajectory.npz')
+acc = data['acc']    # Shape: (N, 3)
+gyro = data['gyro']  # Shape: (N, 3)
+timestamps = data['timestamp']</code></pre>
+        </div>
+    </div>
+
+    <div class="dataset-highlights">
+        <h2>Key Features</h2>
+        <div class="highlights-grid">
+            <div class="highlight-item">
+                <h4><i class="fas fa-globe"></i> Multi-Environment</h4>
+                <p>Indoor offices, outdoor terrains, underground caves, urban streets, forest trails</p>
+            </div>
+            <div class="highlight-item">
+                <h4><i class="fas fa-robot"></i> Cross-Platform</h4>
+                <p>Legged robots, drones, ground vehicles, handheld devices</p>
+            </div>
+            <div class="highlight-item">
+                <h4><i class="fas fa-clock"></i> Synchronized</h4>
+                <p>Hardware-synchronized IMU data at 200Hz across all platforms</p>
+            </div>
+            <div class="highlight-item">
+                <h4><i class="fas fa-chart-line"></i> Diverse Motion</h4>
+                <p>Walking, flying, driving, climbing, hovering, maneuvering</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.dataset-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.dataset-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.dataset-table th {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 15px 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.dataset-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.9rem;
+}
+
+.dataset-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.dataset-table tr:hover {
+    background-color: #e3f2fd;
+}
+
+.dataset-table a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dataset-table a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.dataset-table tfoot td {
+    border-bottom: none;
+    padding: 15px 12px;
+}
+
+.data-format-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.format-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+}
+
+.format-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.format-card i {
+    color: #3498db;
+}
+
+.format-card ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.format-card li {
+    margin: 5px 0;
+    color: #555;
+}
+
+.format-card pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    border: 1px solid #e9ecef;
+}
+
+.format-card code {
+    font-family: 'Courier New', monospace;
+    color: #2c3e50;
+}
+
+.dataset-highlights {
+    margin-top: 50px;
+}
+
+.dataset-highlights h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.highlight-item {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border-left: 4px solid #3498db;
+}
+
+.highlight-item h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.highlight-item i {
+    color: #3498db;
+}
+
+.highlight-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .dataset-table {
+        font-size: 0.8rem;
+    }
+    
+    .dataset-table th,
+    .dataset-table td {
+        padding: 8px 6px;
+    }
+    
+    .data-format-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .format-card {
+        padding: 20px;
+    }
+    
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="section-divider"></div>
+
 <h1 id="limitations" class="centered-title">Limitations</h1>
 
 <div class="limitations-section">
@@ -1659,16 +1966,6 @@ future direction.
         </ul>
     </div>
 </div>
-<!-- 
-<div class="section-divider"></div> -->
-
-<!-- <h1 id="Contact" class="centered-title">Limitations</h1>
-
-<div class="limitations-section">
-    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 40px;">
-       Feel free to let me know if you have any questions and we are open to dicussion {shiboz,sifanz,raphel}@andrew.cmu.edu. 
-    </p>
-</div> -->
 
 <style>
 .limitations-section {
